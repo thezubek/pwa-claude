@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded-md hover:shadow-lg flex flex-col"
+    class="rounded-lg hover:shadow-lg flex flex-col bg-white"
     data-testid="product-card"
     :class="{ 'border border-neutral-200': configuration?.cardBorders }"
   >
@@ -29,8 +29,8 @@
           :width="getWidth()"
           :height="getHeight()"
           :class="[
-            'object-contain rounded-md aspect-square w-full transition-opacity duration-300',
-            effectiveHoverImageUrl ? 'group-hover/image:opacity-0' : '',
+            'object-contain rounded-lg aspect-square w-full transition-all duration-500',
+            effectiveHoverImageUrl ? 'group-hover/image:opacity-0' : 'hover:scale-105',
           ]"
           data-testid="image-slot"
         />
@@ -73,7 +73,7 @@
           <SfLink
             :tag="NuxtLink"
             :to="productPath"
-            class="no-underline"
+            class="no-underline font-body font-medium text-aura-text-dark hover:text-aura-primary transition-colors"
             variant="secondary"
             data-testid="productcard-name"
           >
@@ -104,7 +104,7 @@
           </div>
 
           <div class="flex flex-col-reverse items-start md:flex-row md:items-center mt-auto">
-            <span class="block pb-2 font-bold typography-text-sm" data-testid="product-card-vertical-price">
+            <span class="block pb-2 font-bold typography-text-sm font-body text-aura-text-muted" data-testid="product-card-vertical-price">
               <span v-if="!canAddFromCategory" class="mr-1">{{
                 t('account.ordersAndReturns.orderDetails.priceFrom')
               }}</span>
@@ -113,7 +113,7 @@
             </span>
             <span
               v-if="crossedPrice && differentPrices(price, crossedPrice)"
-              class="typography-text-sm text-neutral-500 line-through md:ml-3 md:pb-2"
+              class="typography-text-sm text-neutral-400 line-through md:ml-3 md:pb-2 font-body"
             >
               {{ format(crossedPrice) }}
             </span>
@@ -124,10 +124,10 @@
           <UiButton
             v-if="canAddFromCategory"
             size="sm"
-            class="min-w-[80px] w-fit"
+            class="min-w-[80px] w-full"
             data-testid="add-to-basket-short"
             :disabled="loading"
-            :variant="configuration?.addToCartStyle || 'primary'"
+            :variant="configuration?.addToCartStyle || 'aura-secondary'"
             @click="addWithLoader(Number(productGetters.getId(product)))"
           >
             <template v-if="!loading" #prefix>
@@ -139,12 +139,12 @@
 
           <UiButton
             v-else
-            :variant="configuration?.addToCartStyle || 'primary'"
+            :variant="configuration?.addToCartStyle || 'aura-secondary'"
             type="button"
             :tag="NuxtLink"
             :to="productPath"
             size="sm"
-            class="w-fit"
+            class="w-full"
           >
             <span>{{ t('showOptions') }}</span>
           </UiButton>

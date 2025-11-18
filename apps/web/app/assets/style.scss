@@ -91,3 +91,17 @@ apple-pay-button {
     vertical-align: middle;
   }
 }
+
+// Material Icons configuration for AURA
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+// AURA design system utilities
+.tracking-headline {
+  letter-spacing: -0.015em;
+}
+
+.tracking-wide-link {
+  letter-spacing: 0.1em;
+}
