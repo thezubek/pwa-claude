@@ -45,6 +45,8 @@ const props = withDefaults(defineProps<Props>(), {
   overlayOpacity: 0.5,
 });
 
+const NuxtLink = resolveComponent('NuxtLink');
+
 const backgroundStyle = computed(() => {
   const overlayEnd = `rgba(0, 0, 0, ${props.overlayOpacity})`;
   return {

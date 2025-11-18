@@ -5,8 +5,8 @@
       <NuxtLink :to="productPath" class="block h-full w-full">
         <NuxtImg
           :src="imageUrl"
-          :alt="product.name"
-          :title="product.name"
+          :alt="imageAlt"
+          :title="imageAlt"
           :loading="lazy ? 'lazy' : 'eager'"
           :fetchpriority="priority ? 'high' : 'auto'"
           :width="256"
@@ -22,7 +22,7 @@
       <div>
         <NuxtLink :to="productPath" class="no-underline">
           <p class="font-body text-base font-medium leading-normal text-aura-text-dark hover:text-aura-primary transition-colors">
-            {{ product.name }}
+            {{ productName }}
           </p>
         </NuxtLink>
         <p class="font-body text-sm font-normal leading-normal text-aura-text-muted mt-1">
@@ -38,6 +38,7 @@
 </template>
 
 <script setup lang="ts">
+import { productGetters, productImageGetters } from '@plentymarkets/shop-api';
 import type { Product } from '@plentymarkets/shop-api';
 
 interface Props {
@@ -51,27 +52,35 @@ const props = withDefaults(defineProps<Props>(), {
   priority: false,
 });
 
+const NuxtLink = resolveComponent('NuxtLink');
 const { product } = toRefs(props);
-const { getProductItemUrl } = useProductUrl(product);
-const { formatCurrency } = useFormatCurrency();
+const localePath = useLocalePath();
+const { format } = usePriceFormatter();
+const { addToCart } = useCart();
+const { openQuickCheckout } = useQuickCheckout();
+const { price } = useProductPrice(product.value);
 
-const productPath = computed(() => getProductItemUrl());
+const productName = computed(() => productGetters.getName(product.value) ?? '');
 
-const imageUrl = computed(() => {
-  const images = product.value?.images?.all;
-  if (images && images.length > 0) {
-    return images[0].url;
-  }
-  return '/placeholder-product.jpg'; // fallback image
+const productPath = computed(() => {
+  const basePath = `/${productGetters.getUrlPath(product.value)}_${productGetters.getItemId(product.value)}`;
+  const variationId = productGetters.getVariationId(product.value);
+  const shouldAppendVariation = variationId && productGetters.getSalableVariationCount(product.value) === 1;
+  return localePath(shouldAppendVariation ? `${basePath}_${variationId}` : basePath);
 });
 
-const formattedPrice = computed(() => {
-  const price = product.value?.prices?.default?.price?.value || 0;
-  return formatCurrency(price);
-});
+const cover = computed(() => productGetters.getCoverImage(product.value));
+const firstImage = computed(() => productImageGetters.getFirstImage(product.value));
+const { addModernImageExtension } = useModernImage();
 
-const handleAddToCart = () => {
-  // Add to cart functionality - to be implemented
-  console.log('Add to cart:', product.value.name);
+const imageUrl = computed(() => addModernImageExtension(cover.value));
+const imageAlt = computed(() => productImageGetters.getImageAlternate(firstImage.value) || productName.value || '');
+
+const formattedPrice = computed(() => format(price));
+
+const handleAddToCart = async () => {
+  const productId = Number(productGetters.getId(product.value));
+  await addToCart({ productId, quantity: 1 });
+  openQuickCheckout(product.value, 1);
 };
 </script>

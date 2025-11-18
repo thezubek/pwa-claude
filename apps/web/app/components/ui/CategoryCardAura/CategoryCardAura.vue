@@ -16,7 +16,7 @@
     <!-- Title -->
     <div class="absolute inset-0 flex items-center justify-center p-4">
       <h3 class="font-display text-2xl font-bold text-white tracking-tight text-center">
-        {{ category.name }}
+        {{ categoryName }}
       </h3>
     </div>
   </NuxtLink>
@@ -30,11 +30,16 @@ interface Props {
 }
 
 const props = defineProps<Props>();
+const NuxtLink = resolveComponent('NuxtLink');
 const { category } = toRefs(props);
 
+const categoryName = computed(() => {
+  return category.value?.details?.[0]?.name ?? '';
+});
+
 const categoryPath = computed(() => {
-  // Generate category URL path
-  return `/category/${category.value.id}`;
+  const categoryId = category.value?.details?.[0]?.categoryId ?? category.value?.id ?? 0;
+  return `/category/${categoryId}`;
 });
 
 const imageUrl = computed(() => {
