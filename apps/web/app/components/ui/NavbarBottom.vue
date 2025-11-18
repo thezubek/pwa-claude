@@ -1,12 +1,12 @@
 <template>
-  <nav class="w-full fixed bottom-0 left-0 flex flex-row items-stretch md:hidden" data-testid="navbar-bottom">
+  <nav class="w-full fixed bottom-0 left-0 flex flex-row items-stretch md:hidden shadow-[0_-2px_10px_rgba(0,0,0,0.1)] border-t border-aura-border bg-white" data-testid="navbar-bottom">
     <UiButton
       v-for="{ label, icon, link } in items"
       :key="label"
       variant="tertiary"
       :class="[
-        '!p-1 !pt-3 flex flex-col h-full w-full rounded-none bg-primary-500 text-white hover:text-white hover:bg-primary-800 active:text-white active:bg-primary-700 !text-xs !font-base',
-        { 'text-white bg-primary-700': route.path === link },
+        '!p-1 !pt-3 flex flex-col h-full w-full rounded-none bg-white text-aura-text-primary hover:text-aura-primary hover:bg-aura-background-dark active:text-aura-primary active:bg-aura-background-darker !text-xs !font-body transition-all duration-200',
+        { 'text-aura-primary bg-aura-background-dark font-semibold': route.path === link },
       ]"
       size="sm"
       :tag="link ? NuxtLink : undefined"
@@ -20,13 +20,13 @@
             v-if="label === t('cart')"
             :content="cartItemsCount"
             :max="99"
-            class="translate-x-[5px] translate-y-[-3px] outline outline-primary-500 bg-white !text-neutral-900 group-hover:outline-primary-800 group-active:outline-primary-700 flex justify-center items-center text-xs min-w-[16px] min-h-[16px]"
+            class="translate-x-[5px] translate-y-[-3px] bg-aura-primary !text-white flex justify-center items-center text-xs min-w-[18px] min-h-[18px] font-bold"
           />
           <SfBadge
             v-if="label === t('wishlist')"
             :content="wishlistItemIds.length"
             :max="99"
-            class="translate-x-[5px] translate-y-[-3px] outline outline-primary-500 bg-white !text-neutral-900 group-hover:outline-primary-800 group-active:outline-primary-700 flex justify-center items-center text-xs min-w-[16px] min-h-[16px]"
+            class="translate-x-[5px] translate-y-[-3px] bg-aura-accent !text-white flex justify-center items-center text-xs min-w-[18px] min-h-[18px] font-bold"
             data-testid="wishlist-badge"
           />
         </div>

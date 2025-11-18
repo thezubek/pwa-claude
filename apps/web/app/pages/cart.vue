@@ -32,14 +32,31 @@
         </OrderSummary>
       </div>
     </div>
-    <div v-else class="flex items-center justify-center flex-col pt-24 pb-32" data-testid="cart-page-content">
-      <h2 class="mt-8 typography-headline-3 font-bold">{{ t('emptyCart') }}</h2>
+    <div v-else class="flex items-center justify-center flex-col pt-24 pb-32 px-4" data-testid="cart-page-content">
+      <div class="max-w-md text-center">
+        <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-aura-background-dark flex items-center justify-center">
+          <SfIconShoppingCart class="text-aura-text-secondary" style="font-size: 4rem;" />
+        </div>
+        <h2 class="aura-heading-3 text-aura-text-primary mb-4">{{ t('emptyCart') }}</h2>
+        <p class="aura-body text-aura-text-secondary mb-8">
+          {{ t('emptyCart.description', 'Looks like you haven\'t added anything to your cart yet. Start shopping to fill it up!') }}
+        </p>
+        <UiButton
+          variant="aura-primary"
+          size="lg"
+          :tag="NuxtLink"
+          :to="localePath(paths.home)"
+          class="mx-auto"
+        >
+          {{ t('continueShopping', 'Continue Shopping') }}
+        </UiButton>
+      </div>
     </div>
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-import { SfLoaderCircular } from '@storefront-ui/vue';
+import { SfLoaderCircular, SfIconShoppingCart } from '@storefront-ui/vue';
 import { cartGetters } from '@plentymarkets/shop-api';
 const { setPageMeta } = usePageMeta();
 

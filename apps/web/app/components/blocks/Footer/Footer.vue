@@ -1,7 +1,7 @@
 <template>
   <footer
     v-if="resolvedContent"
-    class="pt-10"
+    class="pt-10 border-t border-aura-border"
     :style="{
       backgroundColor: resolvedContent.colors?.background,
       color: resolvedContent.colors?.text,
@@ -11,19 +11,19 @@
     <div class="px-4 md:px-6 pb-10 max-w-screen-3xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
         <div v-if="getColumnSwitches(resolvedContent.column1).length" class="max-w-[280px] break-words">
-          <div class="ml-4 text-lg font-medium leading-7">
+          <div class="ml-4 text-lg font-semibold leading-7 font-body mb-3">
             {{ resolvedContent.column1?.title }}
           </div>
           <ul>
             <SfListItem
               v-for="switchConfig in getColumnSwitches(resolvedContent.column1)"
               :key="switchConfig.id"
-              class="py-2 !bg-transparent typography-text-sm"
+              class="py-2 !bg-transparent text-sm font-body"
             >
               <SfLink
                 :tag="NuxtLink"
                 :style="{ color: resolvedContent.colors?.text || undefined }"
-                class="no-underline text-neutral-600 hover:underline active:underline"
+                class="no-underline hover:text-aura-primary transition-colors duration-200 hover:underline active:underline"
                 variant="secondary"
                 :to="localePath(switchConfig.link)"
               >
@@ -38,7 +38,7 @@
           :key="i"
           class="max-w-[280px] break-words"
         >
-          <div class="ml-4 text-lg font-medium leading-7">
+          <div class="ml-4 text-lg font-semibold leading-7 font-body mb-3">
             {{ column?.title }}
           </div>
           <div v-if="getColumnSwitches(column).length" class="text-sm">
@@ -46,12 +46,12 @@
               <SfListItem
                 v-for="switchConfig in getColumnSwitches(column)"
                 :key="switchConfig.id"
-                class="inline-flex items-center gap-2 w-full hover:bg-neutral-100 active:bg-neutral-200 cursor-pointer focus-visible:outline focus-visible:outline-offset focus-visible:relative focus-visible:z-10 px-4 py-2 !bg-transparent typography-text-sm"
+                class="inline-flex items-center gap-2 w-full hover:bg-aura-background-dark active:bg-aura-background-darker cursor-pointer focus-visible:outline focus-visible:outline-offset focus-visible:relative focus-visible:z-10 px-4 py-2 !bg-transparent text-sm font-body rounded transition-colors duration-200"
               >
                 <SfLink
                   :tag="NuxtLink"
                   variant="secondary"
-                  class="no-underline text-neutral-900 hover:cursor-pointer hover:underline active:underline"
+                  class="no-underline hover:text-aura-primary hover:cursor-pointer hover:underline active:underline transition-colors duration-200"
                   :style="{ color: resolvedContent.colors?.text }"
                   :to="localePath(switchConfig.link)"
                 >

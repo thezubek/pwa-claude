@@ -1,12 +1,12 @@
 <template>
-  <nav data-testid="breadcrumbs" class="inline-flex items-center text-sm font-normal">
+  <nav data-testid="breadcrumbs" class="inline-flex items-center text-sm font-body font-normal">
     <ol class="flex w-auto leading-none group md:flex-wrap">
-      <li class="flex items-center sm:hidden text-neutral-500 z-9">
+      <li class="flex items-center sm:hidden text-aura-text-secondary z-9">
         <NuxtLazyHydrate :on-interaction="['click', 'touchstart']">
           <SfDropdown v-model="dropdownOpened" strategy="absolute" placement="bottom-start" @update:model-value="close">
             <template #trigger>
               <UiButton
-                class="relative w-5 h-5 !p-0 rounded-sm outline-secondary-600 hover:bg-transparent active:bg-transparent"
+                class="relative w-5 h-5 !p-0 rounded-sm outline-aura-primary hover:bg-transparent active:bg-transparent"
                 :aria-label="t('breadcrumbsDropdownText')"
                 variant="tertiary"
                 square
@@ -16,18 +16,18 @@
                 <template #prefix>
                   <SfIconMoreHoriz
                     size="sm"
-                    class="text-neutral-500 hover:text-primary-500 active:text-primary-800 active:bg-transparent"
+                    class="text-aura-text-secondary hover:text-aura-primary active:text-aura-primary-dark active:bg-transparent transition-colors duration-200"
                   />
                 </template>
               </UiButton>
             </template>
-            <ol class="px-4 py-2 rounded-md shadow-md border-neutral-100 bg-white" data-testid="breadcrumbs-dropdown">
+            <ol class="px-4 py-2 rounded-md shadow-lg border border-aura-border bg-white" data-testid="breadcrumbs-dropdown">
               <li v-for="item in breadcrumbs" :key="item.name" class="py-2 last-of-type:hidden">
                 <SfLink
                   :tag="NuxtLink"
                   :to="localePath(item.link)"
                   variant="secondary"
-                  class="leading-5 no-underline text-inherit hover:underline active:underline whitespace-nowrap outline-secondary-600"
+                  class="leading-5 no-underline text-aura-text-primary hover:text-aura-primary hover:underline active:underline whitespace-nowrap outline-aura-primary transition-colors duration-200 font-body"
                 >
                   {{ item.name }}
                 </SfLink>
@@ -39,18 +39,18 @@
       <li
         v-for="(item, index) in breadcrumbs"
         :key="item.name"
-        class="peer hidden sm:flex items-center peer-[:nth-of-type(even)]:before:content-['/'] peer-[:nth-of-type(even)]:before:px-2 peer-[:nth-of-type(even)]:before:leading-5 last-of-type:flex last-of-type:before:font-normal last-of-type:before:text-neutral-500 text-neutral-500 last-of-type:text-neutral-900 last-of-type:font-medium"
+        class="peer hidden sm:flex items-center peer-[:nth-of-type(even)]:before:content-['/'] peer-[:nth-of-type(even)]:before:px-2 peer-[:nth-of-type(even)]:before:leading-5 last-of-type:flex last-of-type:before:font-normal last-of-type:before:text-aura-text-secondary text-aura-text-secondary last-of-type:text-aura-text-primary last-of-type:font-semibold"
       >
         <SfLink
           v-if="index < breadcrumbs.length - 1"
           :tag="NuxtLink"
           :to="localePath(item.link)"
           variant="secondary"
-          class="leading-5 no-underline hover:underline active:underline whitespace-nowrap outline-secondary-600 text-inherit"
+          class="leading-5 no-underline hover:text-aura-primary hover:underline active:underline whitespace-nowrap outline-aura-primary text-inherit transition-colors duration-200 font-body"
         >
           {{ item.name }}
         </SfLink>
-        <span v-else>
+        <span v-else class="font-body">
           {{ item.name }}
         </span>
       </li>
