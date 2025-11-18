@@ -1,0 +1,30 @@
+{
+  "display": "Server",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "lib": ["DOM", "DOM.Iterable", "ES2019"],
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2019",
+    "types": [
+      "jest",
+      "@vue-storefront/middleware",
+    ],
+    "rootDir": ".",
+    "outDir": "lib"
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["dist", "lib", "node_modules", ".turbo"]
+}

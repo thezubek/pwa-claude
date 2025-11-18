@@ -1,0 +1,93 @@
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    @apply hidden;
+  }
+}
+.grid-areas-product-page {
+  grid-template-areas: 'left-top right' 'left-bottom right';
+}
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+@media (min-width: 1024px) {
+  .padding-right-desktop {
+    padding-right: 3.1rem;
+  }
+}
+.variation-properties {
+  a {
+    color: rgb(var(--colors-2-primary-700));
+  }
+}
+
+apple-pay-button {
+  --apple-pay-button-width: 100%;
+  --apple-pay-button-height: 50px;
+  --apple-pay-button-border-radius: 7px;
+  --apple-pay-button-box-sizing: border-box;
+}
+
+.swiper-button-prev {
+  color: rgb(var(--colors-2-primary-500)) !important;
+  z-index: 0 !important;
+}
+
+.swiper-button-next {
+  color: rgb(var(--colors-2-primary-500)) !important;
+  z-index: 0 !important;
+}
+
+#google-pay-button {
+  div {
+    button {
+      width: 100% !important;
+      display: block;
+    }
+  }
+}
+
+.no-preflight {
+  :not(iframe) {
+    all: revert;
+  }
+
+  h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.67em 0;
+    padding: 0;
+    line-height: 1.2;
+    color: inherit;
+    text-align: left;
+    white-space: normal;
+  }
+
+  img,
+  video {
+    height: auto;
+    max-width: 100%;
+  }
+
+  audio,
+  canvas,
+  embed,
+  iframe,
+  img,
+  object,
+  svg,
+  video {
+    display: block;
+    vertical-align: middle;
+  }
+}

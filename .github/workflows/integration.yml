@@ -1,0 +1,159 @@
+name: Integration Gates
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  packages: read
+  pull-requests: write
+
+concurrency: 
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  meta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Assign author to PR
+        if: github.event.action == 'opened'
+        uses: toshimaru/auto-author-assign@v2.1.1
+
+      - name: Validate PR title
+        uses: amannn/action-semantic-pull-request@v6
+        with:
+          requireScope: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Assign labels to PR
+        uses: mauroalderete/action-assign-labels@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          conventional-commits: |
+            conventional-commits:
+              - type: 'fix'
+                nouns: ['FIX', 'Fix', 'fix', 'FIXED', 'Fixed', 'fixed']
+                labels: ['fix']
+              - type: 'feature'
+                nouns: ['FEATURE', 'Feature', 'feature', 'FEAT', 'Feat', 'feat']
+                labels: ['feature']
+          maintain-labels-not-matched: false
+          apply-changes: true
+  fitness-compliance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    needs: meta
+    steps:
+      - uses: actions/checkout@v5
+      - name: Dependency review
+        uses: actions/dependency-review-action@v4
+        with:
+          license-check: true
+          deny-licenses: 'AGPL-1.0-or-later, GPL-1.0-or-later, LGPL-2.0-or-later, NGPL'
+          vulnerability-check: false
+          comment-summary-in-pr: on-failure
+
+      - name: Install Semgrep
+        run: pip install semgrep
+
+      - name: Scan for malicious code
+        run: >
+          semgrep scan
+          --error
+          --severity ERROR
+          .
+  fitness-code-quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - name: Setup Node
+        uses: ./.github/actions/setup
+
+      - name: Run prettier
+        run: npm run format
+
+      - name: Run linter
+        run: npm run lint
+  test-unit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - name: Setup Node
+        uses: ./.github/actions/setup
+
+      - name: Unit tests
+        run: npm run test:coverage
+      - name: 'Report Coverage'
+        if: always()
+        uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          working-directory: './apps/web/app'
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - name: Setup Node
+        uses: ./.github/actions/setup
+
+      - name: Setup environment
+        uses: ./.github/actions/environment
+        with:
+          api-security-token: ${{ secrets.API_SECURITY_TOKEN }}
+          api-endpoint: ${{ vars.API_ENDPOINT_TESTING }}
+          configuration: ${{ vars.CONFIG }}
+
+      - name: Build application
+        run: npm run build
+
+      - name: Install productive dependencies for server
+        run: |
+          npm install --omit=dev --ignore-scripts --workspace=apps/web
+          npm install --omit=dev --ignore-scripts --workspace=apps/server
+
+      - name: Tar build output
+        run: tar -czf build.tar.gz -C ${{ github.workspace }} apps/server/dist apps/web/.output apps/web/.nuxt
+
+      - name: Upload build
+        uses: actions/upload-artifact@v5
+        with:
+          name: build
+          path: build.tar.gz
+  smoke:
+    if: github.repository == 'plentymarkets/plentyshop-pwa'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - name: Setup Node
+        uses: ./.github/actions/setup
+
+      - name: Setup environment
+        uses: ./.github/actions/environment
+        with:
+          api-security-token: ${{ secrets.API_SECURITY_TOKEN }}
+          api-endpoint: ${{ vars.API_ENDPOINT_TESTING }}
+          configuration: ${{ vars.CONFIG }}
+
+      - name: Download build
+        uses: actions/download-artifact@v6
+        with:
+          name: build
+
+      - name: Extract build
+        run: tar -xzf build.tar.gz
+
+      - name: E2E Smoke
+        uses: cypress-io/github-action@v6
+        with:
+          install: false
+          command: npm run test:cypress
+        env:
+          NUXT_PUBLIC_CONFIG_ID: 1

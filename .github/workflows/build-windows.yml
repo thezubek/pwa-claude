@@ -1,0 +1,32 @@
+name: Windows Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: ./.github/actions/setup
+
+      - name: Set environment
+        run: |
+          New-Item -ItemType File -Path apps/web/.env -Force
+          Add-Content -Path apps/web/.env -Value "API_SECURITY_TOKEN=${{ secrets.API_SECURITY_TOKEN }}"
+          Add-Content -Path apps/web/.env -Value "API_ENDPOINT=https://mevofvd5omld.c01-14.plentymarkets.com"
+        shell: pwsh
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build app
+        run: |
+          npm run build

@@ -1,0 +1,70 @@
+<template>
+  <div v-if="documents && documents.length > 0" data-testid="documents-list" class="documents-list">
+    <UiButton
+      v-for="(document, key) in documents"
+      :key="key"
+      :disabled="loading"
+      class="mt-4 w-full cursor-pointer"
+      variant="secondary"
+      @click="downloadPDF(document, orderGetters.getAccessKey(props.order), key)"
+    >
+      <SfLoaderCircular v-if="downloadingDocument === key" class="mr-2" />
+      <span>{{ getDocumentName(document) }}</span>
+    </UiButton>
+  </div>
+</template>
+
+<script setup lang="ts">
+import type { OrderDocument } from '@plentymarkets/shop-api';
+import { orderDocumentGetters, orderGetters } from '@plentymarkets/shop-api';
+import type { DocumentsListProps } from './types';
+import { SfLoaderCircular } from '@storefront-ui/vue';
+
+const props = defineProps<DocumentsListProps>();
+const documents = computed(() => orderGetters.getDocuments(props.order));
+const { data, getDocument, downloadFile, loading } = useOrderDocument();
+const downloadingDocument = ref<number | null>(null);
+const { t } = useI18n();
+
+const translations = {
+  correction_document: t('documents.correctionDocuments'),
+  credit_note: t('documents.Credit Note'),
+  delivery_note: t('documents.Delivery Note'),
+  dunning_letter: t('documents.Dunning Letter'),
+  invoice_external: t('documents.Invoice External'),
+  invoice: t('documents.Invoice'),
+  offer: t('documents.Offer'),
+  order_confirmation: t('documents.Order Confirmation'),
+  pickup_delivery: t('documents.Pickup Delivery'),
+  pro_forma_invoice: t('documents.Pro Forma Invoice'),
+  receipt: t('documents.Receipt'),
+  return_note: t('documents.Return Note'),
+  success_confirmation: t('documents.Success Confirmation'),
+  reversal_document: t('documents.Reversal Document'),
+};
+
+const getTypeName = (type: string) => {
+  return translations[type as keyof typeof translations];
+};
+
+const getDocumentName = (document: OrderDocument) => {
+  return getTypeName(orderDocumentGetters.getType(document)) || orderDocumentGetters.getNumberWithPrefix(document);
+};
+
+const downloadPDF = async (document: OrderDocument, accessKey: string, key: number) => {
+  downloadingDocument.value = key;
+  try {
+    await getDocument(document, accessKey);
+    const name = document.path.split('/').join('_');
+
+    downloadFile(data.value, name, 'application/pdf');
+  } catch {
+    useNotification().send({
+      type: 'negative',
+      message: t('documents.downloadFailed'),
+    });
+  } finally {
+    downloadingDocument.value = null;
+  }
+};
+</script>
