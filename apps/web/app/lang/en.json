@@ -2221,5 +2221,343 @@
       "description": "Shop our seasonal collections",
       "button": "Shop Now"
     }
+  },
+  "careers": {
+    "title": "Careers at HEVENTON",
+    "subtitle": "Join our team and help craft the finest blouses and shirts in Germany. We're building something special.",
+    "whyWorkHere": {
+      "title": "Why Work at HEVENTON?",
+      "benefit1": {
+        "title": "Sustainable Mission",
+        "description": "Be part of a company committed to ethical fashion and environmental responsibility."
+      },
+      "benefit2": {
+        "title": "Quality Craftsmanship",
+        "description": "Work with premium materials and learn from experienced artisans."
+      },
+      "benefit3": {
+        "title": "Growth Opportunities",
+        "description": "We invest in your professional development with training and advancement paths."
+      },
+      "benefit4": {
+        "title": "Competitive Benefits",
+        "description": "Fair compensation, health insurance, and generous vacation policy."
+      },
+      "benefit5": {
+        "title": "Work-Life Balance",
+        "description": "Flexible hours and remote work options to support your lifestyle."
+      },
+      "benefit6": {
+        "title": "Collaborative Culture",
+        "description": "Join a diverse team that values every voice and perspective."
+      }
+    },
+    "values": {
+      "title": "Our Core Values",
+      "sustainability": {
+        "title": "Sustainability First",
+        "description": "Every decision we make considers environmental impact. We're committed to leaving the planet better than we found it."
+      },
+      "quality": {
+        "title": "Uncompromising Quality",
+        "description": "We never cut corners. From materials to craftsmanship, excellence is our standard."
+      },
+      "collaboration": {
+        "title": "Teamwork & Respect",
+        "description": "We succeed together. Every role is valued, every voice is heard."
+      }
+    },
+    "openPositions": {
+      "title": "Open Positions",
+      "applyButton": "Apply Now",
+      "position1": {
+        "title": "Senior Pattern Maker",
+        "description": "Lead our pattern design team, creating innovative blouse and shirt designs that balance style with wearability.",
+        "type": "Full-Time",
+        "location": "Berlin, Germany"
+      },
+      "position2": {
+        "title": "E-Commerce Manager",
+        "description": "Drive our online presence and customer experience across digital channels. Experience with Shopware/Vue.js preferred.",
+        "type": "Full-Time",
+        "location": "Remote (Germany)"
+      },
+      "position3": {
+        "title": "Sustainability Coordinator",
+        "description": "Manage our sustainability initiatives, certifications, and supplier relationships to ensure ethical practices.",
+        "type": "Full-Time",
+        "location": "Berlin, Germany"
+      }
+    },
+    "process": {
+      "title": "Our Application Process",
+      "step1": {
+        "title": "Apply",
+        "description": "Submit your resume and cover letter through our online portal."
+      },
+      "step2": {
+        "title": "Phone Screen",
+        "description": "Brief conversation with our HR team to discuss your background and interests."
+      },
+      "step3": {
+        "title": "Interview",
+        "description": "Meet with the hiring manager and team members to explore fit and role details."
+      },
+      "step4": {
+        "title": "Offer",
+        "description": "If it's a match, we'll extend an offer and welcome you to the team!"
+      }
+    },
+    "noPosition": {
+      "title": "Don't See the Right Role?",
+      "description": "We're always looking for talented people. Send us your resume and tell us how you'd like to contribute.",
+      "button": "Contact Us"
+    }
+  },
+  "wardrobeEssentials": {
+    "title": "Wardrobe Essentials Guide",
+    "subtitle": "Build a timeless wardrobe with these foundational pieces that work for any occasion.",
+    "whyEssential": "Why It's Essential",
+    "women": {
+      "title": "Women's Wardrobe Essentials",
+      "foundation": {
+        "title": "Foundation Pieces",
+        "item1": {
+          "title": "Classic White Blouse",
+          "why": "The most versatile piece you'll ever own. Dress it up for the office, down for weekends. Pairs with everything from jeans to pencil skirts."
+        },
+        "item2": {
+          "title": "Black Silk-Blend Blouse",
+          "why": "Sophistication in a shirt. Perfect for client meetings, dinners, or any occasion requiring polish. The dark color hides stains and the fabric drapes beautifully."
+        },
+        "item3": {
+          "title": "Neutral Button-Down",
+          "why": "Your go-to for effortless style. In beige, cream, or light gray, it's professional without being boring. Layers perfectly under blazers or cardigans."
+        }
+      },
+      "workEssentials": {
+        "title": "Work Essentials",
+        "item1": {
+          "title": "Tailored Fit Blouse",
+          "why": "Structure matters in professional settings. A well-fitted blouse shows attention to detail and projects confidence."
+        },
+        "item2": {
+          "title": "French Cuff Dress Shirt",
+          "why": "For important meetings and presentations. Cufflinks add a touch of personality while maintaining professionalism."
+        },
+        "item3": {
+          "title": "Classic Oxford Shirt",
+          "why": "The workhorse of your wardrobe. Crisp, clean, and appropriate for any office environment."
+        }
+      },
+      "casualEssentials": {
+        "title": "Casual Essentials",
+        "item1": {
+          "title": "Chambray Shirt",
+          "why": "Denim's sophisticated cousin. Casual enough for weekends but polished enough for casual Fridays."
+        },
+        "item2": {
+          "title": "Linen Blend Blouse",
+          "why": "Summer essential. Breathable, relaxed, and effortlessly chic for warm weather."
+        },
+        "item3": {
+          "title": "Striped Button-Down",
+          "why": "Pattern without risk. Stripes add visual interest while remaining classic and versatile."
+        }
+      }
+    },
+    "men": {
+      "title": "Men's Wardrobe Essentials",
+      "foundation": {
+        "title": "Foundation Pieces",
+        "item1": {
+          "title": "White Dress Shirt",
+          "why": "Non-negotiable. Every man needs at least two. Perfect for interviews, weddings, and any formal occasion."
+        },
+        "item2": {
+          "title": "Light Blue Dress Shirt",
+          "why": "The second most important shirt. More interesting than white but just as versatile. Studies show it projects confidence."
+        },
+        "item3": {
+          "title": "Classic Oxford Shirt",
+          "why": "The bridge between casual and formal. Can be worn with a suit or jeans, making it incredibly cost-per-wear efficient."
+        }
+      },
+      "workEssentials": {
+        "title": "Work Essentials",
+        "item1": {
+          "title": "Spread Collar Dress Shirt",
+          "why": "Modern and professional. The wider collar works with most tie knots and looks great without a tie."
+        },
+        "item2": {
+          "title": "Non-Iron Business Shirt",
+          "why": "Time is money. These maintain a crisp look all day without the hassle of ironing."
+        },
+        "item3": {
+          "title": "French Cuff Shirt",
+          "why": "For high-stakes meetings and client presentations. Shows you take the occasion seriously."
+        }
+      },
+      "casualEssentials": {
+        "title": "Casual Essentials",
+        "item1": {
+          "title": "Button-Down Oxford",
+          "why": "The weekend warrior. Preppy without trying too hard. Perfect with chinos or jeans."
+        },
+        "item2": {
+          "title": "Chambray Shirt",
+          "why": "Your casual Friday MVP. Pairs perfectly with darker denim for the denim-on-denim look."
+        },
+        "item3": {
+          "title": "Linen Shirt",
+          "why": "Summer essential. Yes, it wrinkles—that's part of the charm. Breathable and relaxed."
+        }
+      }
+    },
+    "buildingYourWardrobe": {
+      "title": "How to Build Your Wardrobe",
+      "step1": {
+        "title": "Start with Neutrals",
+        "description": "Begin with white, light blue, and neutral colors. These form the foundation and maximize outfit combinations."
+      },
+      "step2": {
+        "title": "Add One Pattern at a Time",
+        "description": "Once you have solid foundations, add stripes, checks, or subtle patterns. One new piece at a time ensures it integrates well."
+      },
+      "step3": {
+        "title": "Invest in Quality",
+        "description": "Better to have 5 excellent shirts than 15 mediocre ones. Quality pieces last longer and always look better."
+      }
+    },
+    "qualityOverQuantity": {
+      "title": "Why Quality Matters",
+      "description": "A well-made shirt can last 5-10 years with proper care. Fast fashion shirts might last 6 months. The math is simple: quality is more economical and sustainable in the long run."
+    },
+    "cta": {
+      "title": "Ready to Build Your Essential Wardrobe?",
+      "description": "Browse our curated collection of timeless pieces designed to last.",
+      "button": "Shop Essentials"
+    }
+  },
+  "collarStyles": {
+    "title": "Complete Guide to Collar Styles",
+    "subtitle": "Understanding collar styles helps you choose the perfect shirt or blouse for any occasion and face shape.",
+    "bestFor": "Best For",
+    "faceShape": "Face Shape",
+    "occasion": "Best Occasion",
+    "women": {
+      "title": "Women's Collar Styles",
+      "classic": {
+        "title": "Classic Point Collar",
+        "description": "The timeless choice. Pointed collar tips that frame the face beautifully. Works with or without accessories.",
+        "image": "Classic Point Collar",
+        "bestFor": "Office wear, professional settings, versatile everyday wear",
+        "faceShape": "Suits all face shapes, especially flattering for round faces"
+      },
+      "peterPan": {
+        "title": "Peter Pan Collar",
+        "description": "Soft, rounded collar that sits flat. Creates a feminine, vintage-inspired look.",
+        "image": "Peter Pan Collar",
+        "bestFor": "Creative workplaces, casual settings, adding playful touch to outfits",
+        "faceShape": "Best for angular or square face shapes to soften features"
+      },
+      "bowTie": {
+        "title": "Bow Tie Collar",
+        "description": "Built-in bow at the neckline. Instantly elevates any look with romantic flair.",
+        "image": "Bow Tie Collar",
+        "bestFor": "Special occasions, date nights, making a statement at work",
+        "faceShape": "Elongates round faces, adds interest to oval faces"
+      },
+      "mandarin": {
+        "title": "Mandarin Collar",
+        "description": "Stand-up collar without points. Clean, modern, and sophisticated.",
+        "image": "Mandarin Collar",
+        "bestFor": "Contemporary professional settings, minimalist style lovers",
+        "faceShape": "Elongates shorter necks, flattering for most face shapes"
+      },
+      "vNeck": {
+        "title": "V-Neck Collar",
+        "description": "Creates a V-shape at the neckline. Elongating and universally flattering.",
+        "image": "V-Neck Collar",
+        "bestFor": "Layering, casual Fridays, showing off delicate necklaces",
+        "faceShape": "Perfect for round or square faces, creates length"
+      },
+      "pussyBow": {
+        "title": "Pussy Bow",
+        "description": "Long ties that create a soft bow. Feminine and vintage-inspired with modern appeal.",
+        "image": "Pussy Bow",
+        "bestFor": "Making a statement, professional settings, creative industries",
+        "faceShape": "Adds volume, best for heart or oval face shapes"
+      }
+    },
+    "men": {
+      "title": "Men's Collar Styles",
+      "point": {
+        "title": "Point Collar",
+        "description": "The classic standard. Collar points angled downward. The most versatile collar style.",
+        "image": "Point Collar",
+        "bestFor": "Professional men who want timeless style, works with or without tie",
+        "occasion": "Office, business casual, any professional setting"
+      },
+      "spread": {
+        "title": "Spread Collar",
+        "description": "Wider collar points spread apart. Modern and sophisticated. Frames the tie knot beautifully.",
+        "image": "Spread Collar",
+        "bestFor": "Wider tie knots (Windsor, Half-Windsor), modern professional look",
+        "occasion": "Business meetings, formal events, when wearing a tie"
+      },
+      "buttonDown": {
+        "title": "Button-Down Collar",
+        "description": "Collar points button to the shirt. Originated in polo, now a casual classic.",
+        "image": "Button-Down Collar",
+        "bestFor": "Smart casual looks, tie-optional settings, preppy style",
+        "occasion": "Casual Fridays, weekend wear, business casual environments"
+      },
+      "cutaway": {
+        "title": "Cutaway Collar",
+        "description": "Extremely wide spread, almost horizontal. Very modern and bold.",
+        "image": "Cutaway Collar",
+        "bestFor": "Large tie knots, contemporary professional style, making a statement",
+        "occasion": "High-profile meetings, formal events, fashion-forward offices"
+      },
+      "club": {
+        "title": "Club Collar",
+        "description": "Rounded collar points instead of pointed. Vintage-inspired and distinctive.",
+        "image": "Club Collar",
+        "bestFor": "Standing out with sophisticated vintage style, creative professionals",
+        "occasion": "Special occasions, creative workplaces, fashion events"
+      },
+      "band": {
+        "title": "Band Collar (Mandarin)",
+        "description": "No collar points, just a standing band. Clean, modern, minimalist.",
+        "image": "Band Collar",
+        "bestFor": "Modern minimalists, tie-free professional looks, contemporary style",
+        "occasion": "Smart casual, modern offices, creative industries"
+      }
+    },
+    "faceShapeGuide": {
+      "title": "Choosing Collars for Your Face Shape",
+      "round": {
+        "title": "Round Face",
+        "description": "Choose collars that create vertical lines: point collars, V-necks, or mandarin collars. Avoid Peter Pan or rounded styles that emphasize roundness."
+      },
+      "oval": {
+        "title": "Oval Face",
+        "description": "Lucky you! Most collar styles work beautifully with oval faces. Experiment with different styles based on personal preference and occasion."
+      },
+      "square": {
+        "title": "Square Face",
+        "description": "Soften angular features with rounded collars like Peter Pan, club, or spread collars. Avoid sharp, pointed collars that emphasize angles."
+      },
+      "heart": {
+        "title": "Heart-Shaped Face",
+        "description": "Balance a wider forehead with wider collars: spread, cutaway, or pussy bow styles. These draw attention downward and create balance."
+      }
+    },
+    "cta": {
+      "title": "Find Your Perfect Collar Style",
+      "description": "Explore our collection and discover which collar styles suit you best.",
+      "button": "Shop by Collar Style"
+    }
   }
 }
