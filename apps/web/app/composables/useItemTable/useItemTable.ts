@@ -8,6 +8,8 @@ import {
   replaceByKeyInArray,
   buildItemHelper,
 } from './helpers/itemTableHelpers';
+import { logger } from '~/utils/logger';
+
 export const UPLOADING_CLASS = '__uploading__';
 
 export const useItemsTable: UseItemTableReturn = () => {
@@ -131,7 +133,7 @@ export const useItemsTable: UseItemTableReturn = () => {
       removeByKey(tempKey);
       const { send } = useNotification();
       send({ type: 'negative', message: (e as ApiError).message || 'Image upload failed.' });
-      console.error('Upload error:', e);
+      logger.error('Upload error:', e);
       return null;
     }
   };

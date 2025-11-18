@@ -3,6 +3,7 @@ import type { Block } from '@plentymarkets/shop-api';
 import type { BlockPosition, RefCallback, ShowBottomAddInGridOptions } from './types';
 import { v4 as uuid } from 'uuid';
 import type { LazyLoadConfig } from '~/components/PageBlock/types';
+import { logger } from '~/utils/logger';
 
 const blocksLists = ref<BlocksList>({});
 const blocksListContext = ref<BlocksListContext>('');
@@ -106,7 +107,7 @@ export const useBlockManager = () => {
     const parentInfo = findBlockParent(copiedData, targetUuid);
 
     if (!parentInfo) {
-      console.error('block not found');
+      logger.error('block not found');
       return;
     }
 
@@ -323,7 +324,7 @@ export const useBlockManager = () => {
   const getLazyLoadKey = (blockName: string, blockUuid?: string): string => {
     const baseKey = blockName.charAt(0).toLowerCase() + blockName.slice(1);
     if (!blockUuid) {
-      console.error('getLazyLoadKey called without blockUuid for', blockName);
+      logger.error('getLazyLoadKey called without blockUuid for', blockName);
       return `${baseKey}-missing-uuid`;
     }
     return `${baseKey}-${blockUuid}`;

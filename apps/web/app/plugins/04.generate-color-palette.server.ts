@@ -1,5 +1,6 @@
 import { getPaletteFromColor } from '../utils/tailwindHelper';
 import type { Shade } from '../utils/tailwindHelper';
+import { logger } from '~/utils/logger';
 
 export default defineNuxtPlugin(async () => {
   const buildPalette = (colorType: string, baseColor?: string): Array<Shade & { type: string }> => {
@@ -37,6 +38,6 @@ export default defineNuxtPlugin(async () => {
       ],
     });
   } catch (error) {
-    console.error('Failed to initialize settings:', error);
+    logger.error('Failed to initialize settings:', error);
   }
 });

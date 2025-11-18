@@ -1,5 +1,6 @@
 import type { FooterSettings } from '~/components/blocks/Footer/types';
 import { createDefaultFooterSettings, extractFooterFromBlocks, addFooterBlock } from '~/utils/footerHelper';
+import { logger } from '~/utils/logger';
 
 /**
  * Composable for accessing global footer settings
@@ -43,7 +44,7 @@ export const useFooter = () => {
         return footerCache.value;
       }
     } catch (error) {
-      console.warn('Failed to fetch footer settings, using defaults:', error);
+      logger.warn('Failed to fetch footer settings, using defaults:', error);
     }
 
     footerCache.value = getFooterSettings();

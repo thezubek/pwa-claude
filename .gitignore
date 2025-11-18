@@ -56,7 +56,7 @@ lib/
 apps/web/docs/reference/
 apps/web/reference/
 
-.vscode
+# Keep team .vscode settings, ignore personal workspaces
 *.code-workspace
 *.tsbuildinfo
 claude-skills.tar.gz

@@ -1,5 +1,6 @@
 import type { CategoryData, CategoryEntry, CategorySearchCriteria } from '@plentymarkets/shop-api';
 import type { UseCategoriesSearchMethodsReturn, UseCategoriesSearchState } from './types';
+import { logger } from '~/utils/logger';
 
 export const useCategoriesSearch: UseCategoriesSearchMethodsReturn = () => {
   const state = useState<UseCategoriesSearchState>('useCategoriesSearch', () => ({
@@ -140,7 +141,7 @@ export const useCategoriesSearch: UseCategoriesSearchMethodsReturn = () => {
       state.value[hasMoreKey] = !result.isLastPage;
       state.value[pageKey]++;
     } catch (error) {
-      console.error(`Error fetching ${categoryType} categories:`, error);
+      logger.error(`Error fetching ${categoryType} categories:`, error);
     } finally {
       state.value[loadingKey] = false;
     }

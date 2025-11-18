@@ -9,6 +9,7 @@ import {
 } from '@plentymarkets/shop-api';
 import { toTypedSchema } from '@vee-validate/yup';
 import { object, string } from 'yup';
+import { logger } from '~/utils/logger';
 
 export const usePreferredDelivery = () => {
   const { $i18n } = useNuxtApp();
@@ -135,8 +136,7 @@ export const usePreferredDelivery = () => {
 
       propagateEnabledOptions(shippingProfileId, data);
     } catch (error: unknown) {
-      // eslint-disable-next-line no-console
-      console.log(error?.toString());
+      logger.debug(error?.toString());
 
       useNotification().send({
         type: 'negative',

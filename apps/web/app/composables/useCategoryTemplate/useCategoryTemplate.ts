@@ -6,6 +6,7 @@ import type {
   SaveBlocks,
 } from './types';
 import type { Block } from '@plentymarkets/shop-api';
+import { logger } from '~/utils/logger';
 
 import { migrateImageContent } from '~/utils/migrate-image-content';
 import type { OldContent } from '~/utils/migrate-recommended-content';
@@ -35,7 +36,7 @@ export const useCategoryTemplate: UseCategoryTemplateReturn = (
     try {
       await fetchFooterSettings();
     } catch (error) {
-      console.warn('Failed to ensure footer block:', error);
+      logger.warn('Failed to ensure footer block:', error);
     }
   };
 
@@ -149,12 +150,12 @@ export const useCategoryTemplate: UseCategoryTemplateReturn = (
           try {
             await fetchFooterSettings();
           } catch (error) {
-            console.warn('Failed to refresh footer settings after save:', error);
+            logger.warn('Failed to refresh footer settings after save:', error);
           }
         }
       }
     } catch (error) {
-      console.error('Error saving blocks:', error);
+      logger.error('Error saving blocks:', error);
     } finally {
       state.value.loading = false;
     }

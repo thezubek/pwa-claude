@@ -1,3 +1,5 @@
+import { logger } from '~/utils/logger';
+
 export const useUpdatePageTemplate = () => {
   const updatePageTemplate = async (): Promise<boolean> => {
     const { isEditingEnabled } = useEditor();
@@ -29,7 +31,7 @@ export const useUpdatePageTemplate = () => {
           message: error.toString(),
           type: 'negative',
         });
-        console.error(error);
+        logger.error(error);
       }
       return false;
     } finally {

@@ -8,6 +8,7 @@ import type {
   SettingValue,
 } from '~/composables/useSiteSettings/types';
 import type { Setting } from '@plentymarkets/shop-api';
+import { logger } from '~/utils/logger';
 
 /**
  * @description Composable for managing site settings.
@@ -94,7 +95,7 @@ export const useSiteSettings: UseSiteSettingsReturn = (setting?: string) => {
 
       state.value.initialData = { ...state.value.initialData, ...state.value.data };
     } catch (error) {
-      console.error('Error saving settings:', error);
+      logger.error('Error saving settings:', error);
     } finally {
       state.value.loading = false;
     }

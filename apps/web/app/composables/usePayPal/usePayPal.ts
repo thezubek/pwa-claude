@@ -2,6 +2,8 @@ import { type PayPalNamespace, type FUNDING_SOURCE, loadScript as loadPayPalScri
 import type { ApiError, PayPalCreateOrder, PayPalCreateOrderRequest, PayPalSettings } from '@plentymarkets/shop-api';
 import { paypalGetters } from '@plentymarkets/shop-api';
 import { PayPalPayLaterKey, PayPalPaymentKey } from './types';
+import { useRetry } from '~/composables/useRetry';
+import { logger } from '~/utils/logger';
 
 const localeMap: Record<string, string> = { de: 'de_DE' };
 const getLocaleForPayPal = (locale: string): string => localeMap[locale] || 'en_US';
@@ -105,12 +107,22 @@ export const usePayPal = () => {
    * ```
    */
   const loadScript = async (currency: string, locale: string, commit = false) => {
+    const log = logger.namespace('usePayPal:loadScript');
+    const { retry } = useRetry();
+
     await loadConfig();
-    if (state.value.config && paypalGetters.getClientId(state.value.config)) {
-      try {
+
+    if (!state.value.config || !paypalGetters.getClientId(state.value.config)) {
+      log.warn('PayPal configuration not available');
+      return null;
+    }
+
+    // Retry PayPal SDK loading with exponential backoff
+    const result = await retry(
+      async () => {
         return await loadPayPalScript({
-          clientId: paypalGetters.getClientId(state.value.config),
-          merchantId: paypalGetters.getMerchantId(state.value.config),
+          clientId: paypalGetters.getClientId(state.value.config!),
+          merchantId: paypalGetters.getMerchantId(state.value.config!),
           currency: currency,
           dataPartnerAttributionId: 'Plenty_Cart_PWA_PPCP',
           components:
@@ -118,12 +130,43 @@ export const usePayPal = () => {
           locale: locale,
           commit: commit,
         });
-      } catch {
-        // TODO: Handle error (not loading sdk)
-      }
+      },
+      {
+        maxAttempts: 3,
+        backoffMs: 1000,
+        shouldRetry: (error) => {
+          // Retry on network errors and script loading failures
+          if (error instanceof Error) {
+            return (
+              error.message.includes('network') ||
+              error.message.includes('script') ||
+              error.message.includes('timeout') ||
+              error.message.includes('fetch')
+            );
+          }
+          return true;
+        },
+        onRetry: (attempt, error) => {
+          log.warn(`Retrying PayPal SDK load (attempt ${attempt})`, error);
+        },
+      },
+    );
+
+    if (!result.success) {
+      log.error('Failed to load PayPal SDK after retries', result.error);
+
+      // Show user-friendly error message
+      const { send } = useNotification();
+      send({
+        message: 'Unable to load PayPal payment method. Please try refreshing the page or use an alternative payment method.',
+        type: 'negative',
+        persist: false,
+      });
+
+      return null;
     }
 
-    return null;
+    return result.data;
   };
 
   const getCurrentScript = () => {

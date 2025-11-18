@@ -1,5 +1,6 @@
 import type { useCategorySettingsReturn, useCategoryConfigurationState } from '~/composables/useCategorySettings/types';
 import type { CategoryEntry } from '@plentymarkets/shop-api';
+import { logger } from '~/utils/logger';
 
 export const useCategorySettings: useCategorySettingsReturn = (settingsId = '') => {
   const cache = useState<Record<string, CategoryEntry>>(`categoryCache-${settingsId}`, () => ({}));
@@ -39,7 +40,7 @@ export const useCategorySettings: useCategorySettingsReturn = (settingsId = '') 
       state.value.initialData = JSON.parse(JSON.stringify(cleanData));
       return cleanData ?? null;
     } catch (error) {
-      console.error('Error fetching category settings:', error);
+      logger.error('Error fetching category settings:', error);
       return null;
     } finally {
       state.value.loading = false;

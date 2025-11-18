@@ -1,5 +1,7 @@
 import type { CategoryData } from '@plentymarkets/shop-api';
 import type { UseCategoryDetailState, UseCategoryDetailsReturn } from './types';
+import { logger } from '~/utils/logger';
+
 export const useCategoryDetails: UseCategoryDetailsReturn = () => {
   const state = useState<UseCategoryDetailState>('useCategoriesSearch', () => ({
     data: {} as CategoryData,
@@ -14,7 +16,7 @@ export const useCategoryDetails: UseCategoryDetailsReturn = () => {
       state.value.data = result ?? state.value.data;
       return result;
     } catch (error) {
-      console.error('getCategory error:', error);
+      logger.error('getCategory error:', error);
     } finally {
       state.value.loading = false;
     }

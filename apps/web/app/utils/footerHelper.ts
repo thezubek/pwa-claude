@@ -1,5 +1,6 @@
 import type { FooterSettings, FooterSwitchDefinition, AddFooterBlock } from '~/components/blocks/Footer/types';
 import { v4 as uuid } from 'uuid';
+import { logger } from '~/utils/logger';
 
 export const FOOTER_SWITCH_DEFINITIONS: FooterSwitchDefinition[] = [
   {
@@ -106,7 +107,7 @@ export const extractFooterFromBlocks = (content: string): FooterSettings | null 
 
     return footerBlock?.content || null;
   } catch (error) {
-    console.warn('Failed to extract footer from blocks:', error);
+    logger.warn('Failed to extract footer from blocks:', error);
     return null;
   }
 };

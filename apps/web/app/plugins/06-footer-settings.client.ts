@@ -1,3 +1,5 @@
+import { logger } from '~/utils/logger';
+
 /**
  * Plugin to initialize and cache footer settings on app startup
  */
@@ -9,7 +11,7 @@ export default defineNuxtPlugin({
     try {
       await fetchFooterSettings();
     } catch (error) {
-      console.warn('Failed to preload footer settings:', error);
+      logger.warn('Failed to preload footer settings:', error);
     }
   },
 });

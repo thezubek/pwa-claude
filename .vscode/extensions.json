@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin",
+    "bradlc.vscode-tailwindcss",
+    "yoavbls.pretty-ts-errors",
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "eamodio.gitlens",
+    "github.copilot",
+    "ms-vscode.vscode-typescript-next"
+  ]
+}
