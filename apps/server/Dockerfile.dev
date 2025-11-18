@@ -1,0 +1,36 @@
+# Development Dockerfile for Alokai Middleware Server
+# Optimized for hot reload with nodemon
+
+ARG NODE_VERSION=20
+
+FROM node:${NODE_VERSION}-alpine
+
+# Install dependencies for native modules
+RUN apk add --no-cache \
+    python3 \
+    make \
+    g++ \
+    git
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy rest of application
+COPY . .
+
+# Expose middleware port
+EXPOSE 4000
+
+# Set development environment
+ENV NODE_ENV=development
+ENV HOST=0.0.0.0
+ENV PORT=4000
+
+# Start development server with nodemon
+CMD ["npm", "run", "dev"]

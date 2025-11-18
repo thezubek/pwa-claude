@@ -1,0 +1,39 @@
+# Development Dockerfile for Nuxt Web Application
+# Optimized for hot reload and fast iteration
+
+ARG NODE_VERSION=20
+
+FROM node:${NODE_VERSION}-alpine
+
+# Install dependencies for native modules
+RUN apk add --no-cache \
+    python3 \
+    make \
+    g++ \
+    git
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+# Using npm ci would be more strict, but npm install works better for development
+RUN npm install
+
+# Copy rest of application
+COPY . .
+
+# Expose ports
+# 3000: Nuxt dev server
+# 24678: Nuxt DevTools
+EXPOSE 3000 24678
+
+# Set development environment
+ENV NODE_ENV=development
+ENV HOST=0.0.0.0
+ENV PORT=3000
+
+# Start development server
+CMD ["npm", "run", "dev"]

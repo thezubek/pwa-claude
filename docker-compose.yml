@@ -1,0 +1,105 @@
+version: '3.8'
+
+services:
+  # Nuxt Web Application
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile.dev
+      args:
+        NODE_VERSION: '20'
+    container_name: pwa-claude-web
+    ports:
+      - '3000:3000'
+      - '24678:24678' # Nuxt DevTools
+    volumes:
+      # Mount source code for hot reload
+      - ./apps/web:/app
+      - /app/node_modules
+      - /app/.nuxt
+    environment:
+      - NODE_ENV=development
+      - NUXT_HOST=0.0.0.0
+      - NUXT_PORT=3000
+      - NUXT_PUBLIC_ALOKAI_MIDDLEWARE_API_URL=http://middleware:4000
+      - NUXT_PUBLIC_DEBUG=true
+      - LOG_LEVEL=debug
+    env_file:
+      - ./apps/web/.env
+    depends_on:
+      - middleware
+    networks:
+      - pwa-claude-network
+    command: npm run dev
+    restart: unless-stopped
+
+  # Alokai Middleware Server
+  middleware:
+    build:
+      context: ./apps/server
+      dockerfile: Dockerfile.dev
+      args:
+        NODE_VERSION: '20'
+    container_name: pwa-claude-middleware
+    ports:
+      - '4000:4000'
+    volumes:
+      # Mount source code for hot reload
+      - ./apps/server:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - HOST=0.0.0.0
+      - PORT=4000
+    env_file:
+      - ./apps/server/.env
+    networks:
+      - pwa-claude-network
+    command: npm run dev
+    restart: unless-stopped
+
+  # Redis Cache (for session storage and caching)
+  redis:
+    image: redis:7-alpine
+    container_name: pwa-claude-redis
+    ports:
+      - '6379:6379'
+    volumes:
+      - redis-data:/data
+    networks:
+      - pwa-claude-network
+    command: redis-server --appendonly yes
+    restart: unless-stopped
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 10s
+      timeout: 3s
+      retries: 3
+
+  # Mock PlentyONE API (for development/testing)
+  mock-api:
+    build:
+      context: ./docker/mock-api
+      dockerfile: Dockerfile
+    container_name: pwa-claude-mock-api
+    ports:
+      - '8080:8080'
+    environment:
+      - PORT=8080
+      - LOG_LEVEL=debug
+    volumes:
+      - ./docker/mock-api:/app
+      - /app/node_modules
+    networks:
+      - pwa-claude-network
+    profiles:
+      - testing
+    restart: unless-stopped
+
+volumes:
+  redis-data:
+    driver: local
+
+networks:
+  pwa-claude-network:
+    driver: bridge
