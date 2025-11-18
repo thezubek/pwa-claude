@@ -3082,5 +3082,595 @@
       "button1": "View Size Charts",
       "button2": "Start Shopping"
     }
+  },
+  "officeDressCode": {
+    "title": "Office Dress Code Guide",
+    "subtitle": "Navigate any workplace with confidence. Learn what to wear for every office environment, from business formal to smart casual.",
+    "forWomen": "For Women",
+    "forMen": "For Men",
+    "remember": "Remember",
+    "levels": {
+      "title": "Understanding Dress Code Levels",
+      "businessFormal": {
+        "title": "Business Formal",
+        "when": "Law firms, finance, C-suite meetings, court appearances",
+        "women": {
+          "item1": "Tailored blouse in white, ivory, or light blue",
+          "item2": "Matched suit (skirt or pants)",
+          "item3": "Closed-toe heels or flats",
+          "item4": "Minimal, classic jewelry"
+        },
+        "men": {
+          "item1": "White or light blue dress shirt",
+          "item2": "Conservative tie",
+          "item3": "Dark suit (navy, charcoal, black)",
+          "item4": "Polished dress shoes"
+        },
+        "tip": "This is the most formal dress code. When in doubt, overdress rather than underdress."
+      },
+      "businessProfessional": {
+        "title": "Business Professional",
+        "when": "Corporate offices, client meetings, presentations",
+        "women": {
+          "item1": "Blouse in conservative colors",
+          "item2": "Blazer or cardigan",
+          "item3": "Dress pants or pencil skirt",
+          "item4": "Professional accessories"
+        },
+        "men": {
+          "item1": "Dress shirt (white, blue, subtle patterns)",
+          "item2": "Tie (optional in some industries)",
+          "item3": "Dress pants (no jeans)",
+          "item4": "Leather dress shoes"
+        },
+        "tip": "More flexible than business formal, but still polished and traditional."
+      },
+      "businessCasual": {
+        "title": "Business Casual",
+        "when": "Most modern offices, tech companies, creative agencies",
+        "women": {
+          "item1": "Blouse or nice knit top",
+          "item2": "Dress pants, chinos, or knee-length skirt",
+          "item3": "Optional blazer",
+          "item4": "Flats, loafers, or low heels"
+        },
+        "men": {
+          "item1": "Button-down shirt (tie optional)",
+          "item2": "Chinos or dress pants",
+          "item3": "Optional blazer or sweater",
+          "item4": "Loafers or dress shoes"
+        },
+        "tip": "No jeans (usually), no sneakers. Still professional but more relaxed."
+      },
+      "smartCasual": {
+        "title": "Smart Casual",
+        "when": "Startups, casual Fridays, creative workplaces",
+        "women": {
+          "item1": "Casual blouse or nice t-shirt",
+          "item2": "Dark jeans or casual pants",
+          "item3": "Cardigan or light jacket",
+          "item4": "Clean sneakers or casual shoes"
+        },
+        "men": {
+          "item1": "Casual button-down or polo",
+          "item2": "Chinos or dark jeans",
+          "item3": "Optional casual blazer",
+          "item4": "Clean sneakers or casual leather shoes"
+        },
+        "tip": "More personality allowed. Still neat and put-together, just less formal."
+      }
+    },
+    "byIndustry": {
+      "title": "Dress Codes by Industry",
+      "description": "Different industries have different expectations. Here's what to expect in the most common fields.",
+      "finance": {
+        "title": "Finance & Banking",
+        "code": "Business Formal to Business Professional",
+        "description": "Conservative, traditional. Stick to classic colors and minimal accessories. First impressions matter enormously."
+      },
+      "law": {
+        "title": "Law",
+        "code": "Business Formal",
+        "description": "The most formal industry. Dark suits, white shirts, conservative ties. Courtroom appearances require formal business attire."
+      },
+      "tech": {
+        "title": "Tech & Startups",
+        "code": "Business Casual to Smart Casual",
+        "description": "Generally the most relaxed. Many allow jeans and sneakers. When meeting investors or clients, dress up one level."
+      },
+      "creative": {
+        "title": "Creative Industries",
+        "code": "Smart Casual",
+        "description": "Design, advertising, media. More freedom to express personal style. Clean, intentional looks still matter."
+      },
+      "healthcare": {
+        "title": "Healthcare (Admin)",
+        "code": "Business Casual",
+        "description": "Clinical staff wear scrubs, but administrative roles typically require business casual attire."
+      },
+      "education": {
+        "title": "Education",
+        "code": "Business Casual",
+        "description": "Neat and professional. You're setting an example. Avoid anything too casual or revealing."
+      }
+    },
+    "mistakes": {
+      "title": "Common Dress Code Mistakes",
+      "mistake1": {
+        "title": "Assuming Friday = Casual Everywhere",
+        "description": "Casual Friday varies wildly by company. Some mean jeans, others just mean no tie. Ask first."
+      },
+      "mistake2": {
+        "title": "Dressing for Your Current Job, Not the One You Want",
+        "description": "If you want to be promoted, observe and match how leadership dresses."
+      },
+      "mistake3": {
+        "title": "Ignoring Company Culture",
+        "description": "The handbook might say business casual, but if everyone wears suits, you should too."
+      },
+      "mistake4": {
+        "title": "Overdressing for Creative Fields",
+        "description": "In some industries, wearing a suit when everyone's in hoodies signals you don't fit the culture."
+      }
+    },
+    "proTips": {
+      "title": "Professional Dress Code Tips",
+      "tip1": {
+        "title": "Observe First",
+        "description": "Your first week, pay attention to what everyone wears. When do people dress up? When do they dress down?"
+      },
+      "tip2": {
+        "title": "Dress for Your Next Meeting",
+        "description": "Have a client meeting or presentation? Dress one level up from your normal office attire."
+      },
+      "tip3": {
+        "title": "Keep a Spare",
+        "description": "Keep a blazer and dress shoes at the office for unexpected meetings or events."
+      }
+    },
+    "cta": {
+      "title": "Build Your Professional Wardrobe",
+      "description": "Shop our collection of office-appropriate shirts and blouses.",
+      "button": "Shop Work Essentials"
+    }
+  },
+  "travelWardrobe": {
+    "title": "Travel Wardrobe Guide",
+    "subtitle": "Pack smart, travel light, and look great anywhere. Master the capsule wardrobe for business and leisure travel.",
+    "tops": "Tops",
+    "bottoms": "Bottoms",
+    "why": "Why This Works",
+    "packingRule": {
+      "title": "The 5-4-3-2-1 Packing Rule",
+      "description": "This classic packing formula works for a week-long trip and ensures maximum outfit combinations with minimum luggage.",
+      "tops": {
+        "title": "Tops",
+        "description": "Mix of blouses/shirts for different occasions"
+      },
+      "bottoms": {
+        "title": "Bottoms",
+        "description": "Pants, skirts, or shorts in coordinating colors"
+      },
+      "shoes": {
+        "title": "Pairs of Shoes",
+        "description": "Walking shoes, dress shoes, casual shoes"
+      },
+      "accessories": {
+        "title": "Accessories",
+        "description": "Scarves, bags, or statement pieces"
+      },
+      "bag": {
+        "title": "Bag",
+        "description": "Carry-on or checked bag"
+      }
+    },
+    "businessTravel": {
+      "title": "Business Travel Capsule",
+      "description": "Pack professional pieces that resist wrinkles and mix-and-match for maximum versatility.",
+      "women": {
+        "title": "Women's Business Travel",
+        "top1": "White classic blouse (wrinkle-resistant)",
+        "top2": "Light blue or gray blouse",
+        "top3": "Black silk-blend blouse",
+        "top4": "Neutral knit top",
+        "top5": "Cardigan or blazer",
+        "bottom1": "Black dress pants",
+        "bottom2": "Navy or gray pants",
+        "bottom3": "Pencil skirt (optional)",
+        "why": "5 tops × 3 bottoms = 15 outfit combinations. Stick to black, navy, gray, white for easy mixing."
+      },
+      "men": {
+        "title": "Men's Business Travel",
+        "top1": "White dress shirt",
+        "top2": "Light blue dress shirt",
+        "top3": "Pale pink or gray shirt",
+        "top4": "Navy or white polo",
+        "top5": "Blazer or sport coat",
+        "bottom1": "Charcoal dress pants",
+        "bottom2": "Navy chinos",
+        "bottom3": "Khaki chinos",
+        "why": "Neutral colors ensure everything matches. Non-iron fabrics save time and hassle."
+      }
+    },
+    "leisureTravel": {
+      "title": "Leisure Travel Capsule",
+      "description": "Comfortable, stylish pieces for sightseeing, dining, and relaxing.",
+      "women": {
+        "title": "Women's Vacation Wardrobe",
+        "top1": "White t-shirt or tank",
+        "top2": "Striped or patterned casual top",
+        "top3": "Chambray shirt",
+        "top4": "Linen blouse",
+        "top5": "Light cardigan or denim jacket",
+        "bottom1": "Dark jeans",
+        "bottom2": "Shorts or casual skirt",
+        "bottom3": "Comfortable pants or capris",
+        "why": "Breathable fabrics, easy to wash, comfortable for all-day wear."
+      },
+      "men": {
+        "title": "Men's Vacation Wardrobe",
+        "top1": "White and gray t-shirts",
+        "top2": "Casual button-down (chambray or linen)",
+        "top3": "Polo shirt",
+        "top4": "Light sweater or hoodie",
+        "top5": "Casual overshirt or light jacket",
+        "bottom1": "Dark jeans",
+        "bottom2": "Shorts",
+        "bottom3": "Casual chinos",
+        "why": "Versatile pieces work for dinner out or daytime exploring. Easy to layer for different climates."
+      }
+    },
+    "packingTips": {
+      "title": "Expert Packing Tips",
+      "tip1": {
+        "title": "Choose a Color Palette",
+        "description": "Pick 2-3 neutral base colors and 1-2 accent colors. Everything should coordinate."
+      },
+      "tip2": {
+        "title": "Roll, Don't Fold",
+        "description": "Rolling clothes saves space and reduces wrinkles. Use packing cubes for organization."
+      },
+      "tip3": {
+        "title": "Wear Bulkiest Items",
+        "description": "Wear your heaviest shoes and jacket on the plane to save luggage space."
+      },
+      "tip4": {
+        "title": "Plan Your Outfits",
+        "description": "Take a photo of each outfit before packing. Ensures you have complete looks."
+      },
+      "tip5": {
+        "title": "Pack Versatile Pieces",
+        "description": "Every item should work for at least 2 different outfits."
+      },
+      "tip6": {
+        "title": "Leave Room for Shopping",
+        "description": "Pack slightly under capacity to bring home souvenirs or purchases."
+      }
+    },
+    "wrinklePrevention": {
+      "title": "Preventing Wrinkles While Traveling",
+      "method1": {
+        "title": "Choose Wrinkle-Resistant Fabrics",
+        "description": "Cotton-polyester blends, jersey knits, and technical fabrics resist wrinkles better than 100% cotton or linen."
+      },
+      "method2": {
+        "title": "Use Tissue Paper",
+        "description": "Layer tissue paper between folded garments to reduce friction and creasing."
+      },
+      "method3": {
+        "title": "Hang Immediately",
+        "description": "Unpack and hang everything as soon as you arrive. Steam from a hot shower can release minor wrinkles."
+      },
+      "method4": {
+        "title": "Travel Steamer",
+        "description": "A compact travel steamer is worth the luggage space for crisp, professional looks."
+      }
+    },
+    "cta": {
+      "title": "Shop Travel-Friendly Pieces",
+      "description": "Browse wrinkle-resistant, packable shirts and blouses perfect for travel.",
+      "button": "Shop Travel Collection"
+    }
+  },
+  "tuckingGuide": {
+    "title": "The Complete Shirt Tucking Guide",
+    "subtitle": "Learn when to tuck, when not to tuck, and master four different tucking techniques for every occasion.",
+    "howTo": "How To Do It",
+    "whenToTuck": {
+      "title": "When to Tuck vs. When to Leave Untucked",
+      "alwaysTuck": {
+        "title": "Always Tuck",
+        "situation1": {
+          "title": "With a Belt",
+          "description": "If you're wearing a belt, your shirt should be tucked. An untucked shirt hides the belt, making it pointless."
+        },
+        "situation2": {
+          "title": "Dress Shirts",
+          "description": "Traditional dress shirts with long tails and stiff collars are designed to be tucked."
+        },
+        "situation3": {
+          "title": "Formal Occasions",
+          "description": "Weddings, job interviews, court, formal dinners—these all require tucked shirts."
+        },
+        "situation4": {
+          "title": "Business Professional Settings",
+          "description": "In conservative office environments, always tuck your shirt."
+        }
+      },
+      "neverTuck": {
+        "title": "Never Tuck",
+        "situation1": {
+          "title": "Short, Straight-Hem Shirts",
+          "description": "If a shirt has a straight bottom hem (not curved), it's designed to be worn untucked."
+        },
+        "situation2": {
+          "title": "Casual T-Shirts",
+          "description": "Unless you're going for a very specific retro look, don't tuck t-shirts."
+        },
+        "situation3": {
+          "title": "Oversized or Boxy Fits",
+          "description": "Modern oversized styles look best untucked. Tucking ruins the intended silhouette."
+        },
+        "situation4": {
+          "title": "Very Short Torsos",
+          "description": "If tucking makes your legs look extremely short, leave it untucked and use other styling tricks."
+        }
+      }
+    },
+    "methods": {
+      "title": "4 Essential Tucking Methods",
+      "fullTuck": {
+        "title": "Full Tuck (Classic)",
+        "description": "The traditional, complete tuck. All of your shirt is tucked in all around. This is the standard for formal and business settings.",
+        "step1": "Put on your pants but don't button them yet",
+        "step2": "Tuck your entire shirt in all the way around",
+        "step3": "Button and zip your pants",
+        "step4": "Adjust the fabric to remove bunching. Pull the shirt tight from the back for a smooth front",
+        "use1": "Business formal",
+        "use2": "Formal events",
+        "use3": "Job interviews"
+      },
+      "halfTuck": {
+        "title": "Half Tuck (French Tuck)",
+        "description": "Made famous by Tan France on Queer Eye. Only the front center portion is tucked in. Casual and fashion-forward.",
+        "step1": "Leave your shirt completely untucked",
+        "step2": "Take just the front center section (about 4-6 inches wide)",
+        "step3": "Tuck only that section into the front of your pants",
+        "step4": "Adjust so it looks intentional, not messy. The rest stays out",
+        "use1": "Casual outings",
+        "use2": "Creative workplaces",
+        "use3": "Weekend brunch"
+      },
+      "frontTuck": {
+        "title": "Front Tuck",
+        "description": "The entire front of the shirt is tucked in, while the back remains out. More coverage than a half-tuck but still casual.",
+        "step1": "Put on your bottoms first",
+        "step2": "Tuck the entire front of your shirt into your pants",
+        "step3": "Leave the back and sides completely untucked",
+        "step4": "Smooth the front and adjust the back so it drapes nicely",
+        "use1": "Business casual",
+        "use2": "Smart casual settings"
+      },
+      "militaryTuck": {
+        "title": "Military Tuck (Shirt Garters)",
+        "description": "The most secure tuck. Creates sharp, wrinkle-free lines that stay in place all day. Used by military and those wanting perfection.",
+        "step1": "Do a full tuck as normal",
+        "step2": "Pull excess fabric at the sides toward the back",
+        "step3": "Pinch the excess fabric and fold it flat against your body",
+        "step4": "The fold should create a clean, flat front with fabric pinched at your hips",
+        "step5": "Use shirt stays or tuck the folded fabric into your underwear waistband to secure",
+        "use1": "Military uniforms",
+        "use2": "Ultra-formal events"
+      }
+    },
+    "bodyType": {
+      "title": "Tucking for Your Body Type",
+      "tall": {
+        "title": "Tall & Lean",
+        "description": "Full tucks work great. They create definition and show off your height. Avoid half-tucks which can make you look boxy."
+      },
+      "petite": {
+        "title": "Petite or Short Torso",
+        "description": "Tucking can shorten your legs further. Try a half-tuck to define waist without full commitment, or choose shorter shirts to wear untucked."
+      },
+      "athletic": {
+        "title": "Athletic or Broad",
+        "description": "Military tuck creates the cleanest line. Full tucks work well. Avoid leaving shirts untucked as they can add bulk."
+      }
+    },
+    "mistakes": {
+      "title": "Common Tucking Mistakes",
+      "mistake1": {
+        "title": "Too Much Fabric",
+        "description": "If your shirt bunches and billows, it's too big. Consider tailoring or sizing down."
+      },
+      "mistake2": {
+        "title": "Tucking Without a Belt",
+        "description": "A full tuck without a belt looks unfinished. Always wear a belt with a full tuck."
+      },
+      "mistake3": {
+        "title": "Uneven Tuck",
+        "description": "Your shirt should be evenly distributed. Check the back in a mirror—most bunching happens there."
+      },
+      "mistake4": {
+        "title": "Wrong Shirt Type",
+        "description": "Don't fight the design. Straight-hem casual shirts shouldn't be tucked. Long dress shirt tails shouldn't be left out."
+      }
+    },
+    "cta": {
+      "title": "Find the Perfect Tuckable Shirt",
+      "description": "Shop shirts designed for the perfect tuck, every time.",
+      "button": "Shop Dress Shirts"
+    }
+  },
+  "accessorizingGuide": {
+    "title": "The Complete Accessorizing Guide",
+    "subtitle": "Master the art of accessories. Learn how to elevate your shirts and blouses with jewelry, ties, scarves, and more.",
+    "goldenRules": {
+      "title": "The 3 Golden Rules of Accessorizing",
+      "rule1": {
+        "title": "Less is More",
+        "description": "Don't wear every accessory you own at once. Choose 2-3 focal points maximum."
+      },
+      "rule2": {
+        "title": "Match Your Metals",
+        "description": "Stick to one metal color (gold OR silver) across all accessories for a cohesive look."
+      },
+      "rule3": {
+        "title": "Balance is Key",
+        "description": "If your shirt is busy, keep accessories simple. If your shirt is plain, accessories can be bold."
+      }
+    },
+    "women": {
+      "title": "Accessorizing for Women",
+      "jewelry": {
+        "title": "Jewelry",
+        "necklaces": {
+          "title": "Necklaces",
+          "item1": "V-neck blouses: Pair with a pendant that follows the V-line",
+          "item2": "Crew neck: Chokers or short necklaces work best",
+          "item3": "Button-down: Leave top 2 buttons open, add a longer necklace",
+          "item4": "High neck: Skip the necklace, focus on earrings"
+        },
+        "earrings": {
+          "title": "Earrings",
+          "item1": "Short hair or updo: Statement earrings shine",
+          "item2": "Long hair: Keep earrings smaller or they get lost",
+          "item3": "Bold necklace: Studs or small hoops balance better"
+        }
+      },
+      "scarves": {
+        "title": "Scarves",
+        "silk": {
+          "title": "Silk Scarf",
+          "description": "Tie at the neck for Parisian chic or wear as a headband. Perfect for adding color to neutral blouses."
+        },
+        "statement": {
+          "title": "Statement Scarf",
+          "description": "Large, bold patterns work best with solid-color blouses. Can double as a shawl."
+        },
+        "neutral": {
+          "title": "Neutral Scarf",
+          "description": "Beige, gray, black scarves complement patterned blouses without competing."
+        }
+      },
+      "beltsAndBags": {
+        "title": "Belts & Bags",
+        "belts": {
+          "title": "Belts",
+          "item1": "Match belt to shoes for a polished look",
+          "item2": "Thin belts for tucked blouses, thicker for over-blouse",
+          "item3": "Statement buckles can replace a necklace as focal point"
+        },
+        "bags": {
+          "title": "Bags",
+          "item1": "Bag doesn't have to match shoes exactly, but should complement",
+          "item2": "Structured bags for professional settings",
+          "item3": "Color can introduce a pop to neutral outfits"
+        }
+      }
+    },
+    "men": {
+      "title": "Accessorizing for Men",
+      "ties": {
+        "title": "Ties & Bow Ties",
+        "choosing": {
+          "title": "Choosing a Tie",
+          "item1": "Solid shirt: Patterned tie works great",
+          "item2": "Patterned shirt: Solid tie or small repeating pattern",
+          "item3": "Tie should be darker than your shirt",
+          "item4": "Tip should reach your belt buckle (not longer or shorter)"
+        },
+        "width": {
+          "title": "Tie Width",
+          "item1": "Standard: 3-3.75 inches (works for most)",
+          "item2": "Slim: 2-3 inches (modern, slim-fit suits)",
+          "item3": "Wide: 3.75-4 inches (broad-shouldered or vintage)"
+        }
+      },
+      "watches": {
+        "title": "Watches",
+        "formal": {
+          "title": "Formal Occasions",
+          "description": "Thin, simple watch with leather band. Metal should match your belt buckle and ring (if worn)."
+        },
+        "business": {
+          "title": "Business Settings",
+          "description": "Classic watch, leather or metal band. Not too flashy. Dial should be easy to read."
+        },
+        "casual": {
+          "title": "Casual Wear",
+          "description": "Sport watches, smart watches, or colorful straps acceptable. More freedom for personal style."
+        }
+      },
+      "extras": {
+        "title": "Pocket Squares, Cufflinks & Belts",
+        "pocketSquares": {
+          "title": "Pocket Squares",
+          "item1": "Should complement tie, not match exactly",
+          "item2": "White linen is always appropriate for formal",
+          "item3": "Colored silk adds personality to business attire"
+        },
+        "cufflinks": {
+          "title": "Cufflinks",
+          "item1": "Only with French cuff shirts",
+          "item2": "Match watch metal (silver with silver, gold with gold)",
+          "item3": "Simple and classic for business, fun designs for social"
+        },
+        "belts": {
+          "title": "Belts",
+          "item1": "Always match belt to shoes (black belt = black shoes)",
+          "item2": "Belt buckle metal should match watch/jewelry",
+          "item3": "Width should match pant loops (usually 1.25-1.5 inches)"
+        }
+      }
+    },
+    "metalCoordination": {
+      "title": "Coordinating Metals",
+      "description": "Mixing gold and silver can look messy. Choose one metal family and stick with it throughout your accessories.",
+      "pairWith": "Pairs Well With",
+      "gold": {
+        "title": "Gold Tones",
+        "description": "Warm, luxurious, traditional. Best for warm skin tones.",
+        "pairWith": "Brown leather, warm colors (burgundy, rust, olive), tortoiseshell"
+      },
+      "silver": {
+        "title": "Silver/Cool Tones",
+        "description": "Modern, clean, versatile. Best for cool skin tones.",
+        "pairWith": "Black leather, cool colors (navy, gray, black), silver hardware"
+      }
+    },
+    "mistakes": {
+      "title": "Common Accessorizing Mistakes",
+      "mistake1": {
+        "title": "Over-Accessorizing",
+        "description": "Wearing too many statement pieces at once. Choose one focal point—earrings OR necklace, not both as statement pieces."
+      },
+      "mistake2": {
+        "title": "Mismatched Metals",
+        "description": "Gold watch + silver belt buckle + mixed jewelry looks disorganized. Pick one metal and commit."
+      },
+      "mistake3": {
+        "title": "Wrong Proportion",
+        "description": "Tiny accessories on a large frame or chunky accessories on a petite frame throw off balance."
+      },
+      "mistake4": {
+        "title": "Ignoring Shirt Color",
+        "description": "Silver jewelry disappears on a gray shirt. Gold can clash with cool-toned blouses. Consider contrast."
+      },
+      "mistake5": {
+        "title": "Tie Too Short or Long",
+        "description": "Tie tip should hit your belt buckle. Any shorter or longer looks sloppy."
+      },
+      "mistake6": {
+        "title": "Forgetting to Remove Tags",
+        "description": "Check your cufflinks, tie, scarf, and watch. Stickers and tags happen to everyone."
+      }
+    },
+    "cta": {
+      "title": "Complete Your Look",
+      "description": "Browse our shirts and blouses designed to pair perfectly with your favorite accessories.",
+      "button": "Shop Now"
+    }
   }
 }
