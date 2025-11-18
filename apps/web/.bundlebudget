@@ -1,0 +1,47 @@
+# Bundle Size Budget Configuration
+
+# Performance budgets for bundle sizes (in KB, gzipped)
+# These values help ensure the application stays performant
+
+## Main Bundle Limits
+MAX_MAIN_BUNDLE_SIZE=250
+MAX_VENDOR_BUNDLE_SIZE=200
+MAX_ROUTE_BUNDLE_SIZE=100
+
+## Total Bundle Limit
+MAX_TOTAL_BUNDLE_SIZE=800
+
+## Asset Limits
+MAX_IMAGE_SIZE=500
+MAX_FONT_SIZE=100
+
+## Budget per Route (in KB, gzipped)
+# Homepage
+BUDGET_HOME=200
+
+# Product Pages
+BUDGET_PRODUCT=220
+
+# Category Pages
+BUDGET_CATEGORY=200
+
+# Cart/Checkout
+BUDGET_CART=180
+BUDGET_CHECKOUT=200
+
+# Account Pages
+BUDGET_ACCOUNT=150
+
+## Monitoring
+# Fail build if bundle exceeds budget
+FAIL_ON_BUDGET_EXCEED=false
+
+# Warn if bundle is within this percentage of budget (e.g., 0.9 = 90%)
+WARN_THRESHOLD=0.9
+
+## Notes
+# - All sizes are in kilobytes (KB), gzipped
+# - Budgets should be reviewed quarterly
+# - Consider user experience on 3G connections
+# - Target: Initial load < 3 seconds on 3G
+# - Reference: https://web.dev/performance-budgets-101/

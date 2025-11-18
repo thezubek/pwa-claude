@@ -63,6 +63,15 @@ export default defineNuxtConfig({
         'yup',
       ],
     },
+    plugins: process.env.ANALYZE ? [
+      // Bundle analysis with rollup-plugin-visualizer
+      (await import('rollup-plugin-visualizer')).visualizer({
+        open: true,
+        filename: '.nuxt/analyze/stats.html',
+        gzipSize: true,
+        brotliSize: true,
+      }),
+    ] : [],
     build: {
       rollupOptions: {
         output: {
