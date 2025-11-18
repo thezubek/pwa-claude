@@ -87,5 +87,11 @@ export const variantClasses = {
     'text-primary-500 hover:bg-primary-100 hover:text-primary-800 active:bg-primary-200 active:text-primary-900 ring-1 ring-inset ring-primary-500 shadow hover:shadow-md active:shadow hover:ring-primary-800 active:ring-primary-900 disabled:ring-1 disabled:ring-disabled-300 disabled:bg-white/50',
   [SfButtonVariant.tertiary]:
     'text-primary-500 hover:bg-primary-100 hover:text-primary-800 active:bg-primary-200 active:text-primary-900 disabled:bg-transparent',
+  'aura-primary':
+    'text-white bg-aura-primary hover:bg-opacity-90 transition-colors rounded-lg shadow-sm font-body font-bold',
+  'aura-secondary':
+    'text-aura-text-dark bg-gray-100 hover:bg-aura-primary hover:text-white transition-colors rounded-lg font-body font-bold',
+  'aura-ghost':
+    'text-aura-text-dark bg-transparent hover:bg-gray-100 transition-colors rounded-lg font-body',
 };
 </script>

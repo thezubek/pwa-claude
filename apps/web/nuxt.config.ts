@@ -293,8 +293,12 @@ export default defineNuxtConfig({
   },
   fonts: {
     defaults: {
-      weights: [300, 400, 500, 700],
+      weights: [300, 400, 500, 700, 800, 900],
     },
+    families: [
+      { name: 'Playfair Display', provider: 'google', weights: [700, 900] },
+      { name: 'Manrope', provider: 'google', weights: [400, 500, 700, 800] },
+    ],
     assets: {
       prefix: '/_nuxt-plenty/fonts/',
     },

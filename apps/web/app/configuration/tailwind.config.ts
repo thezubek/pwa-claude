@@ -42,7 +42,8 @@ export default {
         },
       }),
       fontFamily: {
-        body: [`${fontFamilyText}`, ...defaultTheme.fontFamily.sans],
+        display: ['Playfair Display', 'serif'],
+        body: ['Manrope', `${fontFamilyText}`, ...defaultTheme.fontFamily.sans],
         editor: ['Red Hat Text', ...defaultTheme.fontFamily.sans],
       },
       colors: {
@@ -89,6 +90,13 @@ export default {
           '800': 'rgb(var(--colors-2-header-800) / <alpha-value>)',
           '900': 'rgb(var(--colors-2-header-900) / <alpha-value>)',
           '950': 'rgb(var(--colors-2-header-950) / <alpha-value>)',
+        },
+        aura: {
+          primary: '#1A237E',
+          accent: '#C8A1A4',
+          'bg-light': '#F9F9F9',
+          'text-dark': '#222222',
+          'text-muted': '#757575',
         },
       },
       gridTemplateAreas: {
