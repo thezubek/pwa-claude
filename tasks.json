@@ -1,0 +1,736 @@
+{
+  "metadata": {
+    "project": "PWA Claude - Progressive Web App E-commerce Platform",
+    "techStack": ["Nuxt 3", "Vue 3", "TypeScript", "TailwindCSS", "Alokai SDK"],
+    "lastUpdated": "2025-11-18",
+    "totalEstimatedHours": 350,
+    "taskCount": 42
+  },
+  "categories": [
+    "critical-bugs",
+    "security",
+    "testing",
+    "performance",
+    "accessibility",
+    "documentation",
+    "code-quality",
+    "developer-experience",
+    "advanced-features",
+    "i18n",
+    "deployment",
+    "meta"
+  ],
+  "priorities": {
+    "critical": "🔴 Blocking issues or security vulnerabilities",
+    "high": "🟡 Significant impact on quality or maintainability",
+    "medium": "🟠 Important improvements",
+    "low": "🟢 Nice-to-have enhancements"
+  },
+  "tasks": [
+    {
+      "id": "TASK-001",
+      "title": "Fix Pre-render Build Failures",
+      "category": "critical-bugs",
+      "priority": "critical",
+      "location": "apps/web/nuxt.config.ts:76",
+      "description": "Build consistently failing due to pre-render check. Currently disabled with crawlLinks: false.",
+      "estimatedHours": 5,
+      "dependencies": [],
+      "tags": ["build", "nuxt", "pre-rendering"],
+      "acceptanceCriteria": [
+        "Build succeeds with pre-rendering enabled OR",
+        "Documented technical reason for keeping it disabled"
+      ]
+    },
+    {
+      "id": "TASK-002",
+      "title": "Resolve ApiError Type Definitions",
+      "category": "critical-bugs",
+      "priority": "high",
+      "location": "apps/web/app/composables/useCart/useCart.ts:138, 189",
+      "description": "ApiError type definitions need updates across multiple composables.",
+      "estimatedHours": 3.5,
+      "dependencies": [],
+      "tags": ["typescript", "types", "error-handling"],
+      "acceptanceCriteria": [
+        "No @TODO: Update ApiError comments remaining",
+        "All API errors properly typed",
+        "Error interface exported from shared types"
+      ]
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement PayPal SDK Error Handling",
+      "category": "critical-bugs",
+      "priority": "high",
+      "location": "apps/web/app/composables/usePayPal/usePayPal.ts:122",
+      "description": "Missing error handler for PayPal SDK loading failures.",
+      "estimatedHours": 2.5,
+      "dependencies": ["TASK-802"],
+      "tags": ["paypal", "error-handling", "payments"],
+      "acceptanceCriteria": [
+        "Graceful degradation when SDK fails",
+        "User sees helpful error message",
+        "Error logged for debugging"
+      ]
+    },
+    {
+      "id": "TASK-004",
+      "title": "Clean Up Payment Provider Model",
+      "category": "critical-bugs",
+      "priority": "medium",
+      "location": "apps/web/app/composables/usePaymentMethods/usePaymentMethods.ts:10",
+      "description": "Remove .selected attribute from PaymentProviders API model.",
+      "estimatedHours": 2.5,
+      "dependencies": [],
+      "tags": ["payments", "api", "refactoring"],
+      "acceptanceCriteria": [
+        "Selection state managed in UI layer only",
+        "API model matches backend contract",
+        "Payment flow works correctly"
+      ]
+    },
+    {
+      "id": "TASK-101",
+      "title": "Remove CSP Unsafe Directives",
+      "category": "security",
+      "priority": "critical",
+      "location": "apps/web/app/configuration/security.config.ts:23",
+      "description": "Content Security Policy uses unsafe-inline and unsafe-eval, which pose security risks.",
+      "estimatedHours": 10,
+      "dependencies": [],
+      "tags": ["security", "csp", "headers"],
+      "acceptanceCriteria": [
+        "No unsafe-eval or unsafe-inline in CSP",
+        "All features work with strict CSP",
+        "Security headers pass online CSP validator"
+      ]
+    },
+    {
+      "id": "TASK-102",
+      "title": "Remove Production Debug Statements",
+      "category": "security",
+      "priority": "high",
+      "location": "Throughout codebase",
+      "description": "Debug console statements exposed in production builds (16 found).",
+      "estimatedHours": 2.5,
+      "dependencies": [],
+      "tags": ["security", "debugging", "eslint"],
+      "acceptanceCriteria": [
+        "No console statements in production bundle",
+        "ESLint prevents new console usage",
+        "Debug mode available for developers"
+      ]
+    },
+    {
+      "id": "TASK-103",
+      "title": "Implement Input Sanitization Utility",
+      "category": "security",
+      "priority": "high",
+      "location": "apps/web/app/utils/sanitize.ts",
+      "description": "Centralized input sanitization for user-generated content.",
+      "estimatedHours": 4.5,
+      "dependencies": [],
+      "tags": ["security", "xss", "validation"],
+      "acceptanceCriteria": [
+        "Reusable sanitization composable",
+        "XSS protection on all user inputs",
+        "Type-safe sanitization functions"
+      ]
+    },
+    {
+      "id": "TASK-104",
+      "title": "Add API Rate Limiting Client-Side",
+      "category": "security",
+      "priority": "medium",
+      "location": "apps/web/app/composables/useRateLimiter.ts",
+      "description": "Prevent abuse by implementing client-side request throttling.",
+      "estimatedHours": 3.5,
+      "dependencies": [],
+      "tags": ["security", "rate-limiting", "api"],
+      "acceptanceCriteria": [
+        "Requests throttled per endpoint",
+        "Smooth UX during rate limiting",
+        "Configurable limits per feature"
+      ]
+    },
+    {
+      "id": "TASK-201",
+      "title": "Increase Unit Test Coverage to 80%",
+      "category": "testing",
+      "priority": "high",
+      "location": "apps/web/__tests__/",
+      "description": "Current coverage ~8.7% (95 tests for 1,097 files). Target: 80%.",
+      "estimatedHours": 25,
+      "dependencies": [],
+      "tags": ["testing", "coverage", "vitest"],
+      "acceptanceCriteria": [
+        "≥80% code coverage",
+        "All critical paths tested",
+        "Coverage report in CI/CD"
+      ]
+    },
+    {
+      "id": "TASK-202",
+      "title": "Add E2E Tests for Critical User Flows",
+      "category": "testing",
+      "priority": "high",
+      "location": "apps/web/__tests__/test/",
+      "description": "Expand Cypress E2E coverage beyond payment providers.",
+      "estimatedHours": 17.5,
+      "dependencies": [],
+      "tags": ["testing", "e2e", "cypress"],
+      "acceptanceCriteria": [
+        "8 new E2E test suites",
+        "Tests run in CI pipeline",
+        "Page object pattern used"
+      ]
+    },
+    {
+      "id": "TASK-203",
+      "title": "Implement Integration Tests for SDK",
+      "category": "testing",
+      "priority": "medium",
+      "location": "apps/web/__tests__/integration/",
+      "description": "Test Alokai SDK integration with mock API responses.",
+      "estimatedHours": 9,
+      "dependencies": [],
+      "tags": ["testing", "integration", "sdk"],
+      "acceptanceCriteria": [
+        "SDK integration covered",
+        "API contract validated",
+        "Network failures tested"
+      ]
+    },
+    {
+      "id": "TASK-204",
+      "title": "Add Automated Accessibility Testing",
+      "category": "testing",
+      "priority": "medium",
+      "location": "apps/web/__tests__/",
+      "description": "Integrate axe-core for automated a11y testing.",
+      "estimatedHours": 7,
+      "dependencies": [],
+      "tags": ["testing", "accessibility", "a11y", "axe"],
+      "acceptanceCriteria": [
+        "All pages pass axe-core checks",
+        "WCAG 2.1 AA compliance verified",
+        "A11y tests in CI"
+      ]
+    },
+    {
+      "id": "TASK-301",
+      "title": "Implement Bundle Size Analysis",
+      "category": "performance",
+      "priority": "high",
+      "location": "Build configuration",
+      "description": "Add automated bundle analysis to monitor and optimize build size.",
+      "estimatedHours": 4.5,
+      "dependencies": [],
+      "tags": ["performance", "bundle", "optimization"],
+      "acceptanceCriteria": [
+        "Bundle visualization generated on build",
+        "Size budgets enforced in CI",
+        "Historical tracking enabled"
+      ]
+    },
+    {
+      "id": "TASK-302",
+      "title": "Enable Modern Image Formats by Default",
+      "category": "performance",
+      "priority": "medium",
+      "location": "Image optimization configuration",
+      "description": "Enable AVIF/WebP with fallbacks (currently feature-flagged).",
+      "estimatedHours": 5.5,
+      "dependencies": [],
+      "tags": ["performance", "images", "optimization"],
+      "acceptanceCriteria": [
+        "AVIF/WebP served to modern browsers",
+        "PNG/JPEG fallbacks work",
+        "30%+ reduction in image payload"
+      ]
+    },
+    {
+      "id": "TASK-303",
+      "title": "Add Core Web Vitals Monitoring",
+      "category": "performance",
+      "priority": "medium",
+      "location": "Analytics integration",
+      "description": "Monitor LCP, FID, CLS in production.",
+      "estimatedHours": 7,
+      "dependencies": [],
+      "tags": ["performance", "web-vitals", "monitoring"],
+      "acceptanceCriteria": [
+        "CWV tracked in production",
+        "Dashboard for monitoring",
+        "Alerts for regressions"
+      ]
+    },
+    {
+      "id": "TASK-304",
+      "title": "Optimize Composable Bundle Splitting",
+      "category": "performance",
+      "priority": "medium",
+      "location": "Build configuration",
+      "description": "103 composables may cause overhead. Implement code splitting.",
+      "estimatedHours": 9,
+      "dependencies": ["TASK-601"],
+      "tags": ["performance", "bundle", "composables"],
+      "acceptanceCriteria": [
+        "Initial bundle reduced by 15%+",
+        "Lazy composables load on demand",
+        "No performance regressions"
+      ]
+    },
+    {
+      "id": "TASK-401",
+      "title": "Create Keyboard Navigation Test Suite",
+      "category": "accessibility",
+      "priority": "medium",
+      "location": "apps/web/__tests__/test/a11y/",
+      "description": "Ensure all interactive elements are keyboard accessible.",
+      "estimatedHours": 9,
+      "dependencies": [],
+      "tags": ["accessibility", "keyboard", "testing"],
+      "acceptanceCriteria": [
+        "All features keyboard accessible",
+        "Logical tab order maintained",
+        "Focus indicators visible"
+      ]
+    },
+    {
+      "id": "TASK-402",
+      "title": "Implement ARIA Patterns Documentation",
+      "category": "accessibility",
+      "priority": "medium",
+      "location": "docs/accessibility/aria-patterns.md",
+      "description": "Document ARIA patterns used in components.",
+      "estimatedHours": 5.5,
+      "dependencies": [],
+      "tags": ["accessibility", "aria", "documentation"],
+      "acceptanceCriteria": [
+        "All ARIA patterns documented",
+        "Examples for developers",
+        "PR checklist created"
+      ]
+    },
+    {
+      "id": "TASK-501",
+      "title": "Create Architecture Decision Records (ADRs)",
+      "category": "documentation",
+      "priority": "high",
+      "location": "docs/adr/",
+      "description": "Document key architectural decisions for maintainability.",
+      "estimatedHours": 7,
+      "dependencies": [],
+      "tags": ["documentation", "architecture", "adr"],
+      "acceptanceCriteria": [
+        "5 ADRs created",
+        "Template provided for future ADRs",
+        "Linked from main README"
+      ]
+    },
+    {
+      "id": "TASK-502",
+      "title": "Auto-generate Component Documentation",
+      "category": "documentation",
+      "priority": "medium",
+      "location": "docs/components/",
+      "description": "Generate component API docs from Vue files.",
+      "estimatedHours": 11,
+      "dependencies": [],
+      "tags": ["documentation", "components", "automation"],
+      "acceptanceCriteria": [
+        "Component docs auto-generated",
+        "Props and events documented",
+        "Examples included"
+      ]
+    },
+    {
+      "id": "TASK-503",
+      "title": "Create Data Flow Diagram",
+      "category": "documentation",
+      "priority": "medium",
+      "location": "docs/architecture/data-flow.md",
+      "description": "Visual documentation of API call flows and state management.",
+      "estimatedHours": 4.5,
+      "dependencies": [],
+      "tags": ["documentation", "architecture", "diagrams"],
+      "acceptanceCriteria": [
+        "3 flow diagrams created",
+        "Covers critical paths",
+        "Integrated into docs site"
+      ]
+    },
+    {
+      "id": "TASK-504",
+      "title": "Create Troubleshooting Guide",
+      "category": "documentation",
+      "priority": "medium",
+      "location": "docs/troubleshooting.md",
+      "description": "Common issues and solutions for developers.",
+      "estimatedHours": 5.5,
+      "dependencies": [],
+      "tags": ["documentation", "troubleshooting", "guide"],
+      "acceptanceCriteria": [
+        "Common issues documented",
+        "Solutions provided with examples",
+        "Linked from README"
+      ]
+    },
+    {
+      "id": "TASK-601",
+      "title": "Implement Composable Design Guidelines",
+      "category": "code-quality",
+      "priority": "high",
+      "location": "docs/guidelines/composables.md",
+      "description": "Document composable patterns to prevent bloat (103 composables).",
+      "estimatedHours": 7,
+      "dependencies": [],
+      "tags": ["code-quality", "composables", "guidelines"],
+      "acceptanceCriteria": [
+        "Guidelines documented",
+        "Examples provided",
+        "Linked from CONTRIBUTING.md"
+      ]
+    },
+    {
+      "id": "TASK-602",
+      "title": "Refactor Large Composables",
+      "category": "code-quality",
+      "priority": "medium",
+      "location": "apps/web/app/composables/",
+      "description": "Split composables larger than 200 lines.",
+      "estimatedHours": 12.5,
+      "dependencies": ["TASK-601"],
+      "tags": ["code-quality", "refactoring", "composables"],
+      "acceptanceCriteria": [
+        "No composable >200 lines",
+        "All features still work",
+        "Tests pass"
+      ]
+    },
+    {
+      "id": "TASK-603",
+      "title": "Implement Type Safety Improvements",
+      "category": "code-quality",
+      "priority": "high",
+      "location": "Throughout codebase",
+      "description": "Fix all @TODO: Fix typing comments and enhance type safety.",
+      "estimatedHours": 13.5,
+      "dependencies": ["TASK-002"],
+      "tags": ["code-quality", "typescript", "types"],
+      "acceptanceCriteria": [
+        "No typing TODOs remaining",
+        "Stricter TypeScript config",
+        "Runtime type validation for critical paths"
+      ]
+    },
+    {
+      "id": "TASK-604",
+      "title": "Create Component Naming Convention Guide",
+      "category": "code-quality",
+      "priority": "medium",
+      "location": "docs/guidelines/components.md",
+      "description": "Standardize component organization and naming.",
+      "estimatedHours": 9,
+      "dependencies": [],
+      "tags": ["code-quality", "components", "guidelines"],
+      "acceptanceCriteria": [
+        "Naming guide created",
+        "ESLint rules added",
+        "All components follow convention"
+      ]
+    },
+    {
+      "id": "TASK-701",
+      "title": "Create Docker Compose Development Environment",
+      "category": "developer-experience",
+      "priority": "high",
+      "location": "docker-compose.yml",
+      "description": "One-command local development setup.",
+      "estimatedHours": 7,
+      "dependencies": [],
+      "tags": ["devex", "docker", "setup"],
+      "acceptanceCriteria": [
+        "docker-compose up starts all services",
+        "Hot reload works",
+        "Environment documented"
+      ]
+    },
+    {
+      "id": "TASK-702",
+      "title": "Add Environment Variable Validation",
+      "category": "developer-experience",
+      "priority": "high",
+      "location": "apps/web/app/plugins/validateEnv.ts",
+      "description": "Validate .env on application startup.",
+      "estimatedHours": 3.5,
+      "dependencies": [],
+      "tags": ["devex", "validation", "environment"],
+      "acceptanceCriteria": [
+        "App fails fast with clear message if env missing",
+        "All required vars documented",
+        ".env.example comprehensive"
+      ]
+    },
+    {
+      "id": "TASK-703",
+      "title": "Add VSCode Debug Configuration",
+      "category": "developer-experience",
+      "priority": "medium",
+      "location": ".vscode/launch.json",
+      "description": "Enable debugging in VSCode.",
+      "estimatedHours": 2.5,
+      "dependencies": [],
+      "tags": ["devex", "vscode", "debugging"],
+      "acceptanceCriteria": [
+        "Debugging works in VSCode",
+        "Breakpoints hit correctly",
+        "Documented for contributors"
+      ]
+    },
+    {
+      "id": "TASK-704",
+      "title": "Create Contributor Onboarding Guide",
+      "category": "developer-experience",
+      "priority": "medium",
+      "location": "docs/onboarding.md",
+      "description": "Step-by-step guide for new contributors.",
+      "estimatedHours": 4.5,
+      "dependencies": ["TASK-701", "TASK-702"],
+      "tags": ["devex", "documentation", "onboarding"],
+      "acceptanceCriteria": [
+        "New contributor can set up in <30 min",
+        "All steps documented",
+        "Linked from CONTRIBUTING.md"
+      ]
+    },
+    {
+      "id": "TASK-801",
+      "title": "Implement Global Error Boundary",
+      "category": "advanced-features",
+      "priority": "high",
+      "location": "apps/web/app/error.vue",
+      "description": "Graceful error handling with recovery options.",
+      "estimatedHours": 7,
+      "dependencies": [],
+      "tags": ["error-handling", "resilience", "ux"],
+      "acceptanceCriteria": [
+        "App doesn't crash on errors",
+        "Users see helpful error UI",
+        "Errors logged for debugging"
+      ]
+    },
+    {
+      "id": "TASK-802",
+      "title": "Create Retry Logic Composable",
+      "category": "advanced-features",
+      "priority": "medium",
+      "location": "apps/web/app/composables/useRetry.ts",
+      "description": "Reusable composable for retry with exponential backoff.",
+      "estimatedHours": 4.5,
+      "dependencies": [],
+      "tags": ["error-handling", "composables", "resilience"],
+      "acceptanceCriteria": [
+        "Reusable retry logic",
+        "Configurable backoff strategy",
+        "Used in API calls"
+      ]
+    },
+    {
+      "id": "TASK-803",
+      "title": "Implement Feature Flag System",
+      "category": "advanced-features",
+      "priority": "medium",
+      "location": "apps/web/app/composables/useFeatureFlags.ts",
+      "description": "Runtime feature toggling without deployments.",
+      "estimatedHours": 9,
+      "dependencies": [],
+      "tags": ["feature-flags", "configuration", "deployment"],
+      "acceptanceCriteria": [
+        "Feature flags configurable",
+        "Runtime toggling works",
+        "A/B testing capable"
+      ]
+    },
+    {
+      "id": "TASK-804",
+      "title": "Add Performance Profiling Tools",
+      "category": "advanced-features",
+      "priority": "medium",
+      "location": "Development utilities",
+      "description": "Tools for profiling app performance during development.",
+      "estimatedHours": 11,
+      "dependencies": [],
+      "tags": ["performance", "profiling", "devex"],
+      "acceptanceCriteria": [
+        "Developers can profile locally",
+        "Performance bottlenecks visible",
+        "Memory leaks detectable"
+      ]
+    },
+    {
+      "id": "TASK-901",
+      "title": "Create i18n Workflow Documentation",
+      "category": "i18n",
+      "priority": "medium",
+      "location": "docs/i18n.md",
+      "description": "Document translation workflow for contributors.",
+      "estimatedHours": 3.5,
+      "dependencies": [],
+      "tags": ["i18n", "documentation", "workflow"],
+      "acceptanceCriteria": [
+        "Translation workflow documented",
+        "Examples provided",
+        "Contributor-friendly"
+      ]
+    },
+    {
+      "id": "TASK-902",
+      "title": "Add Translation Key Extraction Script",
+      "category": "i18n",
+      "priority": "medium",
+      "location": "scripts/extract-i18n.js",
+      "description": "Automated extraction and validation of translation keys.",
+      "estimatedHours": 7,
+      "dependencies": [],
+      "tags": ["i18n", "automation", "validation"],
+      "acceptanceCriteria": [
+        "Script finds all translation keys",
+        "Missing translations detected",
+        "Runs in CI"
+      ]
+    },
+    {
+      "id": "TASK-903",
+      "title": "Test Language Switching on Critical Pages",
+      "category": "i18n",
+      "priority": "medium",
+      "location": "apps/web/__tests__/test/i18n/",
+      "description": "Ensure language switching works across all pages.",
+      "estimatedHours": 5.5,
+      "dependencies": [],
+      "tags": ["i18n", "testing", "e2e"],
+      "acceptanceCriteria": [
+        "Language switching tested on all critical pages",
+        "No layout breaks on switch",
+        "URLs include locale"
+      ]
+    },
+    {
+      "id": "TASK-1001",
+      "title": "Document CI/CD Pipeline Requirements",
+      "category": "deployment",
+      "priority": "high",
+      "location": "docs/deployment.md",
+      "description": "Complete deployment documentation.",
+      "estimatedHours": 5.5,
+      "dependencies": [],
+      "tags": ["deployment", "documentation", "ci-cd"],
+      "acceptanceCriteria": [
+        "Complete deployment guide",
+        "Environment vars documented",
+        "Rollback procedure defined"
+      ]
+    },
+    {
+      "id": "TASK-1002",
+      "title": "Add Production Build Size Monitoring",
+      "category": "deployment",
+      "priority": "medium",
+      "location": "CI configuration",
+      "description": "Track bundle size over time and alert on increases.",
+      "estimatedHours": 4.5,
+      "dependencies": ["TASK-301"],
+      "tags": ["deployment", "monitoring", "performance"],
+      "acceptanceCriteria": [
+        "Bundle size tracked in CI",
+        "PR comments show size changes",
+        "Alerts configured"
+      ]
+    },
+    {
+      "id": "TASK-1003",
+      "title": "Create Deployment Checklist",
+      "category": "deployment",
+      "priority": "medium",
+      "location": "docs/deployment-checklist.md",
+      "description": "Pre-deployment verification checklist.",
+      "estimatedHours": 2.5,
+      "dependencies": [],
+      "tags": ["deployment", "checklist", "quality"],
+      "acceptanceCriteria": [
+        "Checklist created",
+        "Used in deployment process",
+        "Updated regularly"
+      ]
+    },
+    {
+      "id": "TASK-9001",
+      "title": "Set Up Task Automation Framework",
+      "category": "meta",
+      "priority": "high",
+      "location": "scripts/task-runner.js",
+      "description": "CLI tool for agents to execute tasks from this file.",
+      "estimatedHours": 9,
+      "dependencies": [],
+      "tags": ["automation", "tooling", "meta"],
+      "acceptanceCriteria": [
+        "Tasks executable via CLI",
+        "Progress tracked",
+        "Reports generated"
+      ]
+    },
+    {
+      "id": "TASK-9002",
+      "title": "Create Task Dependency Graph",
+      "category": "meta",
+      "priority": "medium",
+      "location": "docs/task-dependencies.md",
+      "description": "Visualize task dependencies for optimal execution order.",
+      "estimatedHours": 3.5,
+      "dependencies": [],
+      "tags": ["documentation", "planning", "meta"],
+      "acceptanceCriteria": [
+        "Dependency graph created",
+        "Optimal execution order defined",
+        "Updated with new tasks"
+      ]
+    }
+  ],
+  "executionPhases": {
+    "phase1": {
+      "name": "Foundation",
+      "weeks": "1-2",
+      "tasks": ["TASK-001", "TASK-002", "TASK-003", "TASK-004", "TASK-102", "TASK-702", "TASK-501", "TASK-504"]
+    },
+    "phase2": {
+      "name": "Security & Testing",
+      "weeks": "3-4",
+      "tasks": ["TASK-101", "TASK-103", "TASK-104", "TASK-201", "TASK-202"]
+    },
+    "phase3": {
+      "name": "Performance & Quality",
+      "weeks": "5-6",
+      "tasks": ["TASK-301", "TASK-302", "TASK-303", "TASK-601", "TASK-603", "TASK-204", "TASK-401"]
+    },
+    "phase4": {
+      "name": "Developer Experience",
+      "weeks": "7-8",
+      "tasks": ["TASK-701", "TASK-703", "TASK-704", "TASK-502", "TASK-503", "TASK-801", "TASK-802"]
+    },
+    "phase5": {
+      "name": "Advanced Features",
+      "weeks": "Ongoing",
+      "tasks": ["TASK-304", "TASK-402", "TASK-803", "TASK-804", "TASK-901", "TASK-902", "TASK-903", "TASK-1001", "TASK-1002"]
+    }
+  },
+  "quickWins": [
+    "TASK-102",
+    "TASK-003",
+    "TASK-702",
+    "TASK-703",
+    "TASK-1003"
+  ]
+}

@@ -113,6 +113,53 @@ npx plentyshop generate composable
 
 The generators will create all necessary files with proper TypeScript types, test stubs, and follow the project's established patterns.
 
+## 🤖 Agent Task System
+
+This project includes a comprehensive task management system designed for AI agents and developers to systematically improve the application.
+
+### Quick Start for Agents
+
+```bash
+# View available tasks
+./scripts/task-runner.sh quick-wins
+
+# Get task details
+./scripts/task-runner.sh show TASK-001
+
+# Start working on a task
+./scripts/task-runner.sh start TASK-001
+
+# Mark task as complete
+./scripts/task-runner.sh complete TASK-001
+```
+
+### Task Files
+
+- **[AGENT_QUICKSTART.md](AGENT_QUICKSTART.md)** - 5-minute quick start guide
+- **[AGENT_TASKS.md](AGENT_TASKS.md)** - Detailed task descriptions with steps and acceptance criteria
+- **[TASKS_README.md](TASKS_README.md)** - Complete task system documentation
+- **[tasks.json](tasks.json)** - Machine-readable task database
+
+### What's Included
+
+- **42 improvement tasks** covering security, testing, performance, and more
+- **350 hours** of estimated work organized into phases
+- **Task runner CLI** for easy task management
+- **Automated progress tracking** with logs and reports
+
+### Task Categories
+
+- Critical Bugs & TODOs
+- Security Hardening
+- Testing & Quality (target: 80% coverage)
+- Performance Optimization
+- Accessibility Improvements
+- Documentation
+- Code Quality & Maintainability
+- Developer Experience
+
+For full details, see **[AGENT_QUICKSTART.md](AGENT_QUICKSTART.md)**.
+
 ## Resources
 
 ### Documentation
