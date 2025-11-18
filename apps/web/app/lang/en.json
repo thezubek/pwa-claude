@@ -2559,5 +2559,528 @@
       "description": "Explore our collection and discover which collar styles suit you best.",
       "button": "Shop by Collar Style"
     }
+  },
+  "bodyTypeGuide": {
+    "title": "Body Type Guide - Find Your Perfect Fit",
+    "subtitle": "Understanding your body type helps you choose shirts and blouses that flatter your unique shape. Find your fit below.",
+    "bestStyles": "Best Styles",
+    "avoid": "Avoid",
+    "women": {
+      "title": "Women's Body Types",
+      "pear": {
+        "title": "Pear Shape",
+        "description": "Narrower shoulders and bust, wider hips and thighs",
+        "best1": "Boat neck blouses that widen shoulders",
+        "best2": "Statement sleeves or shoulder details",
+        "best3": "Bright colors and patterns on top",
+        "avoid1": "Blouses that end at widest part of hips",
+        "avoid2": "Tight-fitting styles that emphasize bottom half"
+      },
+      "apple": {
+        "title": "Apple Shape",
+        "description": "Fuller midsection, shapely legs, narrower hips",
+        "best1": "V-neck and scoop neck blouses",
+        "best2": "Empire waist styles",
+        "best3": "Flowing fabrics that skim the midsection",
+        "avoid1": "Clingy fabrics around the waist",
+        "avoid2": "Cropped styles or waist-emphasis details"
+      },
+      "hourglass": {
+        "title": "Hourglass Shape",
+        "description": "Balanced bust and hips with defined waist",
+        "best1": "Fitted styles that show your waist",
+        "best2": "Wrap blouses and belted styles",
+        "best3": "Classic button-downs tucked in",
+        "avoid1": "Boxy, shapeless styles",
+        "avoid2": "Overly loose fits that hide your curves"
+      },
+      "rectangle": {
+        "title": "Rectangle Shape",
+        "description": "Shoulders, waist, and hips are similar width",
+        "best1": "Peplum styles that create waist definition",
+        "best2": "Ruffles and details that add curves",
+        "best3": "Belted blouses worn over pants",
+        "avoid1": "Straight, boxy cuts",
+        "avoid2": "Styles that make you look too linear"
+      },
+      "invertedTriangle": {
+        "title": "Inverted Triangle",
+        "description": "Broader shoulders, narrower hips",
+        "best1": "V-necks and vertical details",
+        "best2": "Dark colors on top, lighter on bottom",
+        "best3": "Simple, streamlined shoulder lines",
+        "avoid1": "Shoulder pads or puffy sleeves",
+        "avoid2": "Boat necks that emphasize width"
+      },
+      "petite": {
+        "title": "Petite",
+        "description": "5'4\" or under, proportionately small frame",
+        "best1": "Fitted styles that don't overwhelm",
+        "best2": "Cropped or shorter-length blouses",
+        "best3": "Vertical stripes and monochromatic looks",
+        "avoid1": "Oversized, baggy styles",
+        "avoid2": "Long tunics that shorten your legs"
+      }
+    },
+    "men": {
+      "title": "Men's Body Types",
+      "athletic": {
+        "title": "Athletic Build",
+        "description": "Broad shoulders, defined chest, narrow waist",
+        "best1": "Slim or tailored fit shirts",
+        "best2": "Stretch fabrics for comfort and movement",
+        "best3": "Tapered waist to highlight your V-shape",
+        "avoid1": "Boxy, loose fits that hide your physique",
+        "avoid2": "Shirts that are too tight in chest/arms"
+      },
+      "slim": {
+        "title": "Slim Build",
+        "description": "Lean frame, minimal muscle definition",
+        "best1": "Slim fit shirts (not too tight)",
+        "best2": "Horizontal stripes to add width",
+        "best3": "Layering to add dimension",
+        "avoid1": "Extra slim fits that emphasize thinness",
+        "avoid2": "Baggy shirts that make you look smaller"
+      },
+      "stocky": {
+        "title": "Stocky Build",
+        "description": "Muscular, broader frame, shorter stature",
+        "best1": "Regular fit with room in chest",
+        "best2": "Vertical stripes to create length",
+        "best3": "Slightly longer shirt tails",
+        "avoid1": "Slim fits that pull across chest",
+        "avoid2": "Horizontal stripes or patterns"
+      },
+      "broadShoulders": {
+        "title": "Broad Shoulders",
+        "description": "Wide shoulder width, athletic upper body",
+        "best1": "Classic or athletic fit shirts",
+        "best2": "Raglan sleeves for comfort",
+        "best3": "Stretch fabrics in shoulders",
+        "avoid1": "Slim fits that restrict shoulders",
+        "avoid2": "Shoulder details that add bulk"
+      },
+      "tallLean": {
+        "title": "Tall & Lean",
+        "description": "6'2\"+ height, slender build",
+        "best1": "Tall sizes with longer sleeves/torso",
+        "best2": "Fitted styles to avoid looking lanky",
+        "best3": "Horizontal details or patterns",
+        "avoid1": "Regular lengths that look too short",
+        "avoid2": "Extra long, loose fits"
+      },
+      "short": {
+        "title": "Short Stature",
+        "description": "Under 5'8\", proportionally built",
+        "best1": "Short sizes with proper proportions",
+        "best2": "Vertical stripes and minimal patterns",
+        "best3": "Shorter collar points",
+        "avoid1": "Long tails that shorten your legs",
+        "avoid2": "Large patterns that overwhelm"
+      }
+    },
+    "universalTips": {
+      "title": "Universal Fit Tips",
+      "tip1": {
+        "title": "Shoulder Seam is Key",
+        "description": "The shoulder seam should hit exactly at your shoulder point. Too wide or narrow throws off the entire fit."
+      },
+      "tip2": {
+        "title": "Collar Comfort",
+        "description": "You should fit two fingers comfortably between your neck and a buttoned collar. Any tighter is uncomfortable."
+      },
+      "tip3": {
+        "title": "Movement Test",
+        "description": "Raise your arms, sit down, move around. A well-fitted shirt allows full movement without pulling or gaping."
+      }
+    },
+    "cta": {
+      "title": "Find Your Perfect Fit",
+      "description": "Browse our collection and discover styles made for your body type.",
+      "button": "Shop Now"
+    }
+  },
+  "colorGuide": {
+    "title": "Color Matching Guide",
+    "subtitle": "Master the art of color coordination. Learn which colors work together and which shades complement your skin tone.",
+    "basics": {
+      "title": "Color Basics",
+      "neutrals": {
+        "title": "Neutral Colors",
+        "description": "The foundation of any wardrobe. Mix with anything.",
+        "white": "White",
+        "black": "Black",
+        "gray": "Gray",
+        "beige": "Beige",
+        "navy": "Navy"
+      },
+      "warm": {
+        "title": "Warm Colors",
+        "description": "Colors with red, orange, or yellow undertones.",
+        "red": "Red",
+        "orange": "Orange",
+        "yellow": "Yellow",
+        "brown": "Brown"
+      },
+      "cool": {
+        "title": "Cool Colors",
+        "description": "Colors with blue, green, or purple undertones.",
+        "blue": "Blue",
+        "green": "Green",
+        "purple": "Purple",
+        "pink": "Pink"
+      }
+    },
+    "combinations": {
+      "title": "Classic Color Combinations",
+      "classic": {
+        "title": "Timeless Classics",
+        "combo1": "White + Navy",
+        "desc1": "The most versatile combination. Always sophisticated.",
+        "combo2": "Light Blue + Charcoal",
+        "desc2": "Professional and polished. Perfect for business.",
+        "combo3": "Blush + Dark Gray",
+        "desc3": "Soft yet professional. Modern elegance.",
+        "combo4": "Black + White",
+        "desc4": "High contrast. Bold and confident."
+      },
+      "bold": {
+        "title": "Bold Combinations",
+        "combo1": "Burgundy + Navy",
+        "desc1": "Rich and sophisticated. Great for fall/winter.",
+        "combo2": "Forest Green + Tan",
+        "desc2": "Earthy and refined. Perfect for casual settings.",
+        "combo3": "Purple + Gray",
+        "desc3": "Creative yet professional. Stand out tastefully.",
+        "combo4": "Burnt Orange + Navy",
+        "desc4": "Unexpected but harmonious. Fashion-forward."
+      }
+    },
+    "skinTone": {
+      "title": "Colors for Your Skin Tone",
+      "description": "Choosing colors that complement your skin tone makes you look healthier, more vibrant, and more polished.",
+      "bestColors": "Best Colors",
+      "avoid": "Colors to Avoid",
+      "tip": "Tip",
+      "warm": {
+        "title": "Warm Skin Tones",
+        "description": "Gold jewelry looks better than silver. Veins appear greenish.",
+        "color1": "Warm reds, oranges, yellows",
+        "color2": "Olive green, warm brown, rust",
+        "color3": "Cream, ivory, warm beige",
+        "color4": "Coral, peach, terracotta",
+        "avoid1": "Cool blues and purples",
+        "avoid2": "Pure black (try warm brown instead)"
+      },
+      "cool": {
+        "title": "Cool Skin Tones",
+        "description": "Silver jewelry looks better than gold. Veins appear bluish.",
+        "color1": "True blues, emerald green, purple",
+        "color2": "Pure white, bright white",
+        "color3": "Cool grays, charcoal, black",
+        "color4": "Pink, lavender, cool red",
+        "avoid1": "Warm oranges and yellows",
+        "avoid2": "Beige and warm browns"
+      },
+      "neutral": {
+        "title": "Neutral Skin Tones",
+        "description": "Both gold and silver jewelry look good. Lucky you!",
+        "color1": "Most colors work for you",
+        "color2": "Jade green, dusty rose, teal",
+        "color3": "Soft white, off-white",
+        "color4": "Medium blues and purples",
+        "tip": "Experiment freely! You have the most flexibility in color choices."
+      }
+    },
+    "professional": {
+      "title": "Professional Color Choices",
+      "conservative": {
+        "title": "Conservative Industries",
+        "description": "Finance, law, corporate: stick to classic neutrals",
+        "color1": "White (most professional)",
+        "color2": "Light blue (trustworthy)",
+        "color3": "Pale pink or gray (subtle)",
+        "color4": "Navy (authority)"
+      },
+      "creative": {
+        "title": "Creative Industries",
+        "description": "Tech, design, media: express personality with color",
+        "color1": "Burgundy or wine",
+        "color2": "Forest or emerald green",
+        "color3": "Deep purple",
+        "color4": "Blush or soft pink"
+      }
+    },
+    "patterns": {
+      "title": "Mixing Patterns with Color",
+      "do": {
+        "title": "Do",
+        "tip1": "Match one color from the pattern to your bottoms",
+        "tip2": "Keep patterns in the same color family",
+        "tip3": "Mix different pattern sizes (small + large)"
+      },
+      "dont": {
+        "title": "Don't",
+        "tip1": "Mix more than 2 patterns in one outfit",
+        "tip2": "Combine patterns of the same size/scale",
+        "tip3": "Clash warm and cool patterns together"
+      }
+    },
+    "cta": {
+      "title": "Explore Our Color Collection",
+      "description": "Shop our curated selection of colors perfect for every occasion.",
+      "button": "Browse Colors"
+    }
+  },
+  "fabricEncyclopedia": {
+    "title": "Complete Fabric Encyclopedia",
+    "subtitle": "Understanding fabric types helps you choose the right shirt or blouse for any occasion. Learn about materials, care, and best uses.",
+    "pros": "Pros",
+    "cons": "Cons",
+    "care": "Care Instructions",
+    "natural": {
+      "title": "Natural Fabrics",
+      "cotton": {
+        "title": "Cotton",
+        "description": "The most popular natural fiber. Soft, breathable, and versatile. From casual to formal, cotton works for everything.",
+        "pro1": "Extremely breathable and comfortable",
+        "pro2": "Hypoallergenic and gentle on skin",
+        "pro3": "Durable and long-lasting",
+        "pro4": "Easy to care for and affordable",
+        "con1": "Wrinkles easily without special finish",
+        "con2": "Can shrink in hot water",
+        "use1": "Everyday wear",
+        "use2": "Office shirts",
+        "use3": "Casual blouses",
+        "care": "Machine wash cold, tumble dry low. Iron while slightly damp for best results."
+      },
+      "linen": {
+        "title": "Linen",
+        "description": "Made from flax plant fibers. The ultimate summer fabric—incredibly breathable but wrinkles are part of its charm.",
+        "pro1": "Most breathable natural fabric",
+        "pro2": "Gets softer with each wash",
+        "pro3": "Naturally antimicrobial",
+        "pro4": "Absorbs moisture without feeling damp",
+        "con1": "Wrinkles very easily (it's expected)",
+        "con2": "Can be expensive",
+        "use1": "Summer wear",
+        "use2": "Vacation clothes",
+        "use3": "Casual settings",
+        "care": "Machine wash cold, line dry preferred. Embrace the wrinkles or iron while damp."
+      },
+      "silk": {
+        "title": "Silk",
+        "description": "Luxurious protein fiber from silkworm cocoons. Incredibly soft, naturally temperature-regulating, and undeniably elegant.",
+        "pro1": "Luxurious feel and beautiful drape",
+        "pro2": "Natural temperature regulation",
+        "pro3": "Hypoallergenic and gentle",
+        "pro4": "Takes dye beautifully for rich colors",
+        "con1": "Expensive and delicate",
+        "con2": "Requires gentle care",
+        "con3": "Can water-spot easily",
+        "use1": "Special occasions",
+        "use2": "Evening wear",
+        "use3": "Luxury pieces",
+        "care": "Dry clean preferred or hand wash in cold water with silk-safe detergent. Never wring."
+      }
+    },
+    "synthetic": {
+      "title": "Synthetic & Semi-Synthetic Fabrics",
+      "polyester": {
+        "title": "Polyester",
+        "description": "Man-made fiber that's wrinkle-resistant and durable. Often blended with natural fibers for easy-care performance.",
+        "pro1": "Wrinkle-resistant",
+        "pro2": "Dries quickly",
+        "pro3": "Very affordable",
+        "pro4": "Color-fast and durable",
+        "con1": "Less breathable than natural fibers",
+        "con2": "Can feel less comfortable in heat",
+        "con3": "Not eco-friendly",
+        "use1": "Travel clothes",
+        "use2": "Performance wear",
+        "care": "Machine wash warm, tumble dry low. Easy care."
+      },
+      "modal": {
+        "title": "Modal / Rayon",
+        "description": "Semi-synthetic fiber made from beech tree cellulose. Combines the best of natural and synthetic—soft, breathable, and drapes beautifully.",
+        "pro1": "Incredibly soft and smooth",
+        "pro2": "Drapes like silk",
+        "pro3": "More eco-friendly than polyester",
+        "pro4": "Resists shrinking and fading",
+        "con1": "Can be delicate when wet",
+        "con2": "May require special care",
+        "use1": "Casual blouses",
+        "use2": "Comfortable everyday wear",
+        "care": "Machine wash cold on gentle cycle, hang dry or tumble dry low."
+      }
+    },
+    "blends": {
+      "title": "Fabric Blends",
+      "description": "Combining fibers creates fabrics with the best properties of each. These are some of the most practical options.",
+      "bestFor": "Best For",
+      "cottonPoly": {
+        "title": "Cotton-Polyester Blend",
+        "description": "Usually 60% cotton, 40% polyester. The cotton provides breathability, the polyester adds wrinkle-resistance.",
+        "bestFor": "Work shirts, travel, low-maintenance wardrobe essentials"
+      },
+      "cottonSilk": {
+        "title": "Cotton-Silk Blend",
+        "description": "Combines cotton's comfort with silk's sheen and drape. More affordable than pure silk, easier to care for.",
+        "bestFor": "Special occasion blouses, elevated casual wear"
+      },
+      "linenCotton": {
+        "title": "Linen-Cotton Blend",
+        "description": "The breathability of linen with cotton's softness and reduced wrinkling. Best of both worlds for summer.",
+        "bestFor": "Summer shirts, vacation wear, smart casual"
+      },
+      "stretch": {
+        "title": "Stretch Blends (with Elastane/Spandex)",
+        "description": "Adding 2-5% stretch fiber to any fabric improves comfort and fit. Moves with you without losing shape.",
+        "bestFor": "Active lifestyles, fitted styles, all-day comfort"
+      }
+    },
+    "sustainability": {
+      "title": "Sustainable Fabric Choices",
+      "description": "Not all fabrics are created equal when it comes to environmental impact. Here's what to look for:",
+      "organic": {
+        "title": "Organic Cotton",
+        "description": "Grown without pesticides or synthetic fertilizers. Better for the environment and farmers."
+      },
+      "recycled": {
+        "title": "Recycled Polyester",
+        "description": "Made from recycled plastic bottles. Reduces waste and uses less energy than virgin polyester."
+      },
+      "lowImpact": {
+        "title": "Low-Impact Dyes",
+        "description": "Traditional dyeing uses lots of water and chemicals. Low-impact dyes reduce environmental harm."
+      }
+    },
+    "cta": {
+      "title": "Shop by Fabric Type",
+      "description": "Filter our collection by fabric to find exactly what you need.",
+      "button": "Browse Fabrics"
+    }
+  },
+  "howToMeasure": {
+    "title": "How to Measure Yourself",
+    "subtitle": "Get the perfect fit every time with accurate measurements. Follow our step-by-step guide for both men and women.",
+    "whatYouNeed": {
+      "title": "What You'll Need",
+      "item1": "Soft measuring tape",
+      "item2": "Mirror",
+      "item3": "Pen & paper",
+      "item4": "Fitted shirt (for reference)"
+    },
+    "tip": "Pro Tip",
+    "women": {
+      "title": "Women's Measurements",
+      "bust": {
+        "title": "Bust Measurement",
+        "step1": "Wear a non-padded bra for accurate measurement",
+        "step2": "Wrap tape around the fullest part of your bust, keeping tape parallel to floor",
+        "step3": "The tape should be snug but not tight. You should be able to breathe comfortably",
+        "tip": "Don't pull the tape too tight—this is the most common mistake that leads to ordering too small.",
+        "diagram": "Bust Measurement Diagram"
+      },
+      "waist": {
+        "title": "Waist Measurement",
+        "step1": "Find your natural waist (narrowest point, usually 1-2 inches above belly button)",
+        "step2": "Wrap tape around your waist, keeping it level all around",
+        "step3": "Breathe normally and take measurement at the end of a natural exhale",
+        "tip": "Don't suck in! Measure your natural waist for accurate fit.",
+        "diagram": "Waist Measurement Diagram"
+      },
+      "shoulder": {
+        "title": "Shoulder Width",
+        "step1": "Stand naturally with shoulders relaxed",
+        "step2": "Measure from the edge of one shoulder to the edge of the other, across your back",
+        "step3": "The measurement should cross the top of your shoulders where they naturally slope",
+        "tip": "This is easier with a helper. If alone, measure a well-fitting shirt's shoulder width instead.",
+        "diagram": "Shoulder Measurement Diagram"
+      },
+      "sleeve": {
+        "title": "Sleeve Length",
+        "step1": "Bend your elbow 90 degrees and place hand on hip",
+        "step2": "Measure from the center back of neck, over the shoulder, down to the wrist bone",
+        "step3": "The tape should follow the curve of your bent arm",
+        "tip": "Sleeve length varies by style. This measurement works best for long-sleeve shirts.",
+        "diagram": "Sleeve Length Diagram"
+      }
+    },
+    "men": {
+      "title": "Men's Measurements",
+      "neck": {
+        "title": "Neck Size",
+        "step1": "Stand naturally with shoulders back",
+        "step2": "Wrap tape around the base of your neck where a collar would sit",
+        "step3": "You should fit two fingers comfortably between your neck and the tape",
+        "tip": "This determines your collar size. Add 0.5 inch for comfort—you don't want it too tight.",
+        "diagram": "Neck Measurement Diagram"
+      },
+      "chest": {
+        "title": "Chest Measurement",
+        "step1": "Breathe normally and stand with arms at sides",
+        "step2": "Wrap tape around the fullest part of your chest (usually nipple level)",
+        "step3": "Keep tape parallel to floor and ensure it's not too tight",
+        "tip": "For athletic builds, measure with arms slightly away from body to account for movement.",
+        "diagram": "Chest Measurement Diagram"
+      },
+      "waist": {
+        "title": "Waist Measurement",
+        "step1": "Measure where you naturally wear your pants (not your natural waist)",
+        "step2": "Wrap tape around this point, keeping it level",
+        "step3": "Don't suck in—measure your real waist for accurate fit",
+        "tip": "Men's shirts use chest size primarily, but waist measurement helps with fit preference.",
+        "diagram": "Waist Measurement Diagram"
+      },
+      "sleeve": {
+        "title": "Sleeve Length",
+        "step1": "Stand with arm relaxed at side, slightly bent",
+        "step2": "Measure from center back of neck, over shoulder, down arm to wrist bone",
+        "step3": "The measurement should follow your arm's natural position",
+        "tip": "Alternatively, measure from shoulder seam to where you want cuff to end (at wrist bone).",
+        "diagram": "Sleeve Length Diagram"
+      }
+    },
+    "mistakes": {
+      "title": "Common Measuring Mistakes",
+      "mistake1": {
+        "title": "Pulling Tape Too Tight",
+        "description": "The tape should be snug but not compressing. Too tight means you'll order too small."
+      },
+      "mistake2": {
+        "title": "Measuring Over Bulky Clothes",
+        "description": "Always measure over fitted clothing or directly on skin for accuracy."
+      },
+      "mistake3": {
+        "title": "Not Standing Naturally",
+        "description": "Don't suck in, puff out chest, or stand differently than normal. Natural posture = accurate measurements."
+      },
+      "mistake4": {
+        "title": "Uneven Tape Position",
+        "description": "Keep the tape parallel to the floor. Check in mirror to ensure it's not slanted."
+      }
+    },
+    "proTips": {
+      "title": "Pro Measuring Tips",
+      "tip1": {
+        "title": "Measure in the Morning",
+        "description": "Your body can fluctuate throughout the day. Morning measurements tend to be most consistent."
+      },
+      "tip2": {
+        "title": "Get Help When Possible",
+        "description": "A second person can ensure the tape stays level and positioned correctly, especially for shoulder and sleeve measurements."
+      },
+      "tip3": {
+        "title": "Compare to a Favorite Shirt",
+        "description": "Lay flat a shirt that fits you perfectly and measure it. Compare these measurements to our size charts."
+      }
+    },
+    "cta": {
+      "title": "Ready to Find Your Perfect Fit?",
+      "description": "Use your measurements with our detailed size charts.",
+      "button1": "View Size Charts",
+      "button2": "Start Shopping"
+    }
   }
 }
