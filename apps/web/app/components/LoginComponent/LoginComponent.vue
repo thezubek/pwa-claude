@@ -19,7 +19,7 @@
           </SfLink>
         </div>
 
-        <UiButton type="submit" class="mt-2" :disabled="loading" data-testid="login-submit">
+        <UiButton type="submit" variant="aura-primary" class="mt-2" :disabled="loading" data-testid="login-submit">
           <SfLoaderCircular v-if="loading" class="flex justify-center items-center" size="base" />
           <span v-else>
             {{ t('auth.login.submitLabel') }}

@@ -15,6 +15,7 @@
             data-testid="checkout-button"
             :tag="NuxtLink"
             :to="goToCheckout()"
+            variant="aura-primary"
             size="lg"
             class="w-full mb-4 md:mb-0"
           >

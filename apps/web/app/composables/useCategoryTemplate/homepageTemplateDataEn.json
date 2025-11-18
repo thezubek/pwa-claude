@@ -1,5 +1,21 @@
 [
   {
+    "name": "HeroAura",
+    "type": "content",
+    "meta": {
+      "uuid": "hero-aura-main-001",
+      "isGlobalTemplate": false
+    },
+    "content": {
+      "headline": "Elevate Your Sound Experience",
+      "subheadline": "Discover our curated collection of premium headphones, cutting-edge drones, and stylish apparel",
+      "ctaText": "Shop Now",
+      "ctaLink": "/gear",
+      "bgImage": "https://cdn02.plentymarkets.com/mevofvd5omld/frontend/Test_Banner_Person/guy-1024.avif",
+      "overlayOpacity": 0.6
+    }
+  },
+  {
     "name": "Carousel",
     "type": "structure",
     "meta": {
@@ -43,7 +59,7 @@
           "button": {
             "label": "Discover Capybara",
             "link": "/gear/headphones-capybara_157",
-            "variant": "primary"
+            "variant": "aura-primary"
           }
         }
       },
@@ -78,7 +94,7 @@
           "button": {
             "label": "Discover Omega",
             "link": "/gear/drone-omega_154",
-            "variant": "primary"
+            "variant": "aura-primary"
           }
         }
       }
@@ -103,7 +119,7 @@
       "button": {
         "label": "Get shopping",
         "link": "",
-        "variant": "primary"
+        "variant": "aura-primary"
       }
     }
   },
@@ -166,7 +182,7 @@
           "button": {
             "label": "To our headphones",
             "link": "/gear/headphones-capybara_157",
-            "variant": "primary"
+            "variant": "aura-primary"
           }
         }
       }

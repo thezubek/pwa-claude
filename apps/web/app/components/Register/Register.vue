@@ -125,7 +125,7 @@
       />
       <ErrorMessage as="div" name="register.turnstile" class="text-negative-700 text-center text-sm" />
 
-      <UiButton type="submit" class="mt-2" :disabled="loading || migrateLoading">
+      <UiButton type="submit" variant="aura-primary" class="mt-2" :disabled="loading || migrateLoading">
         <SfLoaderCircular v-if="loading || migrateLoading" class="flex justify-center items-center" size="base" />
         <span v-else>
           {{ t('auth.signup.submitLabel') }}
