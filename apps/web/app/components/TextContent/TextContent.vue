@@ -22,7 +22,7 @@
       v-if="button?.label && button?.link"
       :tag="NuxtLink"
       :to="localePath(button?.link ?? '')"
-      :variant="button?.variant ?? 'primary'"
+      :variant="button?.variant ?? 'aura-primary'"
       data-testid="text-button"
       class="mt-3 px-4 py-2"
     >

@@ -75,7 +75,7 @@
           class="flex flex-col md:flex-row gap-4 mt-6"
           :tag="NuxtLink"
           :to="localePath(banner.button.link ?? '')"
-          :variant="banner.button.variant ?? 'primary'"
+          :variant="banner.button.variant ?? 'aura-primary'"
           size="lg"
           :data-testid="'banner-button-' + meta.uuid"
         >
