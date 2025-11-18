@@ -1677,5 +1677,549 @@
       "description": "Explore our collection to find your perfect blouse or shirt",
       "shopButton": "Shop Now"
     }
+  },
+  "styleGuides": {
+    "title": "Style Guides",
+    "subtitle": "Expert styling advice to help you look and feel your best in HEVENTON blouses and shirts.",
+    "explore": "Explore Guide",
+    "office": {
+      "title": "Office & Professional",
+      "description": "Master professional styling from business formal to smart casual"
+    },
+    "casual": {
+      "title": "Casual & Weekend",
+      "description": "Effortless everyday looks that feel as good as they look"
+    },
+    "evening": {
+      "title": "Evening & Events",
+      "description": "Elevate your blouse for evening wear and special occasions"
+    },
+    "seasonal": {
+      "title": "Seasonal Styling",
+      "description": "Adapt your wardrobe for every season of the year"
+    },
+    "colors": {
+      "title": "Color Coordination",
+      "description": "Learn to mix colors and create cohesive outfits"
+    },
+    "capsule": {
+      "title": "Capsule Wardrobe",
+      "description": "Build a versatile wardrobe with essential pieces"
+    },
+    "quickTips": {
+      "title": "Quick Styling Tips",
+      "tip1": {
+        "title": "The Power of Tucking",
+        "description": "A simple tuck can transform your silhouette. Try a front tuck for casual looks or full tuck for professional settings."
+      },
+      "tip2": {
+        "title": "Layer with Confidence",
+        "description": "Blazers, cardigans, and vests add dimension. Keep it simple: one pattern maximum when layering."
+      },
+      "tip3": {
+        "title": "Accessorize Strategically",
+        "description": "Statement jewelry, belts, and scarves can completely change a look. Less is often more."
+      },
+      "tip4": {
+        "title": "Roll Your Sleeves Right",
+        "description": "Master the casual sleeve roll: fold twice to just below the elbow for the perfect relaxed look."
+      }
+    },
+    "cta": {
+      "title": "Ready to Elevate Your Style?",
+      "description": "Put these tips into practice with our collection",
+      "button": "Shop Collection"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about ordering, sizing, returns, and more.",
+    "categories": {
+      "all": "All Questions",
+      "ordering": "Ordering & Shipping",
+      "sizing": "Sizing & Fit",
+      "returns": "Returns & Exchanges",
+      "care": "Care & Quality",
+      "payment": "Payment & Security"
+    },
+    "ordering": {
+      "title": "Ordering & Shipping",
+      "q1": {
+        "question": "Do you offer free shipping?",
+        "answer": "Yes! We offer free shipping on all orders within Germany. For international orders, shipping costs are calculated at checkout based on your location."
+      },
+      "q2": {
+        "question": "How long does delivery take?",
+        "answer": "Orders within Germany typically arrive within 2-4 business days. International shipping times vary by destination but generally range from 5-10 business days."
+      },
+      "q3": {
+        "question": "Can I track my order?",
+        "answer": "Absolutely! Once your order ships, you'll receive a tracking number via email. You can also track your order status in your account dashboard."
+      },
+      "q4": {
+        "question": "Do you ship internationally?",
+        "answer": "Yes, we ship to most countries worldwide. Shipping costs and delivery times vary by destination. All applicable customs fees and import duties are the responsibility of the customer."
+      },
+      "q5": {
+        "question": "What if I need my order urgently?",
+        "answer": "For urgent orders, please contact our customer service team. We may be able to arrange express shipping for an additional fee, subject to availability."
+      }
+    },
+    "sizing": {
+      "title": "Sizing & Fit",
+      "q1": {
+        "question": "How do I find my correct size?",
+        "answer": "Visit our <a href='/size-guide' class='text-primary-500 hover:underline'>Size Guide</a> for detailed measurement instructions and size charts. We provide both EU and international sizing conversions."
+      },
+      "q2": {
+        "question": "What if I'm between sizes?",
+        "answer": "If you're between sizes, we generally recommend sizing up for a more comfortable fit. However, this can depend on your preferred style and the specific garment. Check the product description for fit notes."
+      },
+      "q3": {
+        "question": "Do your sizes run true to size?",
+        "answer": "Yes, our sizes follow standard European sizing. We provide detailed measurements for each size in our size guide to help ensure the perfect fit."
+      },
+      "q4": {
+        "question": "Can I exchange for a different size?",
+        "answer": "Yes! We offer free size exchanges within 30 days of purchase. Simply request an exchange through your account or contact our customer service team."
+      },
+      "q5": {
+        "question": "Do you offer petite or tall sizes?",
+        "answer": "Currently, we offer our standard size range. However, we're working on expanding to include petite and tall options. Sign up for our newsletter to be notified when these become available."
+      }
+    },
+    "returns": {
+      "title": "Returns & Exchanges",
+      "q1": {
+        "question": "What is your return policy?",
+        "answer": "We offer a 30-day return policy from the date of delivery. Items must be unworn, unwashed, and in original condition with tags attached. Returns are free within Germany."
+      },
+      "q2": {
+        "question": "How do I initiate a return?",
+        "answer": "Log into your account and navigate to your order history. Select the order you wish to return and click 'Request Return'. You'll receive a return label via email."
+      },
+      "q3": {
+        "question": "When will I receive my refund?",
+        "answer": "Refunds are processed within 5-7 business days of receiving your return. The refund will be issued to your original payment method."
+      },
+      "q4": {
+        "question": "Can I exchange instead of returning?",
+        "answer": "Yes! Exchanges are free and often faster than returns and repurchases. Select 'Exchange' when initiating your return to specify your preferred replacement."
+      },
+      "q5": {
+        "question": "What if my item is defective?",
+        "answer": "We're sorry to hear that! Contact us immediately with photos of the defect. We'll arrange a free replacement or full refund, including return shipping costs."
+      }
+    },
+    "care": {
+      "title": "Care & Quality",
+      "q1": {
+        "question": "How should I care for my blouse/shirt?",
+        "answer": "Visit our <a href='/fabric-care' class='text-primary-500 hover:underline'>Fabric Care Guide</a> for detailed care instructions by fabric type. Generally, we recommend washing in cool water and air drying for longest life."
+      },
+      "q2": {
+        "question": "Can I machine wash my HEVENTON items?",
+        "answer": "Yes, most of our items are machine washable. Always check the care label for specific instructions. We recommend using a gentle cycle and cool water."
+      },
+      "q3": {
+        "question": "How do I remove stains?",
+        "answer": "Act quickly! Blot (don't rub) the stain and treat with appropriate stain remover. Our <a href='/fabric-care#stain-removal' class='text-primary-500 hover:underline'>Stain Removal Guide</a> provides detailed instructions for common stains."
+      },
+      "q4": {
+        "question": "Will my white blouse yellow over time?",
+        "answer": "Proper care prevents yellowing. Wash whites separately, avoid fabric softener, and store in a cool, dry place. Our care guide includes tips for keeping whites bright."
+      },
+      "q5": {
+        "question": "What makes HEVENTON quality different?",
+        "answer": "We use premium long-staple cotton, reinforced seams, and quality construction throughout. Every piece is designed to last for years with proper care. Learn more on our <a href='/about' class='text-primary-500 hover:underline'>About page</a>."
+      }
+    },
+    "payment": {
+      "title": "Payment & Security",
+      "q1": {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept all major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and bank transfer. All payments are processed securely."
+      },
+      "q2": {
+        "question": "Is my payment information secure?",
+        "answer": "Absolutely. We use industry-standard SSL encryption and PCI-compliant payment processing. We never store your complete credit card information."
+      },
+      "q3": {
+        "question": "When will I be charged?",
+        "answer": "Your payment method is charged when your order is confirmed and enters processing. For pre-orders, payment is taken when the item ships."
+      },
+      "q4": {
+        "question": "Can I use multiple payment methods?",
+        "answer": "Currently, we accept one payment method per order. If you'd like to split payment, please place separate orders."
+      },
+      "q5": {
+        "question": "Do you offer payment plans?",
+        "answer": "We currently don't offer payment plans directly, but you may be able to use services like PayPal Credit or Klarna if available in your region."
+      }
+    },
+    "stillHaveQuestions": {
+      "title": "Still Have Questions?",
+      "description": "Our customer service team is here to help.",
+      "button": "Contact Us"
+    }
+  },
+  "testimonials": {
+    "title": "Customer Reviews",
+    "subtitle": "See what our customers are saying about their HEVENTON experience.",
+    "basedOn": "Based on",
+    "reviews": "reviews",
+    "verifiedPurchase": "Verified Purchase",
+    "filters": {
+      "all": "All Reviews",
+      "5star": "5 Stars Only",
+      "womens": "Women's",
+      "mens": "Men's",
+      "recent": "Most Recent"
+    },
+    "reviews": {
+      "1": {
+        "title": "Perfect Fit and Quality!",
+        "text": "I've been searching for the perfect white blouse for years, and this is it! The fabric is thick enough to not be see-through, the fit is flattering, and it holds up beautifully after multiple washes. Worth every penny!",
+        "product": "White Long-Sleeve Blouse"
+      },
+      "2": {
+        "title": "Best Dress Shirt I Own",
+        "text": "As someone who wears dress shirts daily, I can confidently say this is the highest quality shirt I've purchased. The cotton is substantial, the stitching is impeccable, and it doesn't wrinkle as easily as my other shirts.",
+        "product": "Men's Classic Dress Shirt"
+      },
+      "3": {
+        "title": "Sustainable and Stylish",
+        "text": "Love that HEVENTON uses sustainable materials without compromising on style. The blouse fits perfectly and I appreciate knowing exactly where it came from and how it was made.",
+        "product": "Organic Cotton Blouse"
+      },
+      "4": {
+        "title": "Great Value",
+        "text": "The quality is outstanding for the price. My only minor complaint is I wish there were more color options, but the classic white and blue are beautiful. Will definitely order more.",
+        "product": "Men's Business Shirt"
+      },
+      "5": {
+        "title": "Customer Service Excellence",
+        "text": "Not only is the blouse beautiful, but when I needed to exchange sizes, the process was seamless. Customer service was responsive and helpful. This is how online shopping should be!",
+        "product": "Bell Collar Blouse"
+      },
+      "6": {
+        "title": "A Wardrobe Staple",
+        "text": "I now own three of these shirts in different colors. They're my go-to for both work and casual wear. The fit is consistent, quality is reliable, and they look great every time.",
+        "product": "Men's Polo Shirt"
+      }
+    },
+    "customerPhotos": {
+      "title": "Customer Photos",
+      "subtitle": "See how our customers style their HEVENTON pieces",
+      "placeholder": "Customer Photo"
+    },
+    "writeReview": {
+      "title": "Share Your Experience",
+      "description": "We'd love to hear about your HEVENTON purchase!",
+      "button": "Write a Review"
+    }
+  },
+  "sustainability": {
+    "title": "Our Commitment to Sustainability",
+    "hero": {
+      "title": "Sustainability",
+      "subtitle": "Quality clothing that respects people and planet"
+    },
+    "commitment": {
+      "title": "Our Commitment",
+      "paragraph1": "At HEVENTON, sustainability isn't just a buzzword—it's woven into everything we do. From the fibers we source to the factories we partner with, every decision is made with environmental and social responsibility in mind.",
+      "paragraph2": "We believe that creating beautiful, long-lasting clothing and protecting our planet aren't mutually exclusive. In fact, they go hand in hand. By focusing on quality over quantity, using sustainable materials, and ensuring fair labor practices, we're building a business that can thrive for generations.",
+      "paragraph3": "Transparency is key to our approach. We want you to know exactly where your clothes come from, how they're made, and the impact they have. This page details our commitments, achievements, and ongoing goals in our sustainability journey."
+    },
+    "initiatives": {
+      "title": "Key Sustainability Initiatives",
+      "organic": {
+        "title": "Organic & Natural Fibers",
+        "description": "100% of our cotton is organically grown without harmful pesticides or synthetic fertilizers"
+      },
+      "recycling": {
+        "title": "Waste Reduction",
+        "description": "95% of our production waste is recycled or upcycled into new products"
+      },
+      "manufacturing": {
+        "title": "Ethical Manufacturing",
+        "description": "All partner factories are certified for fair wages and safe working conditions"
+      },
+      "fairTrade": {
+        "title": "Fair Trade Certified",
+        "description": "Supporting farming communities through fair prices and sustainable practices"
+      }
+    },
+    "materials": {
+      "title": "Sustainable Materials & Sourcing",
+      "cotton": {
+        "title": "Organic Cotton",
+        "description": "Our primary fabric is GOTS-certified organic cotton, grown without harmful chemicals.",
+        "point1": "Uses 91% less water than conventional cotton",
+        "point2": "No synthetic pesticides or fertilizers",
+        "point3": "Supports biodiversity and soil health"
+      },
+      "linen": {
+        "title": "European Linen",
+        "description": "We source linen from European flax, one of the most sustainable fibers available.",
+        "point1": "Requires minimal water and no irrigation",
+        "point2": "Every part of the flax plant is used",
+        "point3": "Naturally pest-resistant, no pesticides needed"
+      }
+    },
+    "production": {
+      "title": "Sustainable Production Practices",
+      "waterSaving": {
+        "title": "Water Conservation",
+        "description": "Our partner factories use closed-loop water systems, reducing water consumption by 60%"
+      },
+      "energyEfficient": {
+        "title": "Renewable Energy",
+        "description": "70% of our production facilities are powered by renewable energy sources"
+      },
+      "wasteReduction": {
+        "title": "Zero Waste Goals",
+        "description": "We're committed to achieving zero landfill waste from our production by 2027"
+      }
+    },
+    "certifications": {
+      "title": "Our Certifications",
+      "gots": "GOTS Organic",
+      "oeko": "OEKO-TEX",
+      "fairTrade": "Fair Trade",
+      "bci": "Better Cotton"
+    },
+    "packaging": {
+      "title": "Sustainable Packaging",
+      "point1": "100% recyclable and biodegradable packaging materials",
+      "point2": "No plastic bags—we use compostable mailers",
+      "point3": "Minimal packaging design to reduce waste",
+      "point4": "Printed with soy-based inks",
+      "point5": "Reusable garment bags for storage",
+      "point6": "Carbon-neutral shipping options available"
+    },
+    "goals": {
+      "title": "Our 2025-2030 Goals",
+      "goal1": {
+        "title": "Carbon Neutral by 2027",
+        "description": "Achieve carbon neutrality across our entire supply chain through emissions reduction and verified offset programs."
+      },
+      "goal2": {
+        "title": "100% Sustainable Materials by 2026",
+        "description": "Ensure all materials used are either organic, recycled, or sustainably sourced with third-party certification."
+      },
+      "goal3": {
+        "title": "Circular Economy Model by 2030",
+        "description": "Implement a take-back program where customers can return worn items for recycling or upcycling into new products."
+      }
+    },
+    "cta": {
+      "title": "Shop with Purpose",
+      "description": "Every HEVENTON purchase supports sustainable fashion",
+      "shopButton": "Shop Collection",
+      "contactButton": "Learn More"
+    }
+  },
+  "giftGuide": {
+    "title": "Gift Guide",
+    "subtitle": "Find the perfect gift with our curated selection of timeless blouses and shirts.",
+    "byRecipient": {
+      "title": "Shop by Recipient",
+      "forHer": {
+        "title": "Gifts for Her",
+        "description": "Elegant blouses she'll love",
+        "item1": "Classic White Blouse",
+        "item2": "Silk-Cotton Blend Blouse",
+        "item3": "Bell Collar Statement Piece"
+      },
+      "forHim": {
+        "title": "Gifts for Him",
+        "description": "Sophisticated shirts he'll wear",
+        "item1": "Tailored Dress Shirt",
+        "item2": "Casual Oxford Shirt",
+        "item3": "Premium Polo Shirt"
+      },
+      "professional": {
+        "title": "For Professionals",
+        "description": "Perfect for the office",
+        "item1": "Non-Iron Business Shirts",
+        "item2": "Executive Blouse Collection",
+        "item3": "Travel-Friendly Fabrics"
+      },
+      "graduate": {
+        "title": "For Graduates",
+        "description": "Starting their career right",
+        "item1": "Interview-Ready Shirts",
+        "item2": "Versatile Work Wardrobe",
+        "item3": "Professional Starter Set"
+      }
+    },
+    "byBudget": {
+      "title": "Shop by Budget",
+      "under50": {
+        "title": "Under €50",
+        "description": "Thoughtful gifts that won't break the bank",
+        "item1": "Classic solid color shirts",
+        "item2": "Casual weekend blouses",
+        "item3": "Gift cards"
+      },
+      "under100": {
+        "title": "€50 - €100",
+        "description": "Premium quality pieces",
+        "item1": "Premium cotton blouses",
+        "item2": "Dress shirt sets",
+        "item3": "Limited edition colors"
+      },
+      "luxury": {
+        "title": "Luxury Gifts €100+",
+        "description": "The finest quality",
+        "item1": "Silk blend collection",
+        "item2": "Made-to-measure options",
+        "item3": "Complete wardrobe sets"
+      }
+    },
+    "byOccasion": {
+      "title": "Shop by Occasion",
+      "birthday": {
+        "title": "Birthday Gifts",
+        "description": "Make their day special with a quality piece they'll treasure"
+      },
+      "anniversary": {
+        "title": "Anniversary Gifts",
+        "description": "Celebrate your relationship with timeless elegance"
+      },
+      "mothersDay": {
+        "title": "Mother's Day",
+        "description": "Show mom your appreciation with quality she deserves"
+      },
+      "fathersDay": {
+        "title": "Father's Day",
+        "description": "Dad will love the quality and craftsmanship"
+      },
+      "christmas": {
+        "title": "Christmas & Holidays",
+        "description": "Give the gift of quality that lasts all year"
+      },
+      "graduation": {
+        "title": "Graduation Gifts",
+        "description": "Help them start their professional journey in style"
+      }
+    },
+    "giftSets": {
+      "title": "Curated Gift Sets",
+      "description": "Take the guesswork out of gift giving with our pre-selected sets",
+      "set1": {
+        "title": "The Professional Set",
+        "description": "3 essential shirts for the modern workplace"
+      },
+      "set2": {
+        "title": "Weekend Essentials",
+        "description": "Casual comfort meets quality"
+      },
+      "set3": {
+        "title": "The Complete Wardrobe",
+        "description": "Everything needed for a versatile wardrobe"
+      }
+    },
+    "wrapping": {
+      "title": "Beautiful Gift Wrapping Available",
+      "description": "Make your gift extra special with our premium gift wrapping service",
+      "feature1": "Eco-friendly recyclable gift boxes",
+      "feature2": "Handwritten gift messages",
+      "feature3": "Elegant ribbon and tissue",
+      "imageCaption": "Gift Wrapping"
+    },
+    "cta": {
+      "title": "Need Gift Advice?",
+      "description": "Our team can help you choose the perfect gift",
+      "button": "Start Shopping"
+    }
+  },
+  "lookbook": {
+    "title": "Seasonal Lookbook",
+    "subtitle": "Discover how to style your HEVENTON pieces for every season and occasion.",
+    "seasons": {
+      "springSummer": "Spring/Summer",
+      "fallWinter": "Fall/Winter"
+    },
+    "top": "Top",
+    "bottom": "Bottom",
+    "layer": "Layer",
+    "styling": "Styling Tip",
+    "springSummer": {
+      "title": "Spring/Summer 2025",
+      "description": "Light, breathable fabrics and fresh colors define our spring/summer collection. Perfect for warm weather while maintaining professional polish.",
+      "look1": {
+        "title": "Fresh Office Look",
+        "description": "Classic professionalism with a spring update",
+        "image": "Spring Office Look",
+        "top": "Crisp white cotton blouse",
+        "bottom": "Tailored beige trousers",
+        "styling": "Add a silk scarf for a pop of color"
+      },
+      "look2": {
+        "title": "Weekend Casual",
+        "description": "Effortless style for your days off",
+        "image": "Weekend Casual Look",
+        "top": "Light blue linen shirt",
+        "bottom": "White denim or chinos",
+        "styling": "Roll sleeves to 3/4 length for relaxed vibe"
+      },
+      "keyPieces": {
+        "title": "Spring/Summer Key Pieces",
+        "piece1": {
+          "title": "White Cotton Blouse",
+          "description": "The ultimate warm-weather staple. Pairs with everything."
+        },
+        "piece2": {
+          "title": "Linen Shirt",
+          "description": "Breathable and naturally cooling for hot days"
+        },
+        "piece3": {
+          "title": "Light Blue Oxford",
+          "description": "Versatile enough for office or weekend"
+        }
+      }
+    },
+    "fallWinter": {
+      "title": "Fall/Winter 2025",
+      "description": "Master the art of layering with our fall/winter collection. Stay warm without sacrificing style.",
+      "look1": {
+        "title": "Layered Professional",
+        "description": "Office-ready with autumn warmth",
+        "image": "Fall Office Look",
+        "top": "Classic white shirt",
+        "layer": "Wool blazer or cardigan",
+        "bottom": "Dark tailored trousers"
+      },
+      "look2": {
+        "title": "Smart Casual",
+        "description": "Weekend style with seasonal warmth",
+        "image": "Fall Casual Look",
+        "top": "Flannel or oxford shirt",
+        "layer": "Vest or sweater",
+        "bottom": "Dark denim or corduroy"
+      },
+      "layeringTips": {
+        "title": "Fall/Winter Layering Tips",
+        "tip1": {
+          "title": "Start with a Quality Base",
+          "description": "Your shirt is the foundation. Choose quality that won't pill or lose shape."
+        },
+        "tip2": {
+          "title": "Add Warmth Strategically",
+          "description": "Vests and cardigans add warmth without bulk. Choose neutral colors for versatility."
+        },
+        "tip3": {
+          "title": "Don't Forget the Details",
+          "description": "Collar stays, cuffs showing at sleeve ends—small details matter in layered looks."
+        }
+      }
+    },
+    "cta": {
+      "title": "Get the Look",
+      "description": "Shop our seasonal collections",
+      "button": "Shop Now"
+    }
   }
 }
