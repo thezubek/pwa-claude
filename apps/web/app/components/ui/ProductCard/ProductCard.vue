@@ -1,8 +1,8 @@
 <template>
   <div
-    class="rounded-lg hover:shadow-lg flex flex-col bg-white"
+    class="rounded-lg hover:shadow-lg flex flex-col bg-white transition-all duration-300"
     data-testid="product-card"
-    :class="{ 'border border-neutral-200': configuration?.cardBorders }"
+    :class="{ 'border border-aura-border hover:border-aura-primary-200': configuration?.cardBorders }"
   >
     <div class="relative overflow-hidden">
       <UiBadges
@@ -53,7 +53,7 @@
         <slot name="wishlistButton">
           <WishlistButton
             square
-            class="absolute bottom-0 right-0 mr-2 mb-2 bg-white ring-1 ring-inset ring-neutral-200 !rounded-full"
+            class="absolute bottom-0 right-0 mr-2 mb-2 bg-white ring-1 ring-inset ring-aura-border hover:ring-aura-primary transition-all duration-200 !rounded-full shadow-sm"
             :product="product"
           />
         </slot>
@@ -61,7 +61,7 @@
     </div>
 
     <div
-      class="p-2 border-t border-neutral-200 typography-text-sm flex flex-col flex-auto"
+      class="p-4 border-t border-aura-border typography-text-sm flex flex-col flex-auto gap-2"
       :class="{
         'items-center': configuration?.contentAlignment === 'center',
         'items-end': configuration?.contentAlignment === 'right',
@@ -73,7 +73,7 @@
           <SfLink
             :tag="NuxtLink"
             :to="productPath"
-            class="no-underline font-body font-medium text-aura-text-dark hover:text-aura-primary transition-colors"
+            class="no-underline font-body font-semibold text-aura-text-primary hover:text-aura-primary transition-colors duration-200"
             variant="secondary"
             data-testid="productcard-name"
           >
@@ -91,7 +91,7 @@
         <template v-if="key === 'previewText' && configuration?.fields?.previewText">
           <div
             v-if="shortDescription"
-            class="block py-2 font-normal typography-text-xs text-neutral-700 text-justify whitespace-pre-line break-words"
+            class="block py-2 font-normal text-sm text-aura-text-secondary text-justify whitespace-pre-line break-words"
           >
             <div class="line-clamp-3" v-html="shortDescription" />
           </div>
@@ -103,17 +103,17 @@
             <BasePriceInLine :base-price="basePrice" :unit-content="unitContent" :unit-name="unitName" />
           </div>
 
-          <div class="flex flex-col-reverse items-start md:flex-row md:items-center mt-auto">
-            <span class="block pb-2 font-bold typography-text-sm font-body text-aura-text-muted" data-testid="product-card-vertical-price">
-              <span v-if="!canAddFromCategory" class="mr-1">{{
+          <div class="flex flex-col-reverse items-start md:flex-row md:items-center mt-auto gap-2">
+            <span class="block font-bold text-lg font-body text-aura-text-primary" data-testid="product-card-vertical-price">
+              <span v-if="!canAddFromCategory" class="mr-1 text-sm font-normal text-aura-text-secondary">{{
                 t('account.ordersAndReturns.orderDetails.priceFrom')
               }}</span>
               <span>{{ format(price) }}</span>
-              <span>{{ t('asterisk') }}</span>
+              <span class="text-sm">{{ t('asterisk') }}</span>
             </span>
             <span
               v-if="crossedPrice && differentPrices(price, crossedPrice)"
-              class="typography-text-sm text-neutral-400 line-through md:ml-3 md:pb-2 font-body"
+              class="text-sm text-aura-text-disabled line-through font-body"
             >
               {{ format(crossedPrice) }}
             </span>

@@ -88,10 +88,14 @@ export const variantClasses = {
   [SfButtonVariant.tertiary]:
     'text-primary-500 hover:bg-primary-100 hover:text-primary-800 active:bg-primary-200 active:text-primary-900 disabled:bg-transparent',
   'aura-primary':
-    'text-white bg-aura-primary hover:bg-opacity-90 transition-colors rounded-lg shadow-sm font-body font-bold',
+    'text-white bg-aura-primary hover:bg-aura-primary-light active:bg-aura-primary-dark transition-all duration-200 rounded-lg shadow-sm hover:shadow-md font-body font-bold',
   'aura-secondary':
-    'text-aura-text-dark bg-gray-100 hover:bg-aura-primary hover:text-white transition-colors rounded-lg font-body font-bold',
+    'text-aura-text-primary bg-aura-background-dark hover:bg-aura-primary hover:text-white active:bg-aura-primary-dark active:text-white transition-all duration-200 rounded-lg font-body font-bold border border-aura-border',
   'aura-ghost':
-    'text-aura-text-dark bg-transparent hover:bg-gray-100 transition-colors rounded-lg font-body',
+    'text-aura-text-primary bg-transparent hover:bg-aura-background-dark active:bg-aura-background-darker transition-all duration-200 rounded-lg font-body',
+  'aura-accent':
+    'text-white bg-aura-accent hover:bg-aura-accent-light active:bg-aura-accent-dark transition-all duration-200 rounded-lg shadow-sm hover:shadow-md font-body font-bold',
+  'aura-outline':
+    'text-aura-primary bg-transparent hover:bg-aura-primary-50 active:bg-aura-primary-100 transition-all duration-200 rounded-lg font-body font-semibold border-2 border-aura-primary',
 };
 </script>

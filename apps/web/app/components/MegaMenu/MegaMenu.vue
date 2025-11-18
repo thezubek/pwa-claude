@@ -33,7 +33,7 @@
     <div v-if="viewport.isGreaterOrEquals('lg')">
       <nav ref="floatingRef">
         <ul
-          class="flex flex-wrap px-6 py-2 bg-white border-b border-b-neutral-200 border-b-solid"
+          class="flex flex-wrap px-6 py-2 bg-white border-b border-b-aura-border border-b-solid"
           @blur="
             (event: FocusEvent) => {
               if (!(event.currentTarget as Element).contains(event.relatedTarget as Element)) {
@@ -53,7 +53,7 @@
             <div
               ref="triggerReference"
               data-testid="category-button"
-              class="inline-flex items-center justify-center gap-2 font-medium text-base rounded-md py-2 px-4 group mr-2 !text-neutral-900 hover:bg-secondary-100 hover:!text-neutral-700 active:!bg-neutral-300 active:!text-neutral-900 cursor-pointer"
+              class="inline-flex items-center justify-center gap-2 font-body font-medium text-base rounded-md py-2 px-4 group mr-2 text-aura-text-primary hover:bg-aura-background-dark hover:text-aura-primary active:bg-aura-background-darker transition-all duration-200 cursor-pointer"
               @click="onCategoryTap(menuNode)"
             >
               <template v-if="menuNode.childCount > 0">
@@ -80,7 +80,7 @@
               :key="activeMenu.id"
               ref="megaMenuReference"
               :style="style"
-              class="hidden md:grid gap-x-6 grid-cols-4 bg-white shadow-lg p-6 left-0 right-0 outline-none z-40"
+              class="hidden md:grid gap-x-6 grid-cols-4 bg-white shadow-xl border-t border-aura-border p-6 left-0 right-0 outline-none z-40"
               tabindex="0"
               @mouseleave="onMouseLeave"
               @keydown.esc="focusTrigger(index)"
@@ -92,7 +92,7 @@
                       :tag="NuxtLink"
                       size="sm"
                       :href="localePath(generateCategoryLink(node))"
-                      class="typography-text-sm mb-2 hover:bg-secondary-100 rounded"
+                      class="font-body text-sm mb-2 hover:bg-aura-background-dark hover:text-aura-primary transition-colors duration-200 rounded"
                     >
                       {{ categoryTreeGetters.getName(node) }}
                     </SfListItem>
@@ -103,7 +103,7 @@
                     :tag="NuxtLink"
                     size="sm"
                     :href="localePath(generateCategoryLink(node))"
-                    class="typography-text-base font-medium text-neutral-900 whitespace-nowrap px-4 py-1.5 border-b border-b-neutral-200 border-b-solid hover:bg-secondary-100 rounded"
+                    class="font-body text-base font-semibold text-aura-text-primary whitespace-nowrap px-4 py-1.5 border-b border-b-aura-border border-b-solid hover:bg-aura-background-dark hover:text-aura-primary transition-colors duration-200 rounded"
                   >
                     {{ categoryTreeGetters.getName(node) }}
                   </SfListItem>
