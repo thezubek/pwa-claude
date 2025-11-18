@@ -1234,5 +1234,448 @@
       }
     }
   },
-  "cancelOrder": "Cancel order"
+  "cancelOrder": "Cancel order",
+  "sizeGuide": {
+    "title": "Size Guide",
+    "intro": "Finding the perfect fit is essential for comfort and style. Use our comprehensive size guide to ensure your HEVENTON blouse or shirt fits perfectly.",
+    "howToMeasure": {
+      "title": "How to Measure"
+    },
+    "women": {
+      "title": "Women's Measurements",
+      "sizeChart": "Women's Size Chart"
+    },
+    "men": {
+      "title": "Men's Measurements",
+      "sizeChart": "Men's Size Chart"
+    },
+    "measurements": {
+      "bust": "Bust",
+      "bustDescription": "Measure around the fullest part of your bust",
+      "waist": "Waist",
+      "waistDescription": "Measure around the narrowest part of your waist",
+      "hips": "Hips",
+      "hipsDescription": "Measure around the fullest part of your hips",
+      "shoulderWidth": "Shoulder Width",
+      "shoulderWidthDescription": "Measure from shoulder seam to shoulder seam",
+      "chest": "Chest",
+      "chestDescription": "Measure around the fullest part of your chest",
+      "neck": "Neck",
+      "neckDescription": "Measure around the base of your neck",
+      "sleeveLength": "Sleeve Length",
+      "sleeveLengthDescription": "Measure from shoulder to wrist with arm slightly bent"
+    },
+    "table": {
+      "size": "Size"
+    },
+    "sizeCharts": {
+      "title": "Size Charts"
+    },
+    "fitTips": {
+      "title": "Fit Tips",
+      "betweenSizes": {
+        "title": "Between Sizes?",
+        "description": "If you're between sizes, we recommend sizing up for a more comfortable fit, or sizing down for a more tailored look."
+      },
+      "fabricStretch": {
+        "title": "Consider Fabric Stretch",
+        "description": "Some of our fabrics have natural stretch. Check the product description for fabric composition details."
+      },
+      "shoulderFit": {
+        "title": "Shoulder Fit Matters",
+        "description": "The shoulder seam should sit right at your shoulder bone - not beyond or before it."
+      },
+      "lengthConsiderations": {
+        "title": "Length Considerations",
+        "description": "Consider your height and preferred tucking style when choosing between regular and long lengths."
+      }
+    },
+    "commonIssues": {
+      "title": "Common Fit Issues & Solutions",
+      "tooTight": {
+        "title": "Blouse/Shirt Too Tight Across Chest",
+        "description": "Try the next size up or look for styles with stretch fabric. The buttons should not pull or gap."
+      },
+      "tooLoose": {
+        "title": "Blouse/Shirt Too Loose",
+        "description": "Consider sizing down or try our fitted styles. A good fit should skim your body without being tight."
+      },
+      "sleeveTooShort": {
+        "title": "Sleeves Too Short",
+        "description": "Look for long-sleeve options or styles specifically designed for taller frames."
+      },
+      "gapingButtons": {
+        "title": "Button Gaping",
+        "description": "This often means the blouse is too small in the bust. Size up or try styles with stretch."
+      }
+    },
+    "needHelp": {
+      "title": "Still Need Help?",
+      "description": "Our customer service team is here to help you find the perfect fit.",
+      "contactButton": "Contact Us"
+    }
+  },
+  "fabricCare": {
+    "title": "Fabric Care Guide",
+    "intro": "Proper care extends the life of your garments and keeps them looking their best. Follow our expert guidance to maintain the quality and appearance of your HEVENTON pieces.",
+    "generalTips": {
+      "title": "General Care Tips",
+      "sortLaundry": {
+        "title": "Sort Your Laundry",
+        "description": "Separate whites, colors, and delicates to prevent color transfer and damage."
+      },
+      "checkTemp": {
+        "title": "Check Temperature",
+        "description": "Always follow the care label temperature recommendations for washing and ironing."
+      },
+      "turnInside": {
+        "title": "Turn Inside Out",
+        "description": "Protect colors and prints by washing garments inside out."
+      },
+      "mildDetergent": {
+        "title": "Use Mild Detergent",
+        "description": "Gentle, pH-neutral detergents protect fabric fibers and maintain color vibrancy."
+      },
+      "avoidOverload": {
+        "title": "Don't Overload",
+        "description": "Give your garments room to move freely in the washer for effective cleaning."
+      },
+      "airDry": {
+        "title": "Air Dry When Possible",
+        "description": "Line drying is gentler on fabrics and better for the environment."
+      }
+    },
+    "byFabric": {
+      "title": "Care by Fabric Type"
+    },
+    "cotton": {
+      "title": "100% Cotton",
+      "description": "Natural, breathable, and durable. Cotton becomes stronger when wet but can shrink if not cared for properly.",
+      "washing": {
+        "temp": "Machine wash in warm water (30-40°C), hot for whites (60°C)",
+        "cycle": "Use normal cycle for sturdy items, gentle for delicates",
+        "shrinkage": "Expect 3-5% shrinkage on first wash",
+        "whites": "For whites, use detergent with optical brighteners"
+      },
+      "drying": {
+        "tumble": "Tumble dry on medium heat",
+        "airDry": "Preferably air dry on a hanger",
+        "shape": "Reshape while damp to maintain form"
+      },
+      "ironing": {
+        "heat": "High heat setting (cotton setting on iron)",
+        "steam": "Use steam for best results",
+        "damp": "Iron while slightly damp for easier pressing"
+      }
+    },
+    "linen": {
+      "title": "Linen",
+      "description": "Lightweight and breathable with natural texture. Linen wrinkles easily but softens beautifully with wear.",
+      "washing": {
+        "temp": "Machine wash in cool to warm water (30°C)",
+        "gentle": "Use gentle cycle to prevent excessive wrinkling",
+        "detergent": "Mild detergent recommended"
+      },
+      "drying": {
+        "airDry": "Air dry or tumble dry on low",
+        "wrinkles": "Remove while slightly damp to minimize wrinkles"
+      },
+      "ironing": {
+        "highHeat": "High heat while fabric is slightly damp",
+        "slightlyDamp": "Linen irons best when damp"
+      }
+    },
+    "synthetic": {
+      "title": "Synthetic Blends (Polyester, Elastane)",
+      "description": "Easy care, wrinkle-resistant fabrics that often include stretch for comfort.",
+      "washing": {
+        "temp": "Machine wash in cool water (30°C)",
+        "delicate": "Use delicate cycle",
+        "colors": "Wash colors separately"
+      },
+      "drying": {
+        "lowHeat": "Tumble dry on low heat",
+        "hangDry": "Or hang to dry to prevent static"
+      },
+      "ironing": {
+        "lowTemp": "Low temperature setting",
+        "cloth": "Use pressing cloth to prevent shine"
+      }
+    },
+    "washing": "Washing",
+    "drying": "Drying",
+    "ironing": "Ironing",
+    "stainRemoval": {
+      "title": "Stain Removal Guide",
+      "important": "Important:",
+      "importantNote": "Always treat stains as quickly as possible and test any stain removal method on an inconspicuous area first.",
+      "coffee": {
+        "title": "Coffee & Tea Stains",
+        "step1": "Blot immediately with cold water",
+        "step2": "Apply liquid detergent to stain",
+        "step3": "Wash in coldest water safe for fabric"
+      },
+      "wine": {
+        "title": "Red Wine",
+        "step1": "Blot excess liquid immediately",
+        "step2": "Pour salt on stain to absorb",
+        "step3": "Rinse with cold water and wash normally"
+      },
+      "oil": {
+        "title": "Oil & Grease",
+        "step1": "Sprinkle with cornstarch or talcum powder",
+        "step2": "Let sit for 15 minutes to absorb oil",
+        "step3": "Brush off and apply dish soap, then wash"
+      },
+      "ink": {
+        "title": "Ink",
+        "step1": "Place paper towel under stain",
+        "step2": "Dab with rubbing alcohol",
+        "step3": "Rinse and wash as normal"
+      },
+      "sweat": {
+        "title": "Sweat & Deodorant",
+        "step1": "Mix equal parts water, hydrogen peroxide, and baking soda",
+        "step2": "Apply to stain and let sit for 30 minutes",
+        "step3": "Wash in warm water"
+      },
+      "makeup": {
+        "title": "Makeup",
+        "step1": "Apply makeup remover or dish soap to stain",
+        "step2": "Gently work into fabric",
+        "step3": "Rinse with warm water and wash"
+      }
+    },
+    "storage": {
+      "title": "Storage Tips",
+      "hanging": {
+        "title": "Hanging Storage",
+        "description": "Best for most blouses and shirts:",
+        "tip1": "Use padded or wooden hangers to maintain shape",
+        "tip2": "Leave space between garments to prevent wrinkles",
+        "tip3": "Button top button to help keep collar shape"
+      },
+      "folding": {
+        "title": "Folding Storage",
+        "description": "For knit or casual shirts:",
+        "tip1": "Fold along natural seams",
+        "tip2": "Store in drawers with adequate space",
+        "tip3": "Refold periodically to prevent permanent creases"
+      },
+      "seasonal": {
+        "title": "Seasonal Storage",
+        "description": "For long-term storage:",
+        "tip1": "Clean before storing (stains set over time)",
+        "tip2": "Use breathable cotton garment bags",
+        "tip3": "Store in cool, dry place away from sunlight"
+      }
+    },
+    "symbols": {
+      "title": "Understanding Care Symbols",
+      "description": "Care labels provide essential information about how to properly care for your garment.",
+      "washing": "Washing",
+      "washingDesc": "Tub symbol with temperature",
+      "bleaching": "Bleaching",
+      "bleachingDesc": "Triangle indicates if bleach is safe",
+      "drying": "Drying",
+      "dryingDesc": "Circle for tumble dry, square for line dry",
+      "ironing": "Ironing",
+      "ironingDesc": "Iron symbol with dots showing heat level"
+    },
+    "professional": {
+      "title": "When to Use Professional Care",
+      "when": "Consider professional dry cleaning when:",
+      "reason1": "Garment label specifies \"dry clean only\"",
+      "reason2": "Dealing with delicate fabrics like silk or wool blends",
+      "reason3": "Stubborn stains that home remedies can't remove",
+      "reason4": "Valuable or special occasion garments"
+    },
+    "questions": {
+      "title": "Questions About Care?",
+      "description": "Our team is here to help with any fabric care questions.",
+      "contactButton": "Contact Us"
+    }
+  },
+  "about": {
+    "title": "About HEVENTON",
+    "hero": {
+      "title": "About HEVENTON",
+      "subtitle": "Quality blouses and shirts crafted with care, designed to stand the test of time."
+    },
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "HEVENTON was founded with a simple mission: to provide high-quality, timeless blouses and shirts that make getting dressed a pleasure, not a chore.",
+      "paragraph2": "We believe that everyone deserves clothing that fits well, feels comfortable, and lasts for years. That's why we focus exclusively on what we do best - creating exceptional blouses for women and quality shirts for men.",
+      "paragraph3": "Every piece in our collection is carefully designed with attention to detail, using premium fabrics and expert craftsmanship. We're committed to offering styles that transcend trends, providing you with wardrobe essentials you'll reach for season after season.",
+      "imageCaption": "HEVENTON Workshop"
+    },
+    "values": {
+      "title": "Our Values",
+      "quality": {
+        "title": "Quality First",
+        "description": "We never compromise on materials or construction. Every HEVENTON piece is made to last."
+      },
+      "sustainability": {
+        "title": "Sustainable Practices",
+        "description": "We're committed to responsible sourcing and production methods that respect both people and planet."
+      },
+      "timeless": {
+        "title": "Timeless Design",
+        "description": "We create classic styles that won't go out of fashion, reducing waste and providing lasting value."
+      }
+    },
+    "quality": {
+      "title": "Our Quality Commitment",
+      "materials": {
+        "title": "Premium Materials",
+        "point1": "100% natural fibers from certified suppliers",
+        "point2": "Long-staple cotton for superior softness and durability",
+        "point3": "Carefully selected fabric weights for optimal drape",
+        "point4": "Color-fast dyes that maintain vibrancy wash after wash"
+      },
+      "craftsmanship": {
+        "title": "Expert Craftsmanship",
+        "point1": "Precision cutting for consistent sizing",
+        "point2": "Reinforced seams and stress points",
+        "point3": "Quality buttons and closures that last",
+        "point4": "Careful finishing and quality control"
+      }
+    },
+    "sustainability": {
+      "title": "Sustainability Matters",
+      "sourcing": {
+        "title": "Responsible Sourcing",
+        "description": "We work with suppliers who share our commitment to ethical practices and environmental responsibility."
+      },
+      "production": {
+        "title": "Conscious Production",
+        "description": "Our manufacturing partners meet strict standards for worker welfare and environmental impact."
+      },
+      "packaging": {
+        "title": "Eco-Friendly Packaging",
+        "description": "We use minimal, recyclable packaging materials to reduce waste."
+      },
+      "longevity": {
+        "title": "Built to Last",
+        "description": "Quality construction means our garments last longer, reducing the need for frequent replacement."
+      }
+    },
+    "whyChoose": {
+      "title": "Why Choose HEVENTON?",
+      "specialized": {
+        "title": "Specialized Focus",
+        "description": "We do one thing exceptionally well - quality blouses and shirts."
+      },
+      "premiumQuality": {
+        "title": "Premium Quality",
+        "description": "Superior materials and construction in every piece."
+      },
+      "perfectFit": {
+        "title": "Perfect Fit",
+        "description": "Comprehensive sizing and detailed fit guides to help you find your ideal size."
+      },
+      "customerCare": {
+        "title": "Customer Care",
+        "description": "Dedicated support team ready to help with sizing, care, and any questions."
+      }
+    },
+    "promise": {
+      "title": "Our Promise to You",
+      "shipping": {
+        "title": "Free Shipping",
+        "description": "Free delivery on all orders within Germany"
+      },
+      "returns": {
+        "title": "Easy Returns",
+        "description": "30-day return policy for your peace of mind"
+      },
+      "quality": {
+        "title": "Quality Guarantee",
+        "description": "We stand behind the quality of every piece we sell"
+      },
+      "support": {
+        "title": "Expert Support",
+        "description": "Our team is here to help you find the perfect fit"
+      }
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "description": "HEVENTON is brought to you by a dedicated team of fashion professionals, quality experts, and customer service specialists who share a passion for exceptional clothing.",
+      "member1": {
+        "name": "Your Team Member",
+        "role": "Founder & CEO"
+      },
+      "member2": {
+        "name": "Your Team Member",
+        "role": "Head of Quality"
+      },
+      "member3": {
+        "name": "Your Team Member",
+        "role": "Customer Experience Lead"
+      }
+    },
+    "cta": {
+      "title": "Ready to Experience HEVENTON Quality?",
+      "description": "Explore our collection of timeless blouses and shirts",
+      "shopButton": "Shop Collection",
+      "contactButton": "Contact Us"
+    }
+  },
+  "blog": {
+    "title": "HEVENTON Style & Care Blog",
+    "subtitle": "Expert advice on styling, caring for, and getting the most from your blouses and shirts.",
+    "readMore": "Read More",
+    "noPosts": "No blog posts found in this category.",
+    "categories": {
+      "all": "All Posts",
+      "style": "Style & Inspiration",
+      "care": "Care & Maintenance",
+      "fabric": "Fabric & Quality",
+      "sustainability": "Sustainability"
+    },
+    "posts": {
+      "whiteBlouse": {
+        "title": "5 Ways to Style a White Blouse: From Office to Evening",
+        "excerpt": "Discover versatile styling options for the classic white blouse, perfect for any occasion."
+      },
+      "cottonCare": {
+        "title": "How to Properly Care for Cotton Blouses: A Complete Guide",
+        "excerpt": "Learn professional techniques to keep your cotton blouses looking pristine for years."
+      },
+      "fabricQuality": {
+        "title": "Understanding Thread Count: What Makes a Quality Shirt?",
+        "excerpt": "Decode fabric terminology and learn what truly indicates quality in shirts and blouses."
+      },
+      "sustainable": {
+        "title": "Sustainable Fashion Choices: Building a Responsible Wardrobe",
+        "excerpt": "How choosing quality over quantity contributes to a more sustainable fashion future."
+      },
+      "capsule": {
+        "title": "Building a Capsule Wardrobe: Essential Shirts for Every Season",
+        "excerpt": "Create a versatile, minimalist wardrobe with these timeless shirt selections."
+      },
+      "stainRemoval": {
+        "title": "The Ultimate Stain Removal Guide for White Shirts",
+        "excerpt": "Expert tips for tackling common stains and keeping your white shirts pristine."
+      }
+    },
+    "newsletter": {
+      "title": "Never Miss a Style Tip",
+      "description": "Subscribe to our newsletter for styling advice, care tips, and exclusive offers.",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "blog": "Blog"
+    },
+    "tags": "Tags",
+    "shareArticle": "Share This Article",
+    "relatedPosts": "Related Posts",
+    "cta": {
+      "title": "Love What You Read?",
+      "description": "Explore our collection to find your perfect blouse or shirt",
+      "shopButton": "Shop Now"
+    }
+  }
 }
