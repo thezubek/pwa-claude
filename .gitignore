@@ -59,3 +59,4 @@ apps/web/reference/
 .vscode
 *.code-workspace
 *.tsbuildinfo
+claude-skills.tar.gz
