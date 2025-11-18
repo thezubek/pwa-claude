@@ -7,6 +7,7 @@
 
 export default defineNuxtPlugin(() => {
   const config = useRuntimeConfig()
+  const { isEnabled } = useFeatureFlags()
 
   // Check browser support for modern image formats
   const supportsAvif = ref(false)
@@ -34,8 +35,11 @@ export default defineNuxtPlugin(() => {
    * Get optimal image format based on browser support and enabled formats
    */
   function getOptimalImageFormat(): 'avif' | 'webp' | 'jpeg' {
-    const avifEnabled = config.public.imageAvif !== false
-    const webpEnabled = config.public.imageWebP !== false
+    // Check both config and feature flags
+    const avifEnabled =
+      (config.public.imageAvif !== false) && isEnabled('image-avif')
+    const webpEnabled =
+      (config.public.imageWebP !== false) && isEnabled('image-webp')
 
     if (avifEnabled && supportsAvif.value) {
       return 'avif'
@@ -72,8 +76,11 @@ export default defineNuxtPlugin(() => {
       ]
     }
 
-    const avifEnabled = config.public.imageAvif !== false
-    const webpEnabled = config.public.imageWebP !== false
+    // Check both config and feature flags
+    const avifEnabled =
+      (config.public.imageAvif !== false) && isEnabled('image-avif')
+    const webpEnabled =
+      (config.public.imageWebP !== false) && isEnabled('image-webp')
 
     for (const size of sizes) {
       // AVIF source
