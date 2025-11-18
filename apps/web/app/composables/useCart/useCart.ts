@@ -7,6 +7,8 @@ import type {
   Cart,
   PlentyEvents,
 } from '@plentymarkets/shop-api';
+import type { ExtendedApiError } from '~/types/api-error';
+import { getBasketFromError } from '~/types/api-error';
 
 const migrateVariationData = (oldCart: Cart, nextCart: Cart = {} as Cart): Cart => {
   if (!oldCart || !oldCart.items || !nextCart || !nextCart.items) {
@@ -134,17 +136,18 @@ export const useCart = () => {
 
       return !!data;
     } catch (error) {
-      const apiError = error as ApiError;
-      // @TODO: Update ApiError type definition
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const errorEvents = apiError.events as any;
-      if (errorEvents?.AfterBasketChanged?.basket) {
+      const apiError = error as ExtendedApiError;
+
+      // Update cart data from error event if available
+      const basketData = getBasketFromError(apiError);
+      if (basketData) {
         state.value.data = {
-          ...errorEvents.AfterBasketChanged.basket,
-          items: errorEvents.AfterBasketChanged.basketItems,
+          ...basketData,
+          items: (apiError.events?.AfterBasketChanged as any)?.basketItems || basketData.items,
         };
       }
-      useHandleError(apiError);
+
+      useHandleError(apiError as ApiError);
     } finally {
       state.value.loading = false;
     }
@@ -185,17 +188,18 @@ export const useCart = () => {
 
       return !!data;
     } catch (error) {
-      const apiError = error as ApiError;
-      // @TODO: Update ApiError type definition
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const errorEvents = apiError.events as any;
-      if (errorEvents?.AfterBasketChanged?.basket) {
+      const apiError = error as ExtendedApiError;
+
+      // Update cart data from error event if available
+      const basketData = getBasketFromError(apiError);
+      if (basketData) {
         state.value.data = {
-          ...errorEvents.AfterBasketChanged.basket,
-          items: errorEvents.AfterBasketChanged.basketItems,
+          ...basketData,
+          items: (apiError.events?.AfterBasketChanged as any)?.basketItems || basketData.items,
         };
       }
-      useHandleError(apiError);
+
+      useHandleError(apiError as ApiError);
     } finally {
       state.value.loading = false;
     }

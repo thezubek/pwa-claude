@@ -3,11 +3,20 @@ import type { UsePaymentMethodsReturn, UsePaymentMethodsState, FetchPaymentMetho
 
 /**
  * @description Composable for managing payment methods.
+ *
+ * Payment selection state is managed in the UI layer using local state.
+ * The API only stores the selected payment method ID, not a .selected boolean.
+ *
  * @example
  * ``` ts
  * const { data, loading, fetchPaymentMethods, savePaymentMethod } = usePaymentMethods();
+ *
+ * // Selection is managed in component state
+ * const selectedPaymentId = ref<number | null>(null)
+ *
+ * // Save to API when user selects
+ * await savePaymentMethod(selectedPaymentId.value)
  * ```
- * TODO: Remove .selected attribute from PaymentProviders
  */
 export const usePaymentMethods: UsePaymentMethodsReturn = () => {
   const state = useState<UsePaymentMethodsState>('usePaymentMethods', () => ({
