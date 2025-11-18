@@ -22,13 +22,16 @@
 import type { ConcreteComponent } from 'vue';
 import { useAttrsRef, SfButtonSize, SfButtonVariant } from '@storefront-ui/vue';
 
+// Extend SfButtonVariant to include AURA variants
+type ButtonVariant = `${SfButtonVariant}` | 'aura-primary' | 'aura-secondary' | 'aura-ghost';
+
 const props = defineProps({
   size: {
     type: String as PropType<`${SfButtonSize}`>,
     default: SfButtonSize.base,
   },
   variant: {
-    type: String as PropType<`${SfButtonVariant}`>,
+    type: String as PropType<ButtonVariant>,
     default: SfButtonVariant.primary,
   },
   disabled: {
