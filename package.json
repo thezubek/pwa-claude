@@ -72,7 +72,7 @@
     "@vue-storefront/eslint-config": "^5.1.1",
     "@vue/test-utils": "^2.4.6",
     "commitizen": "^4.3.0",
-    "concurrently": "^8.2.2",
+    "concurrently": "^9.2.1",
     "cypress-iframe": "^1.0.1",
     "eslint-module-utils": "^2.12.1",
     "happy-dom": "^20.0.10",
