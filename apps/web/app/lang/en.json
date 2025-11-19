@@ -3672,5 +3672,524 @@
       "description": "Browse our shirts and blouses designed to pair perfectly with your favorite accessories.",
       "button": "Shop Now"
     }
+  },
+  "stainRemoval": {
+    "title": "Emergency Stain Removal Guide",
+    "subtitle": "Quick action can save your favorite shirt or blouse. Learn professional techniques to tackle common stains before they set permanently.",
+    "immediateAction": "Immediate Action",
+    "homeSolution": "Home Solution",
+    "goldenRules": {
+      "title": "The 3 Golden Rules of Stain Removal",
+      "rule1": {
+        "title": "Act Fast",
+        "description": "The first 5 minutes are critical. Fresh stains are 10x easier to remove than set-in stains."
+      },
+      "rule2": {
+        "title": "Never Rub",
+        "description": "Always blot from the outside in. Rubbing spreads the stain and damages fabric fibers."
+      },
+      "rule3": {
+        "title": "Test First",
+        "description": "Always test cleaning solutions on an inconspicuous area first to prevent discoloration or damage."
+      }
+    },
+    "commonStains": {
+      "title": "Common Stains & Solutions",
+      "coffee": {
+        "title": "Coffee & Tea Stains",
+        "step1": "Blot immediately with a clean, dry cloth",
+        "step2": "Run cold water through the back of the stain",
+        "step3": "Apply liquid laundry detergent and let sit for 5 minutes",
+        "solution": "Mix 1 tablespoon white vinegar + 1 tablespoon dish soap + 2 cups warm water. Blot with solution, then rinse."
+      },
+      "wine": {
+        "title": "Red Wine Stains",
+        "step1": "Cover immediately with salt to absorb the wine",
+        "step2": "After 5 minutes, gently scrape off the salt",
+        "step3": "Rinse with cold water from the back of the fabric",
+        "solution": "Pour boiling water from a height of 12 inches onto the stain, or use club soda to lift the stain."
+      },
+      "oil": {
+        "title": "Oil & Grease Stains",
+        "step1": "Do NOT wet the stain - oil and water don't mix",
+        "step2": "Sprinkle cornstarch or baby powder on the stain",
+        "step3": "Let it sit for 30 minutes to absorb the oil",
+        "solution": "Apply dish soap (Dawn works best) directly to dry stain. Rub gently, then wash in hottest water fabric allows."
+      },
+      "ink": {
+        "title": "Ink Stains",
+        "step1": "Place a paper towel under the stain to absorb excess",
+        "step2": "Dab (don't rub) with rubbing alcohol using a cotton ball",
+        "step3": "Continue until no more ink transfers to the cotton ball",
+        "solution": "For ballpoint ink: rubbing alcohol. For gel ink: use hand sanitizer. For permanent marker: try hairspray."
+      },
+      "sweat": {
+        "title": "Sweat & Deodorant Stains",
+        "step1": "Turn garment inside out to access the actual sweat stain",
+        "step2": "Pre-treat with a paste of baking soda and water",
+        "step3": "Let sit for 1 hour before washing",
+        "solution": "Mix 4 tablespoons baking soda + 1/4 cup white vinegar + 1/4 cup water. Apply to stain, scrub gently, rinse after 30 minutes."
+      },
+      "blood": {
+        "title": "Blood Stains",
+        "step1": "ALWAYS use cold water (hot water sets blood stains permanently)",
+        "step2": "Rinse immediately under cold running water",
+        "step3": "Soak in cold salt water for 30 minutes",
+        "solution": "For stubborn blood: apply hydrogen peroxide directly to stain. It will bubble - let it work, then rinse with cold water."
+      }
+    },
+    "emergencyKit": {
+      "title": "Build Your Emergency Stain Kit",
+      "description": "Keep these essentials on hand for quick stain response at home and on the go:",
+      "item1": "Mild Dish Soap",
+      "item2": "White Paper Towels",
+      "item3": "Stain Remover Pen",
+      "item4": "Club Soda",
+      "item5": "Baby Wipes"
+    },
+    "doNot": {
+      "title": "What NOT to Do",
+      "mistake1": {
+        "title": "Don't Use Hot Water on Unknown Stains",
+        "description": "Hot water can permanently set protein-based stains like blood, sweat, and dairy. Always start with cold water."
+      },
+      "mistake2": {
+        "title": "Don't Put It in the Dryer",
+        "description": "Heat from the dryer will permanently set any remaining stain. Air dry until you're certain the stain is gone."
+      },
+      "mistake3": {
+        "title": "Don't Mix Random Chemicals",
+        "description": "Mixing bleach with ammonia or vinegar creates toxic fumes. Stick to one proven method at a time."
+      },
+      "mistake4": {
+        "title": "Don't Give Up Too Soon",
+        "description": "Some stains require multiple treatments. If the first attempt doesn't work completely, try again before giving up."
+      }
+    },
+    "cta": {
+      "title": "Stain-Resistant Fabrics",
+      "description": "Explore our collection of easy-care shirts and blouses that resist stains and stay looking fresh.",
+      "button": "Shop Stain-Resistant Styles"
+    }
+  },
+  "ironingSteaming": {
+    "title": "Ironing & Steaming Guide",
+    "subtitle": "Master the art of wrinkle-free shirts and blouses. Learn when to iron, when to steam, and the professional techniques for crisp, polished results.",
+    "bestFor": "Best For",
+    "pros": "Pros",
+    "cons": "Cons",
+    "comparison": {
+      "title": "Iron vs. Steam: Which Should You Use?",
+      "ironing": {
+        "title": "Ironing",
+        "best1": "Crisp collars and cuffs",
+        "best2": "Dress shirts and business blouses",
+        "best3": "Creating sharp creases",
+        "pro1": "Gives the sharpest, most professional finish",
+        "pro2": "Works on all fabric types",
+        "con1": "Can damage delicate fabrics if too hot",
+        "con2": "Requires ironing board and more time"
+      },
+      "steaming": {
+        "title": "Steaming",
+        "best1": "Delicate fabrics (silk, chiffon)",
+        "best2": "Quick touch-ups",
+        "best3": "Hanging garments",
+        "pro1": "Gentle on all fabrics",
+        "pro2": "Fast and convenient for travel",
+        "con1": "Won't create sharp creases",
+        "con2": "Less effective on heavy wrinkles"
+      }
+    },
+    "ironingGuide": {
+      "title": "Professional Ironing Guide",
+      "temperature": {
+        "title": "Temperature Settings by Fabric",
+        "cool": {
+          "title": "Cool (110°C / 230°F)",
+          "fabrics": "Acetate, acrylic, nylon, polyester"
+        },
+        "warm": {
+          "title": "Warm (150°C / 300°F)",
+          "fabrics": "Silk, wool, rayon"
+        },
+        "hot": {
+          "title": "Hot (200°C / 400°F)",
+          "fabrics": "Cotton, linen, denim"
+        },
+        "noIron": {
+          "title": "Do Not Iron",
+          "fabrics": "Spandex, rubber, vinyl"
+        }
+      },
+      "stepByStep": {
+        "title": "Step-by-Step Ironing",
+        "step1": {
+          "title": "Start with the Collar",
+          "description": "Iron from the points toward the center on both sides. Work from the underside first, then flip and press the top."
+        },
+        "step2": {
+          "title": "Move to the Cuffs",
+          "description": "Unbutton and lay flat. Iron the inside first, then the outside. Pay special attention to button areas."
+        },
+        "step3": {
+          "title": "Iron the Sleeves",
+          "description": "Lay sleeve flat with seam aligned. Iron from shoulder to cuff in smooth strokes. Avoid creasing the top of the sleeve."
+        },
+        "step4": {
+          "title": "Press the Back Panel",
+          "description": "Drape over the ironing board. Start from one side, iron across to the other in sections. Include the yoke."
+        },
+        "step5": {
+          "title": "Finish with the Front Panels",
+          "description": "Iron around buttons (never over them). Use the iron's tip for tight spaces. Work from top to bottom."
+        }
+      }
+    },
+    "steamingGuide": {
+      "title": "Professional Steaming Techniques",
+      "howTo": {
+        "title": "How to Steam Effectively",
+        "hanging": {
+          "title": "Hanging Method",
+          "step1": "Hang garment on a sturdy hanger",
+          "step2": "Fill steamer with distilled water (prevents mineral buildup)",
+          "step3": "Hold steamer head close but not touching fabric",
+          "step4": "Work from top to bottom in vertical motions",
+          "step5": "Pull fabric taut with free hand for best results"
+        },
+        "tips": {
+          "title": "Pro Steaming Tips",
+          "tip1": "Steam from the inside for delicate fabrics",
+          "tip2": "Let garment dry for 5-10 minutes after steaming",
+          "tip3": "Use gentle downward motions - never horizontal",
+          "tip4": "For stubborn wrinkles, steam the same area multiple times"
+        }
+      }
+    },
+    "proTips": {
+      "title": "Pro Tips for Perfect Results",
+      "tip1": {
+        "title": "Use Distilled Water",
+        "description": "Tap water minerals can clog your iron or leave marks on fabric. Distilled water keeps your equipment clean and your shirts spotless."
+      },
+      "tip2": {
+        "title": "Iron Inside Out for Dark Colors",
+        "description": "This prevents shine marks on dark fabrics and protects prints or embellishments from direct heat damage."
+      },
+      "tip3": {
+        "title": "Try the Ice Cube Trick",
+        "description": "Toss a few ice cubes in the dryer with wrinkled shirts for 10 minutes. The steam created will release minor wrinkles without ironing."
+      },
+      "tip4": {
+        "title": "Hang Immediately After Shower",
+        "description": "Bathroom steam can release wrinkles from hanging garments. Perfect for travel when you don't have an iron."
+      },
+      "tip5": {
+        "title": "Focus on What Shows",
+        "description": "No one sees the back. In a time crunch, prioritize collar, cuffs, and front panels - the parts people actually notice."
+      },
+      "tip6": {
+        "title": "Iron When Slightly Damp",
+        "description": "Slightly damp fabric irons more easily and gets crisper results. Remove from dryer while still a bit damp, or use spray bottle."
+      }
+    },
+    "cta": {
+      "title": "Wrinkle-Resistant Styles",
+      "description": "Discover our collection of wrinkle-resistant fabrics that look great with minimal effort.",
+      "button": "Shop Easy-Care Shirts"
+    }
+  },
+  "virtualMeeting": {
+    "title": "Virtual Meeting Style Guide",
+    "subtitle": "Look professional and polished on camera. Master the art of video call styling with colors, patterns, and setups that make you look your best.",
+    "proTip": "Pro Tip",
+    "cameraFrame": {
+      "title": "The Camera Frame Rule",
+      "description": "What works in person doesn't always work on camera. Follow these rules for the most flattering video appearance.",
+      "rule1": {
+        "title": "Frame from Chest Up",
+        "description": "Position your camera to show from mid-chest to just above your head. This is the most natural and professional framing."
+      },
+      "rule2": {
+        "title": "What Matters Most",
+        "description": "Focus your effort on what the camera sees: collar area, top buttons, and accessories in the upper third of frame."
+      },
+      "rule3": {
+        "title": "Background Contrast",
+        "description": "Your outfit should contrast with your background. Light background = darker shirt, dark background = lighter shirt."
+      }
+    },
+    "colors": {
+      "title": "Best Colors for Video Calls",
+      "best": {
+        "title": "Best Colors",
+        "blue": {
+          "title": "Blue Tones",
+          "description": "Navy, royal blue, and teal look professional and work with all skin tones on camera."
+        },
+        "purple": {
+          "title": "Purple & Plum",
+          "description": "Sophisticated and memorable without being overpowering. Great for standing out professionally."
+        },
+        "gray": {
+          "title": "Medium Gray",
+          "description": "Neutral and professional. Avoid very light gray which can wash out on camera."
+        },
+        "jewel": {
+          "title": "Jewel Tones",
+          "description": "Emerald, sapphire, ruby - rich colors that add depth and dimension on screen."
+        }
+      },
+      "avoid": {
+        "title": "Colors to Avoid",
+        "white": {
+          "title": "Pure White",
+          "description": "Reflects too much light and can cause glare. Choose cream or light blue instead."
+        },
+        "black": {
+          "title": "Pure Black",
+          "description": "Can create a floating head effect. Dark navy or charcoal are better choices."
+        },
+        "bright": {
+          "title": "Bright Red or Neon",
+          "description": "Can bleed or vibrate on camera. Stick to muted or jewel tones for reds."
+        },
+        "patterns": {
+          "title": "Busy Patterns",
+          "description": "Fine stripes, small checks, and herringbone can create a distracting moiré effect on screen."
+        }
+      }
+    },
+    "outfits": {
+      "title": "Outfit Recommendations",
+      "women": {
+        "title": "For Women",
+        "formal": {
+          "title": "Formal Meetings",
+          "item1": "Solid-colored blouse in jewel tones or pastels",
+          "item2": "Structured blazer in navy, gray, or camel",
+          "item3": "Simple necklace or earrings (nothing dangling)"
+        },
+        "casual": {
+          "title": "Casual Calls",
+          "item1": "Button-up shirt in solid color or subtle pattern",
+          "item2": "Cardigan or casual blazer",
+          "item3": "Statement earrings (on-camera only accessory that really shows)"
+        },
+        "tip": "V-necks and scoop necks are more flattering on camera than crew necks. Add a blazer or cardigan for instant polish."
+      },
+      "men": {
+        "title": "For Men",
+        "formal": {
+          "title": "Formal Meetings",
+          "item1": "Solid dress shirt in blue, white, or light purple",
+          "item2": "Tie (optional) - solid or subtle pattern only",
+          "item3": "Sport coat or suit jacket in navy or charcoal"
+        },
+        "casual": {
+          "title": "Casual Calls",
+          "item1": "Button-up shirt in solid or simple pattern",
+          "item2": "Quarter-zip or polo in rich colors",
+          "item3": "Casual blazer to elevate the look"
+        },
+        "tip": "Button your top button and add a tie for high-stakes calls. For casual meetings, one button undone looks relaxed but professional."
+      }
+    },
+    "technical": {
+      "title": "Technical Setup Matters",
+      "lighting": {
+        "title": "Lighting",
+        "description": "Good lighting is more important than a good camera.",
+        "tip1": "Face a window for natural light (avoid backlighting)",
+        "tip2": "Use a ring light or desk lamp at eye level",
+        "tip3": "Avoid overhead lighting that creates shadows"
+      },
+      "background": {
+        "title": "Background",
+        "description": "Your background should be clean and professional.",
+        "tip1": "Solid wall or subtle bookshelf works best",
+        "tip2": "Keep it uncluttered and distraction-free",
+        "tip3": "Use virtual backgrounds sparingly (can look unprofessional)"
+      },
+      "camera": {
+        "title": "Camera Angle",
+        "description": "Position matters for a flattering appearance.",
+        "tip1": "Camera at eye level (stack books if needed)",
+        "tip2": "Sit 2-3 feet from camera for proper framing",
+        "tip3": "Look at the camera, not the screen, when speaking"
+      }
+    },
+    "mistakes": {
+      "title": "Common Video Call Mistakes",
+      "mistake1": {
+        "title": "Wearing Pajamas on Bottom",
+        "description": "You never know when you'll need to stand up. Dress fully for confidence and unexpected moments."
+      },
+      "mistake2": {
+        "title": "Too Much Jewelry",
+        "description": "Dangling earrings, noisy bracelets, and multiple necklaces are distracting on camera. Keep it simple."
+      },
+      "mistake3": {
+        "title": "Not Testing Beforehand",
+        "description": "Always test your setup 5 minutes early. Check lighting, framing, and audio before the call starts."
+      },
+      "mistake4": {
+        "title": "Forgetting the Collar",
+        "description": "Your collar is the most visible part of your outfit on camera. Make sure it's crisp, straight, and wrinkle-free."
+      }
+    },
+    "cta": {
+      "title": "Camera-Ready Styles",
+      "description": "Discover our collection of video-call-perfect shirts and blouses in flattering solid colors.",
+      "button": "Shop Video Call Essentials"
+    }
+  },
+  "interviewOutfit": {
+    "title": "Job Interview Outfit Guide",
+    "subtitle": "Make a powerful first impression with the perfect interview outfit. Learn industry-specific guidelines and what to wear to land your dream job.",
+    "goldenRules": {
+      "title": "3 Golden Rules for Interview Dressing",
+      "rule1": {
+        "title": "Dress One Level Up",
+        "description": "Research the company dress code and dress one notch more formal. When in doubt, it's better to be slightly overdressed."
+      },
+      "rule2": {
+        "title": "Fit is Everything",
+        "description": "A perfectly fitted, simple outfit beats an expensive, ill-fitting one every time. Get alterations if needed."
+      },
+      "rule3": {
+        "title": "Let Your Skills Shine",
+        "description": "Your outfit should be professional but not distracting. The focus should be on you and your qualifications."
+      }
+    },
+    "industries": {
+      "title": "Industry-Specific Guidelines",
+      "corporate": {
+        "title": "Corporate / Finance / Law",
+        "description": "Traditional business formal is expected. This is where you pull out your most conservative, polished look.",
+        "women": {
+          "title": "Women",
+          "item1": "Tailored suit (navy, charcoal, or black)",
+          "item2": "White or light blue button-up blouse",
+          "item3": "Closed-toe pumps",
+          "item4": "Minimal jewelry - stud earrings, simple necklace",
+          "item5": "Professional leather tote or briefcase"
+        },
+        "men": {
+          "title": "Men",
+          "item1": "Two-piece suit (navy or charcoal)",
+          "item2": "White or light blue dress shirt",
+          "item3": "Conservative tie (solid or subtle pattern)",
+          "item4": "Polished leather dress shoes",
+          "item5": "Matching leather belt"
+        }
+      },
+      "tech": {
+        "title": "Tech / Startup",
+        "description": "Business casual is typically appropriate. Show you understand the culture while still being professional.",
+        "women": {
+          "title": "Women",
+          "item1": "Dark jeans or tailored pants",
+          "item2": "Blouse or button-up in any color",
+          "item3": "Blazer (optional but recommended)",
+          "item4": "Clean sneakers or flats acceptable",
+          "item5": "Keep accessories modern and minimal"
+        },
+        "men": {
+          "title": "Men",
+          "item1": "Chinos or dark jeans",
+          "item2": "Button-up shirt (tie not necessary)",
+          "item3": "Optional blazer or sweater",
+          "item4": "Clean leather shoes or minimal sneakers",
+          "item5": "Smart watch is fine"
+        }
+      },
+      "creative": {
+        "title": "Creative / Design / Marketing",
+        "description": "Show your personal style while staying professional. This is where you can express creativity through your outfit.",
+        "women": {
+          "title": "Women",
+          "item1": "Stylish blouse in interesting color or pattern",
+          "item2": "Well-fitted pants or skirt",
+          "item3": "Statement jewelry or accessories",
+          "item4": "Fashionable but professional shoes",
+          "item5": "Your outfit can show your aesthetic"
+        },
+        "men": {
+          "title": "Men",
+          "item1": "Patterned or colored button-up shirt",
+          "item2": "Well-fitted pants (not suit pants)",
+          "item3": "Optional blazer in interesting texture",
+          "item4": "Quality casual shoes or boots",
+          "item5": "Show personality while staying polished"
+        }
+      }
+    },
+    "virtual": {
+      "title": "Virtual Interview Considerations",
+      "description": "Video interviews have different requirements than in-person meetings.",
+      "tips": {
+        "tip1": "Choose solid colors that contrast with your background",
+        "tip2": "Avoid white (causes glare) and busy patterns (distracting on camera)",
+        "tip3": "Focus on from the waist up - that's all they'll see",
+        "tip4": "Test your outfit on camera 1 day before",
+        "tip5": "Good lighting can make a bigger difference than expensive clothes",
+        "tip6": "Dress fully anyway - it affects your confidence and body language"
+      }
+    },
+    "checklist": {
+      "title": "Interview Outfit Checklist",
+      "nightBefore": {
+        "title": "The Night Before",
+        "item1": "Lay out your complete outfit including accessories",
+        "item2": "Check for wrinkles, stains, loose threads, missing buttons",
+        "item3": "Iron or steam everything",
+        "item4": "Polish shoes and check they're scuff-free",
+        "item5": "Try on the full outfit to verify fit and comfort",
+        "item6": "Prepare a backup outfit just in case"
+      },
+      "morning": {
+        "title": "Interview Morning",
+        "item1": "Get dressed 30 minutes before leaving (avoid last-minute stress)",
+        "item2": "Check yourself from all angles in a full-length mirror",
+        "item3": "Verify tags are removed and nothing is tucked wrong",
+        "item4": "Bring lint roller for final touch-ups",
+        "item5": "Avoid strong perfumes or colognes",
+        "item6": "Keep makeup/grooming subtle and professional"
+      }
+    },
+    "mistakes": {
+      "title": "Common Interview Outfit Mistakes",
+      "mistake1": {
+        "title": "Too Trendy or Casual",
+        "description": "Even at casual companies, an interview is a formal occasion. Save the ripped jeans and graphic tees."
+      },
+      "mistake2": {
+        "title": "Uncomfortable or Ill-Fitting",
+        "description": "If you're tugging at your collar or adjusting your waistband, it shows. Wear something you can sit comfortably in for hours."
+      },
+      "mistake3": {
+        "title": "Too Much Fragrance",
+        "description": "Strong perfumes or colognes can be overwhelming in small interview rooms and may trigger allergies."
+      },
+      "mistake4": {
+        "title": "Distracting Accessories",
+        "description": "Noisy bracelets, flashy watches, or excessive jewelry takes attention away from what you're saying."
+      },
+      "mistake5": {
+        "title": "Wearing Something Brand New",
+        "description": "New clothes can be stiff, uncomfortable, or surprise you with issues. Wear something you've tested before."
+      },
+      "mistake6": {
+        "title": "Ignoring the Details",
+        "description": "Scuffed shoes, visible tags, wrinkled collar, or chipped nail polish suggest you don't pay attention to details."
+      }
+    },
+    "cta": {
+      "title": "Interview-Ready Wardrobe",
+      "description": "Build your professional interview wardrobe with our collection of perfectly tailored shirts and blouses.",
+      "button": "Shop Interview Essentials"
+    }
   }
 }
